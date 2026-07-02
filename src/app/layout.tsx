@@ -11,17 +11,17 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: {
-    default: "Guts and Blackpowder Wiki — 游戏攻略、地图指南、敌人图鉴一站式平台",
+    default: "Guts and Blackpowder Wiki — PvE Zombie Survival Guide, Maps & Weapons",
     template: "%s | Guts and Blackpowder Wiki",
   },
   description:
-    "Guts and Blackpowder 中文攻略站，提供完整的游戏模式攻略、武器指南、敌人图鉴、地图攻略、新手入门等全方位内容，助你在拿破仑战争战场上浴血奋战。",
+    "The complete Guts and Blackpowder wiki. Maps, weapons, enemies, classes, badges, commands and more for the Roblox PvE zombie survival shooter.",
   openGraph: {
-    title: "Guts and Blackpowder Wiki",
+    title: "Guts and Blackpowder Wiki — PvE Zombie Survival Guide",
     description:
-      "Guts and Blackpowder 中文攻略站 — 游戏模式、武器、敌人、地图一站式攻略平台",
+      "The complete Guts and Blackpowder wiki. Maps, weapons, enemies, classes, badges, commands and more for the Roblox PvE zombie survival shooter.",
     type: "website",
-    locale: "zh_CN",
+    locale: "en_US",
     siteName: "Guts and Blackpowder Wiki",
   },
   robots: {
@@ -36,12 +36,24 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="zh-CN" className="h-full scroll-smooth">
+    <html lang="en" className="h-full scroll-smooth">
+      <head>
+        {/* Google AdSense Auto Ads */}
+        <script
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXXXX"
+          crossOrigin="anonymous"
+        />
+      </head>
       <body
         className={`${inter.className} min-h-full flex flex-col bg-background text-foreground antialiased`}
       >
         <Header />
-        <main className="flex-1">{children}</main>
+        <main className="flex-1">
+          <div id="ad-banner-top" style={{minHeight:"90px",textAlign:"center",margin:"15px 0"}}></div>
+          {children}
+        </main>
+        <div id="ad-banner-footer" style={{minHeight:"250px",textAlign:"center",margin:"20px 0"}}></div>
         <Footer />
       </body>
     </html>

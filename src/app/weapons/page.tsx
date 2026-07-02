@@ -3,8 +3,8 @@ import SectionTitle from "@/components/SectionTitle";
 import { weaponTypes, classWeaponMap, recommendedWeapons } from "@/lib/data";
 
 export const metadata: Metadata = {
-  title: "武器指南",
-  description: "Guts and Blackpowder 多种历史武器详解",
+  title: "Weapons Guide",
+  description: "Guts and Blackpowder comprehensive weapons guide — muskets, rifles, sabres, pistols, and more",
 };
 
 export default function WeaponsPage() {
@@ -24,14 +24,13 @@ export default function WeaponsPage() {
             className="font-serif text-4xl md:text-5xl lg:text-6xl leading-tight mb-4"
             style={{ color: "#f0ece4" }}
           >
-            武器指南
+            Weapons Guide
           </h1>
           <p
             className="text-lg md:text-xl max-w-2xl mx-auto leading-relaxed"
             style={{ color: "#8a8884" }}
           >
-            Guts and Blackpowder 拥有多种各具特色的历史武器，武器选择将决定你的战斗风格。
-            了解每种武器的特性，搭配适合的兵种，将在战场上决定你的生死。
+            Guts and Blackpowder features a wide array of historically inspired weapons. Your weapon choice defines your combat style and effectiveness on the battlefield. Master the muzzle-loaders, sabres, and specialized tools of the Napoleonic era.
           </p>
         </div>
       </section>
@@ -40,8 +39,8 @@ export default function WeaponsPage() {
       <section className="py-16" style={{ backgroundColor: "#05030c" }}>
         <div className="max-w-5xl mx-auto px-4">
           <SectionTitle
-            title="武器系统简介"
-            subtitle="历史武器是 Guts and Blackpowder 战斗系统的核心"
+            title="Weapon System Overview"
+            subtitle="Historical firearms and melee weapons are the core of Guts and Blackpowder's combat system"
             align="center"
           />
 
@@ -50,16 +49,13 @@ export default function WeaponsPage() {
               className="text-base leading-relaxed mb-4"
               style={{ color: "#8a8884" }}
             >
-              在 Guts and Blackpowder 中，武器精确还原了拿破仑战争时期的真实装备。
-              从前装滑膛步枪到军官佩剑，每种武器都有独特的装填速度、伤害和射程特性。
-              选择合适的武器能让你的战斗效率得到最大程度的发挥。
+              Weapons in Guts and Blackpowder are faithfully based on real Napoleonic-era equipment. From muzzle-loading smoothbore muskets to officer sabres, each weapon has unique reload speed, damage, and range characteristics. Choosing the right weapon maximizes your combat effectiveness.
             </p>
             <p
               className="text-base leading-relaxed"
               style={{ color: "#8a8884" }}
             >
-              不同兵种可以使用的武器各有不同。线列步兵使用标准步枪，轻步兵可使用精度更高的线膛步枪，
-              军官则配备佩剑和喇叭指挥作战。建议根据兵种特点和个人喜好来选择最适合自己的武器配置。
+              Different classes have access to different weapons. Infantry use standard muskets, while the Officer wields a sabre and bugle. It is recommended to experiment with different loadouts to find what suits your playstyle best.
             </p>
           </div>
         </div>
@@ -72,8 +68,8 @@ export default function WeaponsPage() {
       >
         <div className="max-w-5xl mx-auto px-4">
           <SectionTitle
-            title="武器类型一览"
-            subtitle="多种武器类型及其适用模式"
+            title="Weapon Types"
+            subtitle="All weapon categories and their applicable modes"
             align="center"
           />
 
@@ -88,19 +84,19 @@ export default function WeaponsPage() {
                     className="px-6 py-4 text-left font-semibold text-sm uppercase tracking-wider"
                     style={{ color: "#05030c" }}
                   >
-                    武器名称
+                    Weapon Name
                   </th>
                   <th
                     className="px-6 py-4 text-left font-semibold text-sm uppercase tracking-wider"
                     style={{ color: "#05030c" }}
                   >
-                    描述
+                    Description
                   </th>
                   <th
                     className="px-6 py-4 text-left font-semibold text-sm uppercase tracking-wider"
                     style={{ color: "#05030c" }}
                   >
-                    可用模式
+                    Available Modes
                   </th>
                 </tr>
               </thead>
@@ -155,8 +151,8 @@ export default function WeaponsPage() {
       <section className="py-16" style={{ backgroundColor: "#05030c" }}>
         <div className="max-w-5xl mx-auto px-4">
           <SectionTitle
-            title="模式武器适配"
-            subtitle="各游戏模式可使用的武器类型一览"
+            title="Class-Weapon Compatibility"
+            subtitle="Which weapons are available for each class"
             align="center"
           />
 
@@ -204,8 +200,8 @@ export default function WeaponsPage() {
       >
         <div className="max-w-5xl mx-auto px-4">
           <SectionTitle
-            title="推荐武器"
-            subtitle="当前版本推荐武器列表"
+            title="Recommended Weapons"
+            subtitle="Top weapon picks for the current meta"
             align="center"
           />
 
@@ -217,13 +213,13 @@ export default function WeaponsPage() {
               <thead>
                 <tr style={{ backgroundColor: "#d4af6a" }}>
                   {[
-                    "武器名称",
-                    "类型",
-                    "适用",
-                    "伤害",
-                    "速度",
-                    "射程",
-                    "说明",
+                    "Weapon Name",
+                    "Type",
+                    "Class",
+                    "DMG",
+                    "SPD",
+                    "Range",
+                    "Notes",
                   ].map((header) => (
                     <th
                       key={header}

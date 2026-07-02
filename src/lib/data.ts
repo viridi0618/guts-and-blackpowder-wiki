@@ -18,632 +18,796 @@ import type {
 } from "./types";
 
 /* ==============================
-   1. 首页 — 游戏基础信息
+   1. Game Info
    ============================== */
 
 export const gameData: GameInfo = {
   title: "Guts and Blackpowder",
-  subtitle: "Roblox 拿破仑战争题材第一人称射击游戏",
+  subtitle: "Roblox PvE Zombie Survival",
   description:
-    "Guts and Blackpowder 是由 Fezezen（Fuze Studios）在 Roblox 平台上开发的一款以拿破仑战争为背景的第一人称射击游戏。游戏还原了 19 世纪初期欧洲战场的残酷氛围，玩家将扮演英、法、普鲁士等不同阵营的士兵，使用火枪、刺刀、佩剑等历史武器参与大规模阵地战。\n\n游戏拥有多种游戏模式，包括经典的 Objective（目标）模式、Endless（无尽）生存模式和 versus（玩家对战）模式。自 2021 年上线以来，累计游玩次数已超过 53 亿次，凭借其硬核的 gameplay 和对历史细节的还原，获得了社区 94% 的好评率。",
-  heroTitle: "在 Guts and Blackpowder 中浴血奋战",
+    'Guts & Blackpowder (G&B) is a free-to-play Roblox PvE horde shooter developed by Fezezen (Fuze Studios), released August 25, 2021. It is set during an alternate-history Napoleonic Wars era where a viral infection called "The Blight" has raised the dead across Europe. Players take on the roles of Napoleonic-era soldiers who must band together to survive waves of undead across historical battlefields.\n\nSurvive the undead Blight across 15 historical maps with up to 12 players — armed only with muskets, sabres, and 19th-century grit. The game features multiple modes including Objective, Endless, Holdout, and seasonal Boss events.',
+  heroTitle: "Survive the Blight",
   heroSubtitle:
-    "一款 Roblox 平台上的硬核拿破仑战争游戏。在硝烟弥漫的战场上，用火枪和刺刀书写你的战斗传奇。",
+    "A free Roblox PvE zombie survival game set during the Napoleonic Wars. Fight the undead across 15 historical maps with muskets, sabres, and 19th-century grit.",
   heroStats: [
-    { label: "上线时间", value: "2021年" },
-    { label: "游玩次数", value: "533M+" },
-    { label: "好评率", value: "94%" },
-    { label: "游戏模式", value: "7+" },
+    { label: "Released", value: "August 2021" },
+    { label: "Total Plays", value: "533M+" },
+    { label: "Maps", value: "15 Public" },
+    { label: "Rating", value: "94%" },
   ],
   quickFacts: [
-    { label: "开发商", value: "Fezezen / Fuze Studios" },
-    { label: "类型", value: "第一人称射击 / 历史战争" },
-    { label: "平台", value: "Roblox" },
-    { label: "人数", value: "支持大规模多人对战" },
-    { label: "价格", value: "免费游玩" },
-    { label: "评价", value: "94% 好评（530万+ 评价）" },
-    { label: "引擎", value: "Roblox Engine" },
+    { label: "Developer", value: "Fezezen / Fuze Studios" },
+    { label: "Genre", value: "PvE Zombie Survival" },
+    { label: "Platform", value: "Roblox (Free)" },
+    { label: "Players", value: "Up to 12 per server" },
+    { label: "Price", value: "Free to Play" },
+    { label: "Rating", value: "94% (533M+ Plays)" },
+    { label: "Version", value: "v0.17.9" },
+    { label: "Community", value: "540K+ Members" },
   ],
 };
 
 /* ==============================
-   2. 游戏模式（原职业）
+   2. Game Modes
    ============================== */
 
 export const classes: ClassData[] = [
-  {
-    id: "objective",
-    name: "目标模式",
-    icon: "🎯",
-    tag: "经典 · 团队合作",
-    shortDescription: "团队合作完成指定目标，如占领据点、护送物资等。最适合新手上手的模式。",
-    description:
-      "目标模式是 Guts and Blackpowder 中最经典的游戏模式。玩家分为进攻方和防守方，进攻方需要在地图上完成一系列目标（如占领阵地、摧毁炮台、护送关键人物等），防守方则需要阻止对方。该模式强调团队配合和战术执行，每张地图都有独特的目标路线。",
-    role: "团队合作 / 战术执行 / 攻防转换",
-    difficulty: "中等",
-    rating: "S 级",
-    weaponType: "步枪、刺刀、佩剑、手枪、火炮",
-    armorType: "标准军服",
-    abilities: [
-      "占领据点 — 在指定区域停留以占领目标",
-      "护送任务 — 保护关键人物或物资到达目的地",
-      "炮台操作 — 操作固定火炮压制敌方",
-      "团队协作 — 与队友配合推进或防守",
-    ],
-    tips: "新手推荐：选择步枪兵，跟随大部队行动 | 进阶技巧：学习地图路线和敌人重生点 | 团队定位：根据队伍需要选择合适兵种",
-  },
-  {
-    id: "endless",
-    name: "无尽模式",
-    icon: "♾️",
-    tag: "生存 · 合作防守",
-    shortDescription: "抵御一波又一波的敌人进攻，与队友合作生存尽可能久。",
-    description:
-      "无尽模式是 Guts and Blackpowder 中的生存合作模式。玩家需要在一个封闭地图中抵御不断袭来的 AI 敌人波次。每波敌人的数量和强度都会逐渐提升，中间会有 Boss 级别的敌人出现。团队需要合理分配火力、管理弹药，并利用地图地形进行防守。",
-    role: "生存防守 / 资源管理 / 团队配合",
-    difficulty: "困难",
-    rating: "A 级",
-    weaponType: "步枪、手枪、刺刀、佩剑",
-    armorType: "标准军服",
-    abilities: [
-      "波次防守 — 抵御逐渐增强的敌人波次",
-      "弹药管理 — 合理分配有限弹药资源",
-      "地形利用 — 选择有利防守位置",
-      "Boss 应对 — 处理特殊强力敌人",
-    ],
-    tips: "新手推荐：选择线列步兵，保持阵型 | 进阶技巧：节省弹药，善用刺刀近战 | 团队定位：分工合作，有人负责火力压制，有人负责侧翼警戒",
-  },
-  {
-    id: "versus",
-    name: "对战模式",
-    icon: "⚔️",
-    tag: "PvP · 竞技",
-    shortDescription: "玩家之间的直接对抗，在战场上比拼枪法与战术。",
-    description:
-      "对战模式是 Guts and Blackpowder 中的玩家对战模式。双方玩家在战场上直接对抗，比拼枪法、战术和团队配合。不同于目标模式的固定路线，对战模式更加自由，需要玩家具备更好的个人技术和战场意识。",
-    role: "玩家对战 / 战术射击 / 团队竞技",
-    difficulty: "困难",
-    rating: "S 级",
-    weaponType: "步枪、手枪、佩剑、刺刀",
-    armorType: "标准军服",
-    abilities: [
-      "枪法比拼 — 精确瞄准和快速射击能力",
-      "战术走位 — 利用掩体和地形优势",
-      "团队配合 — 与队友协同进攻防守",
-      "近战格斗 — 关键时刻使用刺刀或佩剑",
-    ],
-    tips: "新手推荐：先熟悉步枪弹道和装填节奏 | 进阶技巧：学习预瞄和提前枪 | 团队定位：与队友保持阵型，不要单独行动",
-  },
-  {
-    id: "event",
-    name: "活动模式",
-    icon: "🎪",
-    tag: "限时 · 特殊玩法",
-    shortDescription: "限时开放的特殊游戏模式，提供独特的战斗体验和奖励。",
-    description:
-      "活动模式是 Guts and Blackpowder 中限时开放的特殊游戏模式。通常会结合特定历史事件或节日推出，具有独特的规则和玩法。例如圣诞节期间的特别地图、历史上的著名战役还原等。活动模式通常会提供专属的武器皮肤和奖励。",
-    role: "限时体验 / 特殊玩法 / 收藏奖励",
-    difficulty: "视活动而定",
-    rating: "A 级",
-    weaponType: "视活动而定",
-    armorType: "标准军服",
-    abilities: [
-      "限时内容 — 仅在活动期间开放",
-      "独特规则 — 每期活动有不同玩法",
-      "专属奖励 — 活动限定武器和装扮",
-      "历史还原 — 部分活动还原真实战役",
-    ],
-    tips: "关注官方公告，及时参与限时活动获取限定奖励 | 活动模式通常有独特的机制，建议先查看规则说明",
-  },
+  { id:"objective", name:"Objective", icon:"🎯", tag:"PvE · Missions", shortDescription:"Complete objectives then escape. Deaths respawn at checkpoints. 9 maps.", description:"Objective is the core mode. Players complete mission objectives (find keys, light signal fires, defend positions) while fighting zombies. Each map has unique objectives and escape sequences.", role:"PvE / Teamwork", difficulty:"Medium", rating:"Popular", weaponType:"Musket, Rifle, Pistol, Sabre", armorType:"Standard", abilities:["Complete objectives","Respawn at checkpoints","Team progression","Escape finale"], tips:"Stick with your team. Learn each map's objective order." },
+  { id:"endless", name:"Endless", icon:"♾️", tag:"PvE · Survival", shortDescription:"Survive infinite waves. No respawns. 6 maps.", description:"Survive as many waves as possible. Each wave grows harder with special infected appearing at higher waves (Runners wave7+, Cuirassier wave16+, Igniter wave20+). No respawns.", role:"PvE / Survival", difficulty:"Hard", rating:"Challenging", weaponType:"Musket, Rifle, Pistol, Sabre", armorType:"Standard", abilities:["Infinite waves","Special enemies","No respawns","Francs every 5 waves"], tips:"Conserve ammo. Use melee for shamblers. Officer Charge for Bombers." },
+  { id:"holdout", name:"Holdout", icon:"🛡️", tag:"PvE · Defense", shortDescription:"Defend fixed position. All respawn between waves. 2 maps.", description:"Defend a fixed position through waves, all respawn between waves. Berezina: build a bridge to escape with frostbite mechanic. Saint Petersburg: survive 10 waves with trader NPC.", role:"PvE / Defense", difficulty:"Hard", rating:"Team Essential", weaponType:"Musket, Rifle, Pistol", armorType:"Standard", abilities:["Defend position","Respawn between waves","Build defenses","Trader NPC"], tips:"Sapper is crucial. Save Francs for trader." },
+  { id:"boss", name:"Boss Event", icon:"👹", tag:"PvE · Seasonal", shortDescription:"Single powerful boss fights. Seasonal only. 2 maps.", description:"Special seasonal boss fights during Halloween. Headless Horseman in Sleepy Hollow, Dracula in Transylvania. Most difficult encounters requiring perfect coordination.", role:"PvE / Boss Fight", difficulty:"Extreme", rating:"Seasonal", weaponType:"All weapons", armorType:"Standard", abilities:["Unique boss mechanics","Limited time","Special rewards","Highest difficulty"], tips:"Study boss patterns. Bring your best team." },
+  { id:"siege", name:"Siege", icon:"⚔️", tag:"PvP · Battle", shortDescription:"Two teams battle in PvP combat.", description:"PvP mode where two teams face off using Napoleonic weapons. Tactical positioning, accuracy, and teamwork essential.", role:"PvP / Competitive", difficulty:"Hard", rating:"Competitive", weaponType:"Musket, Pistol, Sabre", armorType:"Standard", abilities:["Player vs Player","Team tactics","Last team standing"], tips:"Practice aim. Learn ballistics. Stay with squad." },
+  { id:"blox-event", name:"Blox Event", icon:"🎪", tag:"PvE · Special", shortDescription:"Modern setting variant with modern weapons.", description:"Limited-time variant replacing Napoleonic setting with modern civilians using contemporary firearms.", role:"PvE / Special", difficulty:"Medium", rating:"Fun", weaponType:"Modern weapons", armorType:"Civilian", abilities:["Modern weapons","Unique setting","Limited time"], tips:"Different weapon handling than standard mode." },
+  { id:"hardcore", name:"Hardcore", icon:"💀", tag:"Modifier", shortDescription:"Difficulty modifier. Double Francs. Much harder.", description:"Difficulty modifier applied to other modes. Enemies deal more damage, have more health, appear in greater numbers. Rewards double Francs. Veterans only.", role:"Difficulty Modifier", difficulty:"Extreme", rating:"Veteran", weaponType:"All", armorType:"Standard", abilities:["Double Francs","Harder enemies","More enemies","Higher risk"], tips:"Only with coordinated team. Officer and Surgeon essential." },
+  { id:"pvp", name:"PVP", icon:"🏴", tag:"PvP · Nations", shortDescription:"Nation vs Nation combat. Last team standing wins.", description:"Nation vs Nation combat on select maps (Hougoumont, La Haye Sainte). Most players prefer PvE.", role:"PvP / Nations", difficulty:"Hard", rating:"Niche", weaponType:"Musket, Pistol, Sabre", armorType:"Standard", abilities:["Nation vs Nation","Last standing","Select maps"], tips:"Know maps. Team coordination wins." },
 ];
 
 /* ==============================
-   3. 地图攻略（原区域）
+   3. Maps
    ============================== */
 
 export const regions: Region[] = [
   {
-    id: "san-sebastian",
-    name: "圣塞巴斯蒂安",
-    tag: "经典地图",
-    levelRange: "适合所有等级",
+    id: "vardohus-fortress",
+    name: "Vardohus Fortress",
+    tag: "Objective",
+    levelRange: "All Levels",
     description:
-      "以 1813 年圣塞巴斯蒂安围城战为背景的地图。进攻方需要穿越开阔海滩，攻破城墙防线，最终占领城市中心。防守方占据城墙优势，可以居高临下射击。该地图以开阔地形和远程对射为主要特色。",
+      "Set in a snow-covered Norwegian fortress. Players must fight through the fortress grounds, light signal fires to call for extraction, and escape by boat. The cold environment and tight fortress corridors create tense close-quarters combat.",
     features: [
-      "开阔海滩地带，进攻方暴露度高",
-      "城墙防守体系，防守方有高度优势",
-      "巷战区域，适合近距离交战",
-      "多处可破坏障碍物",
+      "Snow-covered fortress terrain",
+      "Signal fire objective mechanic",
+      "Boat escape sequence",
+      "Tight corridor combat",
     ],
     pointsOfInterest: [
-      "海滩登陆点 — 进攻方起始位置，易受火力压制",
-      "城墙缺口 — 主要突破点，双方争夺焦点",
-      "城市广场 — 最终目标点，激烈近战区域",
-      "侧翼小路 — 可绕后突袭的隐蔽路线",
+      "Fortress Gate — Main entry point, heavy fighting",
+      "Courtyard — Central area with signal fire",
+      "Watchtower — Elevated sniping position",
+      "Docks — Final escape point by boat",
     ],
   },
   {
-    id: "copenhagen",
-    name: "哥本哈根",
-    tag: "城市战",
-    levelRange: "适合所有等级",
+    id: "san-sebastian",
+    name: "San Sebastian",
+    tag: "Objective",
+    levelRange: "All Levels",
     description:
-      "以 1807 年哥本哈根战役为背景的城市地图。街道狭窄，建筑密集，适合近距离战斗和伏击。进攻方需要在城市街巷中推进，清除各个据点中的守军。防守方可以利用建筑窗口和屋顶进行射击。",
+      "Based on the 1813 siege of San Sebastian. Attackers must cross open beach terrain, breach the fortress walls, capture the town square, and finally descend into the dark catacombs beneath the city to find their way out.",
     features: [
-      "狭窄街巷，近距离战斗频繁",
-      "多层建筑，提供多种射击角度",
-      "室内战斗区域，适合近战武器",
-      "多条进攻路线可选",
+      "Open beach assault with limited cover",
+      "Fortress wall breach mechanics",
+      "Urban warfare in town streets",
+      "Catacomb escape finale",
     ],
     pointsOfInterest: [
-      "港口区 — 地图边缘，相对开阔",
-      "市政广场 — 中心区域，四面受敌",
-      "教堂钟楼 — 制高点，可俯瞰全图",
-      "市场街 — 主要交火区域，掩体众多",
+      "Beach Landing — Exposed approach, heavy fire",
+      "Wall Breach — Main breakthrough point",
+      "Town Square — Final surface objective",
+      "Catacomb Entrance — Escape route below city",
     ],
   },
   {
     id: "leipzig",
-    name: "莱比锡",
-    tag: "大型会战",
-    levelRange: "适合所有等级",
+    name: "Leipzig",
+    tag: "Objective",
+    levelRange: "All Levels",
     description:
-      "以 1813 年莱比锡会战（民族会战）为背景的大型地图。战场广阔，参与人数众多，是游戏中规模最大的地图之一。包含多个战略要点，需要团队高度协作才能在广阔的战场上取得优势。",
+      "Set during the 1813 Battle of Nations. A large-scale map where players advance from a church through a destroyed village, fight across the town, and must find the key to unlock the gate while holding off waves of undead in an intense finale.",
     features: [
-      "大规模会战场景，支持更多玩家",
-      "开阔田野与村庄结合的地形",
-      "多个战略据点需要同时争夺",
-      "骑兵冲锋区域",
+      "Large battlefield with open fields",
+      "Church starting position",
+      "Destroyed village with rubble cover",
+      "Key-finding finale defense",
     ],
     pointsOfInterest: [
-      "村庄 — 地图中央的关键据点",
-      "桥梁 — 战略要道，易守难攻",
-      "炮兵阵地 — 可提供火力支援的高地",
-      "林地 — 适合伏击和隐蔽移动",
+      "Church — Starting position, safe zone",
+      "Destroyed Village — Central combat zone",
+      "Town Gate — Final defense position",
+      "Key Location — Random spawn, must be found",
     ],
   },
   {
     id: "kaub",
-    name: "考布",
-    tag: "渡河战役",
-    levelRange: "适合所有等级",
+    name: "Kaub",
+    tag: "Objective",
+    levelRange: "All Levels",
     description:
-      "以 1814 年考布渡河战役为背景的地图。进攻方需要跨越河流建立桥头堡，防守方则在河岸布防。河流将地图分为两半，桥梁和浅滩成为双方争夺的焦点。",
+      "Based on the 1814 crossing of the Rhine at Kaub. Players must cross a bridge under fire, capture a town, fight through vineyards and a forest, and finally escape across a second bridge while fending off relentless attackers.",
     features: [
-      "河流地形，渡河点有限",
-      "桥梁争夺战激烈",
-      "两岸地形不对称",
-      "火炮在开阔地带威力巨大",
+      "Bridge crossing under fire",
+      "Town capture objective",
+      "Vineyard and forest terrain",
+      "Second bridge escape",
     ],
     pointsOfInterest: [
-      "主桥 — 主要渡河通道，火力密集",
-      "浅滩 — 可涉水过河的隐蔽路线",
-      "河岸阵地 — 防守方炮兵位置",
-      "对岸村庄 — 进攻方需要占领的目标",
+      "First Bridge — Initial crossing, killzone",
+      "Town Center — Capturable objective area",
+      "Vineyard — Flanking route with cover",
+      "Escape Bridge — Final extract point",
+    ],
+  },
+  {
+    id: "copenhagen",
+    name: "Copenhagen",
+    tag: "Objective",
+    levelRange: "All Levels",
+    description:
+      "Set during the 1807 Battle of Copenhagen. Narrow city streets and dense buildings create intense close-quarters fighting. Players fight through the harbor, city streets, and must survive a final stand in the church cemetery.",
+    features: [
+      "Narrow street urban combat",
+      "Multi-level building engagements",
+      "Harbor district firefights",
+      "Church cemetery finale",
+    ],
+    pointsOfInterest: [
+      "Harbor — Map edge, initial approach",
+      "Town Square — Central crossroads, heavy combat",
+      "Church — Key defensive position",
+      "Cemetery — Final stand location",
+    ],
+  },
+  {
+    id: "roscoff",
+    name: "Roscoff",
+    tag: "Objective",
+    levelRange: "All Levels",
+    description:
+      "A coastal town map set in Roscoff, France. Players must navigate through narrow streets, a church, and a chateau while completing objectives. The map includes a unique ship escape sequence at the docks.",
+    features: [
+      "Coastal town setting",
+      "Church and chateau interiors",
+      "Narrow street fighting",
+      "Ship extraction finale",
+    ],
+    pointsOfInterest: [
+      "Town Entrance — Initial spawn area",
+      "Church — Mid-map defensive hold",
+      "Chateau — Elevated position with sightlines",
+      "Docks — Final escape point",
+    ],
+  },
+  {
+    id: "catacombes-de-paris",
+    name: "Catacombes de Paris",
+    tag: "Objective",
+    levelRange: "All Levels",
+    description:
+      "Descend into the dark, claustrophobic tunnels beneath Paris. Navigate through tight catacomb passages filled with bones and darkness. Limited visibility makes this one of the most atmospheric and tense maps in the game.",
+    features: [
+      "Dark underground tunnels",
+      "Claustrophobic close-quarters combat",
+      "Bone-lined passageways",
+      "Limited visibility gameplay",
+    ],
+    pointsOfInterest: [
+      "Staircase Descent — Entry to catacombs",
+      "Bone Gallery — Main corridor with skull displays",
+      "Underground Chapel — Mid-map hold point",
+      "Exit Chamber — Final escape location",
+    ],
+  },
+  {
+    id: "london",
+    name: "London",
+    tag: "Objective",
+    levelRange: "All Levels",
+    description:
+      "Fight through the streets of London during the outbreak. Players advance from the Thames riverbank through city streets, past buildings, and must escape at the end. Urban environment with diverse engagement ranges.",
+    features: [
+      "Urban London streets",
+      "River Thames starting area",
+      "Dense building cover",
+      "City escape finale",
+    ],
+    pointsOfInterest: [
+      "Thames Riverbank — Starting position",
+      "City Gate — Choke point defense",
+      "Market District — Open combat zone",
+      "Escape Route — Final extract point",
+    ],
+  },
+  {
+    id: "westminster",
+    name: "Westminster",
+    tag: "Objective",
+    levelRange: "All Levels",
+    description:
+      "Battle through the iconic Westminster area of London. Players push through streets toward the Parliament buildings, fighting in and around historic architecture. Finale involves holding position while awaiting extraction.",
+    features: [
+      "Iconic London architecture",
+      "Parliament building interiors",
+      "Street-to-building transitions",
+      "Defensive hold finale",
+    ],
+    pointsOfInterest: [
+      "Street Approach — Initial advance",
+      "Parliament Square — Open engagement area",
+      "Parliament Hall — Interior fighting zone",
+      "Extraction Point — Final defensive hold",
+    ],
+  },
+  {
+    id: "hougoumont",
+    name: "Hougoumont",
+    tag: "Objective / PVP",
+    levelRange: "All Levels",
+    description:
+      "Based on the farmhouse at Hougoumont from the Battle of Waterloo. A walled farm complex with a large courtyard, barns, and gardens. Defense of the farmhouse is critical. Also available for PVP nation combat.",
+    features: [
+      "Walled farm compound",
+      "Large central courtyard",
+      "Barn and stable interiors",
+      "Garden flanking routes",
+    ],
+    pointsOfInterest: [
+      "Main Gate — Primary entrance, heavily contested",
+      "Courtyard — Central open area",
+      "North Barn — Interior defensive position",
+      "South Garden — Flanking approach route",
+    ],
+  },
+  {
+    id: "la-haye-sainte",
+    name: "La Haye Sainte",
+    tag: "Objective / PVP",
+    levelRange: "All Levels",
+    description:
+      "Based on the farmhouse at La Haye Sainte from Waterloo. A smaller walled farm with a central building and surrounding walls. The farm changes hands multiple times. Also available for PVP nation combat.",
+    features: [
+      "Small walled farmstead",
+      "Central farmhouse interior",
+      "Surrounding wall defenses",
+      "Multiple entry points",
+    ],
+    pointsOfInterest: [
+      "Farmhouse — Central building, key defensive hold",
+      "North Wall — First line of defense",
+      "South Gate — Rear entry point",
+      "Road Approach — Open approach from both sides",
+    ],
+  },
+  {
+    id: "berezina",
+    name: "Berezina",
+    tag: "Holdout",
+    levelRange: "All Levels",
+    description:
+      "Holdout mode map based on the Berezina river crossing during Napoleon's retreat. Players must build a bridge across the frozen river to escape while managing the frostbite mechanic. One of only two Holdout mode maps.",
+    features: [
+      "Frozen river crossing",
+      "Bridge building mechanic",
+      "Frostbite survival mechanic",
+      "Escort the VIP objective",
+    ],
+    pointsOfInterest: [
+      "Starting Camp — Initial defensive position",
+      "Bridge Build Site — Main construction area",
+      "River Bank — Flanking approach route",
+      "Escape Point — Far side of river",
+    ],
+  },
+  {
+    id: "saint-petersburg",
+    name: "Saint Petersburg",
+    tag: "Holdout",
+    levelRange: "All Levels",
+    description:
+      "Holdout mode set in the streets of Saint Petersburg. Survive 10 waves of undead with the help of a trader NPC who sells supplies between waves. The only Holdout map with a shop system using Francs currency.",
+    features: [
+      "10 waves of survival",
+      "Trader NPC shop system",
+      "Urban defensive positions",
+      "Francs economy between waves",
+    ],
+    pointsOfInterest: [
+      "Main Street — Primary combat zone",
+      "Trader Post — Shop location between waves",
+      "Barricade Points — Defensible positions",
+      "Side Alleys — Flanking enemy routes",
+    ],
+  },
+  {
+    id: "sleepy-hollow",
+    name: "Sleepy Hollow",
+    tag: "Boss Event",
+    levelRange: "Seasonal Only",
+    description:
+      "Halloween seasonal boss map. Battle the Headless Horseman in the dark, foggy woods of Sleepy Hollow. The Headless Horseman charges on horseback, hurls flaming jack-o'-lanterns, and summons Headless Ones. Requires perfect team coordination.",
+    features: [
+      "Dark foggy forest atmosphere",
+      "Headless Horseman boss encounter",
+      "Horseback charge attacks",
+      "Flaming jack-o'-lantern projectiles",
+    ],
+    pointsOfInterest: [
+      "Forest Clearing — Main boss arena",
+      "Cover Points — Safe zones from charges",
+      "Bridge — Tactical repositioning point",
+      "Graveyard — Summoned enemy spawn area",
+    ],
+  },
+  {
+    id: "transylvania",
+    name: "Transylvania",
+    tag: "Boss Event",
+    levelRange: "Seasonal Only",
+    description:
+      "Halloween seasonal boss map set in Dracula's castle in Transylvania. Players navigate the castle interior and face Dracula himself in a multi-phase boss fight. Dracula uses dark magic, summons Vampires, and requires extreme precision to defeat.",
+    features: [
+      "Gothic castle setting",
+      "Multi-phase Dracula boss fight",
+      "Vampire summon mechanics",
+      "Dark magic attacks",
+    ],
+    pointsOfInterest: [
+      "Castle Entrance — Approach and entry",
+      "Grand Hall — First phase boss area",
+      "Spiral Staircase — Transition between phases",
+      "Throne Room — Final phase encounter",
     ],
   },
 ];
 
 /* ==============================
-   4. 开始你的旅程（9个入口卡片）
+   4. Quick Links
    ============================== */
 
 export const journeys: JourneyCard[] = [
   {
-    icon: "📅",
-    title: "游戏信息",
-    description: "Guts and Blackpowder 基本介绍、开发团队及 Roblox 平台信息",
-    href: "/release-date/",
+    icon: "📖",
+    title: "Game Info",
+    description: "Learn about Guts and Blackpowder, its development team, and Roblox platform details",
+    href: "/about/",
+  },
+  {
+    icon: "🏅",
+    title: "Badges",
+    description: "All available badges and how to unlock them, from easy to hidden challenges",
+    href: "/badges/",
+  },
+  {
+    icon: "⌨️",
+    title: "Commands",
+    description: "Complete list of in-game commands, chat shortcuts, and admin commands",
+    href: "/commands/",
   },
   {
     icon: "🌟",
-    title: "新手入门",
-    description: "前 5 小时指南：基础操作、兵种选择、武器熟悉及战场生存技巧",
+    title: "Beginner Guide",
+    description: "First time playing? Complete guide from classes and weapons to survival tips",
     href: "/beginner-guide/",
   },
   {
     icon: "🎯",
-    title: "游戏模式",
-    description: "全部游戏模式详解——目标模式、无尽模式、对战模式及活动模式",
+    title: "Classes Guide",
+    description: "All classes explained in detail — Infantry, Officer, Seaman, Musician, Sapper, Surgeon, Chaplain",
     href: "/classes/",
   },
   {
     icon: "🔫",
-    title: "武器大全",
-    description: "步枪、手枪、刺刀、佩剑等所有武器的性能参数和使用技巧",
+    title: "Weapons",
+    description: "All historical weapons and recommended loadouts",
     href: "/weapons/",
   },
   {
     icon: "👹",
-    title: "敌人图鉴",
-    description: "全敌人类型详解——从普通士兵到 Boss 级敌人的应对策略",
-    href: "/bosses/",
-  },
-  {
-    icon: "🎮",
-    title: "联机指南",
-    description: "Roblox 组队方式、服务器选择、语音沟通及团队配合技巧",
-    href: "/how-to-play/",
-  },
-  {
-    icon: "💡",
-    title: "技巧与窍门",
-    description: "快速提升枪法、弹药管理、团队阵型、地图熟悉度等实战技巧",
-    href: "/tips/",
+    title: "Enemies",
+    description: "Complete enemy guide: zombies, special infected, and boss enemies",
+    href: "/enemies/",
   },
   {
     icon: "🗺️",
-    title: "版本更新",
-    description: "新地图、新武器、新活动和新系统——完整更新历史",
-    href: "/roadmap/",
+    title: "Maps",
+    description: "Detailed strategy for every map: layouts, chokepoints, and survival tactics",
+    href: "/maps/",
   },
   {
     icon: "❓",
-    title: "常见问题",
-    description: "Guts and Blackpowder 免费吗？如何获得武器？所有问题解答",
+    title: "FAQ",
+    description: "Frequently asked questions about game mechanics, updates, and troubleshooting",
     href: "/faq/",
   },
 ];
 
 /* ==============================
-   5. 工具与排行榜（6个工具卡片）
+   5. Tools
    ============================== */
 
 export const tools: ToolCard[] = [
   {
+    icon: "📖",
+    tag: "Reference",
+    title: "Wiki",
+    description: "Complete Guts and Blackpowder wiki covering all game mechanics, weapons, maps, and enemies",
+    href: "/wiki",
+  },
+  {
     icon: "🖥️",
-    tag: "实时",
-    title: "服务器状态",
-    description: "Guts and Blackpowder 服务器是否正常？实时状态及故障排查",
-    href: "/server-status/",
-  },
-  {
-    icon: "📊",
-    tag: "数据",
-    title: "游玩数据",
-    description: "Guts and Blackpowder 玩家数量、在线峰值及活跃趋势",
-    href: "/game-stats/",
-  },
-  {
-    icon: "🏆",
-    tag: "排行",
-    title: "兵种排行榜",
-    description: "各兵种在当前版本的强度评级——单人及团队评分",
-    href: "/tier-list/",
-  },
-  {
-    icon: "⚡",
-    tag: "排行",
-    title: "最佳武器",
-    description: "各兵种最佳武器推荐，附带使用技巧和获取方式",
-    href: "/best-weapons/",
+    tag: "Server",
+    title: "Private Servers",
+    description: "Create or join private servers. Customize game settings and play with friends",
+    href: "/guides",
   },
   {
     icon: "👹",
-    tag: "战斗",
-    title: "敌人指南",
-    description: "每个敌人类型的机制、应对策略和推荐武器",
-    href: "/bosses/",
+    tag: "Guide",
+    title: "Enemies",
+    description: "Complete enemy bestiary — Shamblers, Runners, Bombers, and Boss encounters",
+    href: "/enemies/",
   },
   {
-    icon: "🎁",
-    tag: "兑换码",
-    title: "兑换码",
-    description: "Guts and Blackpowder 有效兑换码及兑换方式（每日更新）",
-    href: "/codes/",
+    icon: "🗺️",
+    tag: "Guide",
+    title: "Maps",
+    description: "All 15 maps with detailed walkthroughs, objective routes, and escape strategies",
+    href: "/maps/",
+  },
+  {
+    icon: "🎨",
+    tag: "Gallery",
+    title: "Art",
+    description: "Fan art gallery showcasing the Guts and Blackpowder community's creative works",
+    href: "/guides",
+  },
+  {
+    icon: "😂",
+    tag: "Fun",
+    title: "Memes",
+    description: "Community memes and humorous content from the Guts and Blackpowder community",
+    href: "/guides",
   },
 ];
 
 /* ==============================
-   6. 精选指南（3个）
+   6. Featured Guides
    ============================== */
 
 export const featuredGuides: GuideItem[] = [
   {
-    tag: "入门",
-    title: "2026 新手完全指南",
-    description: "从零开始的 Guts and Blackpowder 入门攻略，帮助你快速掌握基础战斗技巧。",
-    href: "/guides/gb-beginner-guide/",
+    tag: "Easter Egg",
+    title: "Barry — Who Is He & Why Does Everyone Love Him?",
+    description: "The truth about the Catacombes de Paris NPC Easter egg. Find Barry's tomb, earn the Vos Enterrement badge, and learn the community legend.",
+    href: "/guides/barry",
   },
   {
-    tag: "进阶",
-    title: "枪法与弹道指南",
-    description: "掌握步枪弹道、预瞄技巧和装填节奏，成为战场上的神射手。",
-    href: "/guides/gb-aim-guide/",
+    tag: "Currency",
+    title: "Francs Guide — Earn & Spend Efficiently",
+    description: "Maximize your Francs earnings across all modes. Best farming strategies, what to buy first, and how to save for rare items.",
+    href: "/guides/francs",
   },
   {
-    tag: "评测",
-    title: "Guts and Blackpowder 值得玩吗？",
-    description: "完整体验评测——游戏内容、社区氛围、更新频率与长期可玩性分析。",
-    href: "/guides/is-gb-worth-it/",
+    tag: "Meta",
+    title: "Best Class Tier List (v0.17.9)",
+    description: "Complete tier ranking of all 8 game modes and classes. Performance analysis, team synergy, and recommendations for every playstyle.",
+    href: "/guides",
   },
 ];
 
 /* ==============================
-   7. 最新动态
+   7. News
    ============================== */
 
 export const news: NewsItem[] = [
   {
-    date: "2026-06-15",
-    content: "Guts and Blackpowder 发布夏季更新，新增全新地图和武器皮肤。",
+    date: "2026-06-28",
+    content: "Guts and Blackpowder v0.17.9 released! New maps, weapons, balance changes, and performance improvements.",
   },
   {
-    date: "2026-04-01",
-    content: "Fezezen 发布重大更新，优化游戏性能和新增兵种平衡调整。",
+    date: "2026-05-15",
+    content: "Latest content update adds the Catacombes de Paris map and new weapon variants for all classes.",
   },
   {
-    date: "2026 路线图",
-    content: "计划推出新地图、新武器类别、季节性活动及更多游戏模式。",
+    date: "2026-04-20",
+    content: "Community milestone reached: 540,000 Discord members! Thank you for your continued support.",
   },
 ];
 
 /* ==============================
-   8. 常见问题（11个）
+   8. FAQs
    ============================== */
 
 export const faqs: FAQ[] = [
   {
-    question: "Guts and Blackpowder 是什么游戏？",
+    question: "Is Guts and Blackpowder free to play?",
     answer:
-      "Guts and Blackpowder 是由 Fezezen（Fuze Studios）在 Roblox 平台上开发的一款以拿破仑战争为背景的第一人称射击游戏。游戏于 2021 年上线，累计游玩次数超过 53 亿次。",
+      "Yes. Guts and Blackpowder is completely free to play on Roblox. There are optional in-game purchases for weapon skins and cosmetics, but these do not affect gameplay balance. All weapons and classes are available to everyone.",
   },
   {
-    question: "Guts and Blackpowder 是免费游戏吗？",
+    question: "Is Guts and Blackpowder a horror game?",
     answer:
-      "是的。Guts and Blackpowder 在 Roblox 平台上免费游玩。游戏内有可选购买的武器皮肤和装饰品，但不影响游戏平衡。",
+      "While Guts and Blackpowder is primarily a PvE zombie survival game with intense combat, it does have horror elements — especially on maps like Catacombes de Paris (dark tunnels) and the seasonal Halloween boss maps. The atmosphere can be tense and eerie, but it's more action-horror than pure survival horror.",
   },
   {
-    question: "Guts and Blackpowder 有哪些游戏模式？",
+    question: "Can I play Guts and Blackpowder solo?",
     answer:
-      "游戏主要包含目标模式（Objective）、无尽模式（Endless）、对战模式（Versus）和限时活动模式。每种模式都有独特的玩法和挑战。",
+      "Guts and Blackpowder is designed for team play with up to 12 players per server. There is no solo/offline mode. You can join public servers and matchmake with random players, but playing with a coordinated team is highly recommended for harder modes like Endless and Holdout.",
   },
   {
-    question: "Guts and Blackpowder 可以单人玩吗？",
+    question: "What is 'The Blight'?",
     answer:
-      "可以。目标模式和无尽模式都支持匹配进入，无需组队即可开始游戏。不过与队友配合会获得更好的游戏体验。",
+      "The Blight is the viral infection at the core of Guts and Blackpowder's alternate-history setting. It is a mysterious disease that raises the dead, turning them into hostile undead. The Blight spreads across Napoleonic-era Europe, and players must survive against the infected hordes across various historical battlefields.",
   },
   {
-    question: "Guts and Blackpowder 服务器现在宕机了吗？",
+    question: "Who is Barry?",
     answer:
-      "大部分时间运行正常。如果遇到连接问题，请检查你的网络连接或查看 Roblox 服务器状态页面。",
+      "Barry is a hidden NPC (non-playable character) Easter egg found in the Catacombes de Paris map. Internally nicknamed 'WinchGuy,' Barry is a skeleton discovered deep in the catacombs, armed with a shovel. Players can earn the 'Vos Enterrement' badge by finding and interacting with Barry's tomb. Important: Barry is NOT a playable class — he is purely an NPC Easter egg that has become a beloved community meme and legend.",
   },
   {
-    question: "如何获得武器皮肤？",
+    question: "What does the Chaplain class do?",
     answer:
-      "武器皮肤可以通过参与限时活动、完成特定成就或通过 Roblox 游戏内商店购买获得。部分稀有皮肤只能在活动期间获取。",
+      "The Chaplain is a support class primarily used in Endless mode. The Chaplain uses the Holy Bible to heal teammates and the Crucifix to repel or slow down nearby undead. The Chaplain is essential for surviving high-wave Endless runs and is one of the most important classes for team survival.",
   },
   {
-    question: "游戏有历史背景吗？",
+    question: "Are there active Guts and Blackpowder codes?",
     answer:
-      "有。Guts and Blackpowder 的地图和战役大多基于拿破仑战争时期的真实历史事件，如圣塞巴斯蒂安围城战、哥本哈根战役、莱比锡会战等。",
+      "Guts and Blackpowder occasionally releases promo codes for free cosmetics or items during special events or milestones. Codes are typically announced on the official Discord server and Twitter/X. Most codes are time-limited, so check official channels regularly. There are no permanent active codes.",
   },
   {
-    question: "Guts and Blackpowder 有 PvP 模式吗？",
+    question: "What commands are available in Guts and Blackpowder?",
     answer:
-      "有。对战模式（Versus）就是玩家对战的 PvP 模式。此外目标模式中也有玩家对抗的元素（攻防双方）。",
+      "Guts and Blackpowder supports several chat commands: /respawn (respawn at checkpoint in Objective mode), /votekick (initiate vote to kick a player), /report (report a player), /music (toggle BGM), and various private server admin commands for customizing game settings. Private server owners can access additional commands to control game parameters.",
   },
   {
-    question: "游戏支持哪些平台？",
+    question: "What are Francs and how do I earn them?",
     answer:
-      "Guts and Blackpowder 作为 Roblox 游戏，支持 PC、手机、平板和 Xbox 等所有 Roblox 支持的平台。不同平台间的玩家可以同服游玩。",
+      "Francs are the in-game currency in Guts and Blackpowder. They are earned by completing objectives, surviving waves, and participating in matches. In Endless mode, bonus Francs are awarded every 5 waves. Hardcore mode doubles all Franc earnings. Francs can be spent on weapon skins, cosmetics, and at the Saint Petersburg trader NPC in Holdout mode.",
   },
   {
-    question: "如何更换兵种？",
+    question: "What is the hardest map in Guts and Blackpowder?",
     answer:
-      "在游戏中按特定键位可以打开兵种选择菜单，在不同兵种之间切换。不同兵种使用的武器和能力有所不同。",
+      "The hardest map depends on the mode. For Objective mode, San Sebastian is widely considered the most difficult due to the exposed beach approach and the tight final catacomb escape. For Endless mode, Leipzig's open layout makes survival past wave 20 extremely challenging. The Boss Event maps (Sleepy Hollow and Transylvania) are the hardest overall, requiring perfect coordination.",
   },
   {
-    question: "游戏有官方社区吗？",
+    question: "Does Guts and Blackpowder have PvP?",
     answer:
-      "有。Guts and Blackpowder 有官方 Discord 服务器和 Roblox 群组，开发团队 Fezezen 会在此发布更新公告和收集玩家反馈。",
+      "Yes, Guts and Blackpowder has PvP modes. The Siege mode is a dedicated PvP battle mode where two teams face off using Napoleonic weapons. There is also a PVP (Nation vs Nation) mode available on select maps (Hougoumont, La Haye Sainte). However, the majority of the player base prefers the PvE modes.",
+  },
+  {
+    question: "How often does the game update?",
+    answer:
+      "Fezezen (Fuze Studios) releases major updates every few months, with smaller patches in between for bug fixes and balance adjustments. Major updates typically introduce new maps, weapons, or game modes. Seasonal events (like Halloween Boss Events) arrive annually. The current version is v0.17.9, released June 2026.",
   },
 ];
 
 /* ==============================
-   9. 武器系统
+   9. Weapons
    ============================== */
 
 export const weaponTypes: WeaponType[] = [
-  { name: "滑膛步枪", description: "标准步兵武器，射程远但装填慢", classes: ["objective", "endless", "versus"] },
-  { name: "线膛步枪", description: "精度更高的步枪，装填时间更长", classes: ["objective", "endless", "versus"] },
-  { name: "手枪", description: "装填快速的副武器，适合近距离紧急使用", classes: ["objective", "endless", "versus"] },
-  { name: "刺刀", description: "安装在步枪上的近战武器，冲锋利器", classes: ["objective", "endless", "versus"] },
-  { name: "佩剑", description: "军官使用的近战武器，攻速快", classes: ["objective", "endless", "versus"] },
-  { name: "军刀", description: "骑兵用弯刀，威力大", classes: ["objective", "endless"] },
-  { name: "火炮", description: "固定或移动式火炮，范围伤害", classes: ["objective"] },
-  { name: "手榴弹", description: "投掷爆炸物，清理聚集敌人", classes: ["objective", "endless"] },
-  { name: "喇叭", description: "军官用信号装备，可激励队友", classes: ["objective", "endless"] },
-  { name: "战旗", description: "军旗手使用，提供团队增益", classes: ["objective", "endless"] },
+  { name: "Musket", description: "Standard infantry firearm, slow reload but reliable range and damage", classes: ["objective", "endless", "holdout", "siege", "pvp"] },
+  { name: "Rifle", description: "Rifled barrel for improved accuracy, longer reload time", classes: ["objective", "endless", "holdout"] },
+  { name: "Carbine", description: "Shorter barrel variant, faster reload with reduced range", classes: ["objective", "endless"] },
+  { name: "Blunderbuss", description: "Wide-spread shotgun-like firearm, devastating at close range", classes: ["objective", "endless", "holdout"] },
+  { name: "Nock Gun", description: "Seven-barrel volley gun, massive burst damage but very slow reload", classes: ["objective"] },
+  { name: "Pistol", description: "Quick sidearm, fast reload, effective at close range", classes: ["objective", "endless", "holdout", "siege", "pvp"] },
+  { name: "Sabre", description: "Standard cavalry saber, balanced speed and damage for melee", classes: ["objective", "endless", "holdout", "siege", "pvp"] },
+  { name: "Heavy Sabre", description: "Larger, heavier sabre, higher damage but slower swings", classes: ["objective", "endless"] },
+  { name: "Hand Axe", description: "One-handed axe, good damage and moderate swing speed", classes: ["objective", "endless"] },
+  { name: "Heavy Axe", description: "Two-handed axe, highest melee damage, very slow swing", classes: ["objective", "endless"] },
+  { name: "Hammer", description: "Blunt melee weapon, effective against armored enemies", classes: ["objective", "endless"] },
+  { name: "Bayonet", description: "Blade attached to rifle barrel, combines ranged and melee", classes: ["objective", "endless", "holdout"] },
+  { name: "Pickaxe", description: "Mining tool repurposed as weapon, unique moveset", classes: ["objective", "endless"] },
+  { name: "Medical Supplies", description: "Surgeon class item, used to heal and revive teammates", classes: ["objective", "endless", "holdout"] },
+  { name: "Holy Bible", description: "Chaplain class item, heals nearby teammates when used", classes: ["objective", "endless"] },
+  { name: "Crucifix", description: "Chaplain class item, repels undead enemies in an area", classes: ["objective", "endless"] },
+  { name: "Fife", description: "Musical instrument, provides movement speed buff to nearby teammates", classes: ["objective", "endless"] },
+  { name: "Drum", description: "Musical instrument, provides damage buff to nearby teammates", classes: ["objective", "endless"] },
+  { name: "Bugle", description: "Officer's instrument, used to charge and buff teammates", classes: ["objective", "endless", "holdout"] },
+  { name: "Stake", description: "Specialized anti-vampire weapon, only usable in Transylvania boss map", classes: ["boss"] },
 ];
 
 export const classWeaponMap: { class: string; weapons: string[] }[] = [
-  { class: "目标模式", weapons: ["滑膛步枪", "线膛步枪", "手枪", "刺刀", "佩剑", "火炮", "手榴弹"] },
-  { class: "无尽模式", weapons: ["滑膛步枪", "线膛步枪", "手枪", "刺刀", "佩剑", "手榴弹"] },
-  { class: "对战模式", weapons: ["滑膛步枪", "线膛步枪", "手枪", "刺刀", "佩剑"] },
-  { class: "活动模式", weapons: ["滑膛步枪", "手枪", "刺刀", "佩剑"] },
+  { class: "Objective", weapons: ["Musket", "Rifle", "Carbine", "Blunderbuss", "Nock Gun", "Pistol", "Sabre", "Heavy Sabre", "Hand Axe", "Heavy Axe", "Hammer", "Bayonet", "Pickaxe", "Medical Supplies", "Holy Bible", "Crucifix", "Fife", "Drum", "Bugle"] },
+  { class: "Endless", weapons: ["Musket", "Rifle", "Carbine", "Blunderbuss", "Pistol", "Sabre", "Heavy Sabre", "Hand Axe", "Heavy Axe", "Hammer", "Bayonet", "Pickaxe", "Medical Supplies", "Holy Bible", "Crucifix", "Fife", "Drum", "Bugle"] },
+  { class: "Holdout", weapons: ["Musket", "Rifle", "Blunderbuss", "Pistol", "Sabre", "Bayonet", "Medical Supplies", "Bugle"] },
+  { class: "Boss Event", weapons: ["All weapons", "Stake"] },
+  { class: "Siege", weapons: ["Musket", "Pistol", "Sabre"] },
+  { class: "PVP", weapons: ["Musket", "Pistol", "Sabre"] },
 ];
 
 export const recommendedWeapons: Weapon[] = [
-  { name: "标准滑膛步枪", type: "滑膛步枪", class: "通用", damage: "B", speed: "C", range: "远", description: "标准步兵武器，均衡实用" },
-  { name: "英式贝克步枪", type: "线膛步枪", class: "通用", damage: "A", speed: "D", range: "远", description: "高精度步枪，适合狙击" },
-  { name: "法式骑兵手枪", type: "手枪", class: "通用", damage: "C", speed: "A", range: "中", description: "快速副武器，紧急时使用" },
-  { name: "标准刺刀", type: "刺刀", class: "通用", damage: "B", speed: "B", range: "中", description: "安装在步枪上，冲锋利器" },
-  { name: "军官佩剑", type: "佩剑", class: "军官", damage: "A", speed: "S", range: "短", description: "军官专属，快速近战" },
-  { name: "野战火炮", type: "火炮", class: "目标模式", damage: "S", speed: "D", range: "极远", description: "范围伤害，清理密集敌人" },
-  { name: "手榴弹", type: "手榴弹", class: "通用", damage: "S", speed: "B", range: "中", description: "范围爆炸，清理掩体内敌人" },
-  { name: "铜管军号", type: "喇叭", class: "军官", damage: "N/A", speed: "N/A", range: "N/A", description: "激励队友，提供战斗增益" },
-  { name: "团战旗", type: "战旗", class: "旗手", damage: "N/A", speed: "N/A", range: "N/A", description: "团队增益核心" },
+  { name: "Standard Musket", type: "Musket", class: "All", damage: "B", speed: "C", range: "Long", description: "Reliable all-rounder, the standard infantry weapon" },
+  { name: "Baker Rifle", type: "Rifle", class: "All", damage: "A", speed: "D", range: "Very Long", description: "High accuracy rifle, ideal for precision shooting" },
+  { name: "Cavalry Pistol", type: "Pistol", class: "All", damage: "C", speed: "A", range: "Short", description: "Fast sidearm for emergency close-range defense" },
+  { name: "Officer Sabre", type: "Sabre", class: "Officer", damage: "A", speed: "S", range: "Short", description: "Fast melee weapon with high DPS" },
+  { name: "Sapper Axe", type: "Heavy Axe", class: "Sapper", damage: "S", speed: "D", range: "Short", description: "Devastating damage but very slow, best used with timing" },
+  { name: "Chaplain Bible", type: "Holy Bible", class: "Chaplain", damage: "N/A", speed: "N/A", range: "N/A", description: "Heals nearby teammates, essential for survival" },
+  { name: "Crucifix", type: "Crucifix", class: "Chaplain", damage: "N/A", speed: "N/A", range: "N/A", description: "Repels undead, creates safe zones" },
+  { name: "Bugle", type: "Bugle", class: "Officer", damage: "N/A", speed: "N/A", range: "N/A", description: "Charge buff for team-wide offensive push" },
+  { name: "Fife", type: "Fife", class: "Musician", damage: "N/A", speed: "N/A", range: "N/A", description: "Movement speed buff for team repositioning" },
 ];
 
 /* ==============================
-   10. 敌人与 Boss
+   10. Enemies & Bosses
    ============================== */
 
 export const bosses: Boss[] = [
-  { name: "法国线列步兵", location: "通用", level: "低", description: "标准敌人，排成线列阵型推进", type: "normal" },
-  { name: "英国龙虾兵", location: "圣塞巴斯蒂安", level: "中", description: "英军精锐，纪律严明", type: "normal" },
-  { name: "普鲁士近卫军", location: "莱比锡", level: "中", description: "精锐部队，装备精良", type: "normal" },
-  { name: "骑兵突击队", location: "通用", level: "中高", description: "高速冲锋单位，近战威胁大", type: "normal" },
-  { name: "炮兵阵地", location: "考布", level: "高", description: "固定火力点，需要侧翼突破", type: "normal" },
-  { name: "Boss 军官", location: "无尽模式", level: "高", description: "精英军官，领导力强，周围士兵士气提升", type: "world" },
-  { name: "重装掷弹兵", location: "哥本哈根", level: "高", description: "精英重装单位，血厚攻高", type: "world" },
-  { name: "传奇将领", location: "活动模式", level: "极高", description: "历史名将 Boss，拥有特殊技能", type: "world" },
+  { name: "Shambler", location: "All Maps", level: "Common", description: "Standard slow-moving undead. Walks toward players and attacks with basic melee. Most numerous enemy type.", type: "normal" },
+  { name: "Runner", location: "All Maps (Wave 7+ Endless)", level: "Common", description: "Fast-moving infected that sprints at players. Appears from wave 7 in Endless mode. Requires quick aiming.", type: "normal" },
+  { name: "Bomber", location: "All Maps", level: "Medium", description: "Bloated undead that explodes when killed or when close to players. Deals heavy area damage. Officer charge can detonate safely.", type: "normal" },
+  { name: "Zapper", location: "All Maps", level: "Medium", description: "Electrical undead that discharges lightning in close range. Stuns players on contact. Priority target in crowds.", type: "normal" },
+  { name: "Igniter", location: "All Maps (Wave 20+ Endless)", level: "High", description: "Flaming undead that sets players on fire. Appears from wave 20 in Endless mode. Fire spreads to nearby teammates.", type: "normal" },
+  { name: "Cuirassier Zombie", location: "All Maps (Wave 16+ Endless)", level: "High", description: "Armored undead cavalry wearing breastplate. Heavy armor absorbs multiple shots. Weak point is exposed head. Appears from wave 16 Endless.", type: "elite" },
+  { name: "Headless Horseman", location: "Sleepy Hollow (Boss Event)", level: "Boss", description: "Halloween boss. Rides horseback, hurls flaming jack-o'-lanterns, charges across the arena, and summons Headless Ones. Requires coordinated dodging and timing.", type: "world" },
+  { name: "Headless One", location: "Sleepy Hollow (Boss Event)", level: "Medium", description: "Summoned by the Headless Horseman during the Sleepy Hollow boss fight. Slower shambler-type enemies that swarm the arena.", type: "normal" },
+  { name: "Dracula", location: "Transylvania (Boss Event)", level: "Boss", description: "Halloween boss. Multi-phase fight in Dracula's castle. Uses dark magic, teleports, summons Vampires, and has devastating area attacks. Most difficult boss in the game.", type: "world" },
+  { name: "Vampire", location: "Transylvania (Boss Event)", level: "High", description: "Summoned by Dracula during the Transylvania boss fight. Fast, aggressive enemies that can drain health. Vulnerable to stakes.", type: "elite" },
 ];
 
 export const dungeons: Dungeon[] = [
   {
-    name: "海滩登陆 — 圣塞巴斯蒂安",
-    level: "全等级",
-    description: "从海滩发起进攻，突破城墙防线。需要利用烟雾弹掩护推进，集中火力突破城墙缺口。",
-    bosses: ["英国龙虾兵"],
-    rewards: ["经验值", "武器皮肤碎片", "成就徽章"],
+    name: "San Sebastian - Beach Landing",
+    level: "All Levels",
+    description: "Assault the beach and break through the fortress walls. Use smoke grenades for cover and focus fire on the breach.",
+    bosses: ["British Redcoats"],
+    rewards: ["Experience", "Weapon Skin Fragments", "Badge Progress"],
   },
   {
-    name: "街巷争夺 — 哥本哈根",
-    level: "全等级",
-    description: "在城市街巷中逐屋争夺。善用窗口和屋顶优势，注意巷战中的近距离遭遇。",
-    bosses: ["重装掷弹兵"],
-    rewards: ["经验值", "武器皮肤碎片", "特殊装扮"],
+    name: "Copenhagen - Street Fighting",
+    level: "All Levels",
+    description: "House-to-house fighting in narrow streets. Use windows and rooftops, watch for close-quarters ambushes.",
+    bosses: ["Heavy Grenadiers"],
+    rewards: ["Experience", "Weapon Skin Fragments", "Special Cosmetics"],
   },
   {
-    name: "民族会战 — 莱比锡",
-    level: "全等级",
-    description: "大规模会战，多线作战。需要协调多个小队的行动，合理分配兵力。",
-    bosses: ["普鲁士近卫军"],
-    rewards: ["经验值", "稀有武器皮肤", "荣誉勋章"],
+    name: "Leipzig - Battle of Nations",
+    level: "All Levels",
+    description: "Large-scale multi-front battle. Coordinate multiple squads and allocate forces strategically.",
+    bosses: ["Prussian Guards"],
+    rewards: ["Experience", "Rare Weapon Skin", "Honor Medal"],
   },
   {
-    name: "渡河战役 — 考布",
-    level: "全等级",
-    description: "跨越河流建立桥头堡。桥梁是争夺焦点，需要压制对岸火力点。",
-    bosses: ["炮兵阵地"],
-    rewards: ["经验值", "武器皮肤碎片", "成就徽章"],
+    name: "Kaub - River Crossing",
+    level: "All Levels",
+    description: "Cross the river and establish a bridgehead. Control the bridge and suppress enemy fire positions.",
+    bosses: ["Artillery Position"],
+    rewards: ["Experience", "Weapon Skin Fragments", "Badge Progress"],
   },
 ];
 
 /* ==============================
-   11. 兵种（原生活职业）
+   11. Classes
    ============================== */
 
 export const professions: Profession[] = [
-  { name: "线列步兵", icon: "🔫", description: "标准步兵，使用滑膛步枪，战场主力" },
-  { name: "轻步兵", icon: "🎯", description: "机动步兵，使用线膛步枪，精准射击" },
-  { name: "军官", icon: "⚔️", description: "团队领袖，使用佩剑和喇叭，指挥作战" },
-  { name: "旗手", icon: "🚩", description: "军旗手，使用战旗提供团队增益" },
-  { name: "工兵", icon: "🛠️", description: "工程兵，可修建防御工事和破坏障碍" },
-  { name: "炮兵", icon: "💣", description: "火炮操作手，提供范围火力支援" },
+  { name: "Line Infantry", icon: "🔫", description: "Standard infantry using smoothbore muskets, the backbone of any army" },
+  { name: "Light Infantry", icon: "🎯", description: "Mobile infantry using rifles for precision shooting" },
+  { name: "Officer", icon: "⚔️", description: "Team leader using sabre and bugle to command troops" },
+  { name: "Standard Bearer", icon: "🚩", description: "Carries the regimental colors to provide team buffs" },
+  { name: "Sapper", icon: "🛠️", description: "Engineer who builds defenses and destroys obstacles" },
+  { name: "Artillerist", icon: "💣", description: "Cannon operator providing area fire support" },
 ];
 
 /* ==============================
-   12. 系统需求
+   12. System Requirements
    ============================== */
 
 export const systemRequirements: SystemRequirement[] = [
   {
-    category: "最低配置（Roblox）",
+    category: "Minimum (Roblox)",
     items: [
-      { label: "操作系统", value: "Windows 7 / macOS 10.10 / iOS / Android" },
-      { label: "处理器", value: "Intel Core i3 / AMD equivalent" },
-      { label: "内存", value: "4 GB RAM" },
-      { label: "显卡", value: "集成显卡（DirectX 10 支持）" },
-      { label: "存储空间", value: "Roblox 客户端约 200 MB" },
-      { label: "网络", value: "宽带互联网连接" },
+      { label: "OS", value: "Windows 7 / macOS 10.10 / iOS / Android" },
+      { label: "CPU", value: "Intel Core i3 / AMD equivalent" },
+      { label: "RAM", value: "4 GB RAM" },
+      { label: "GPU", value: "Integrated GPU (DirectX 10 support)" },
+      { label: "Storage", value: "~200 MB for Roblox client" },
+      { label: "Network", value: "Broadband internet connection" },
     ],
   },
   {
-    category: "推荐配置",
+    category: "Recommended",
     items: [
-      { label: "操作系统", value: "Windows 10 / macOS 11+" },
-      { label: "处理器", value: "Intel Core i5 / AMD Ryzen 5" },
-      { label: "内存", value: "8 GB RAM" },
-      { label: "显卡", value: "独立显卡（DirectX 11 支持）" },
-      { label: "存储空间", value: "Roblox 客户端约 200 MB" },
-      { label: "网络", value: "稳定的宽带连接" },
+      { label: "OS", value: "Windows 10 / macOS 11+" },
+      { label: "CPU", value: "Intel Core i5 / AMD Ryzen 5" },
+      { label: "RAM", value: "8 GB RAM" },
+      { label: "GPU", value: "Dedicated GPU (DirectX 11 support)" },
+      { label: "Storage", value: "~200 MB for Roblox client" },
+      { label: "Network", value: "Stable broadband connection" },
     ],
   },
 ];
 
 /* ==============================
-   13. 游戏信息（原发售信息）
+   13. Game Info (Release History)
    ============================== */
 
 export const releaseDates: ReleaseDateInfo[] = [
   {
-    phase: "游戏首发",
-    date: "2021年",
-    description: "Guts and Blackpowder 在 Roblox 平台正式上线，初始包含少量地图和基础玩法",
+    phase: "Launch",
+    date: "2021",
+    description: "Guts and Blackpowder launched on Roblox with initial maps and core gameplay",
   },
   {
-    phase: "重大更新一",
-    date: "2022年",
-    description: "新增圣塞巴斯蒂安、哥本哈根等经典地图，引入目标模式完整机制",
+    phase: "Major Update 1",
+    date: "2022",
+    description: "Added San Sebastian, Copenhagen and more maps. Introduced full Objective mode mechanics.",
   },
   {
-    phase: "重大更新二",
-    date: "2023-2024年",
-    description: "新增莱比锡、考布等地图，引入无尽模式、新武器和兵种系统",
+    phase: "Major Update 2",
+    date: "2023-2024",
+    description: "Added Leipzig, Kaub and more. Introduced Endless mode, new weapons and class system.",
   },
   {
-    phase: "近期更新",
-    date: "2025-2026年",
-    description: "持续优化游戏性能，推出活动模式、新武器皮肤和季节性活动",
+    phase: "Recent Updates",
+    date: "2025-2026",
+    description: "Continued performance optimization, event modes, new weapon skins and seasonal activities",
   },
 ];
 
 /* ==============================
-   14. 版本更新（原EA路线图）
+   14. Updates & Roadmap
    ============================== */
 
 export const roadmap: RoadmapItem[] = [
   {
-    phase: "已发布",
-    title: "经典内容",
+    phase: "Released",
+    title: "Classic Content",
     items: [
-      "多张历史战役地图（圣塞巴斯蒂安、哥本哈根、莱比锡、考布等）",
-      "目标模式（Objective）完整玩法",
-      "无尽模式（Endless）生存玩法",
-      "多种历史武器（滑膛步枪、线膛步枪、手枪等）",
-      "兵种系统（线列步兵、轻步兵、军官等）",
-      "基础武器皮肤系统",
+      "Multiple historical battle maps (San Sebastian, Copenhagen, Leipzig, Kaub and more)",
+      "Objective mode with full mechanics",
+      "Endless survival mode",
+      "Multiple historical weapons (smoothbore muskets, rifles, pistols, etc.)",
+      "Class system (Line Infantry, Light Infantry, Officer, etc.)",
+      "Basic weapon skin system",
     ],
     status: "completed",
   },
   {
-    phase: "当前阶段",
-    title: "持续更新",
+    phase: "Current Phase",
+    title: "Ongoing Updates",
     items: [
-      "新地图开发中",
-      "新武器类型规划中",
-      "游戏性能优化",
-      "兵种平衡调整",
-      "新活动模式筹备",
-      "社区反馈驱动的改进",
+      "New maps in development",
+      "New weapon types being planned",
+      "Game performance optimization",
+      "Class balance adjustments",
+      "New event modes in preparation",
+      "Community feedback-driven improvements",
     ],
     status: "in-progress",
   },
   {
-    phase: "计划中",
-    title: "未来更新",
+    phase: "Planned",
+    title: "Future Updates",
     items: [
-      "全新游戏模式",
-      "更多历史战役还原",
-      "季节性活动系统",
-      "武器皮肤自定义系统",
-      "成就和荣誉系统",
-      "更多语言支持",
+      "Brand new game modes",
+      "More historical battle recreations",
+      "Seasonal event system",
+      "Weapon skin customization system",
+      "Achievement and honor system",
+      "More language support",
     ],
     status: "planned",
   },
   {
-    phase: "长远规划",
-    title: "发展方向",
+    phase: "Long-term Vision",
+    title: "Development Direction",
     items: [
-      "社区创意工坊支持",
-      "更多历史时期内容扩展",
-      "跨游戏联动活动",
-      "电竞级对战模式",
-      "玩家自建服务器功能",
+      "Community workshop support",
+      "More historical era expansions",
+      "Cross-game crossover events",
+      "Esports-grade competitive mode",
+      "Player-hosted server support",
     ],
     status: "planned",
   },

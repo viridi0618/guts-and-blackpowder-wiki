@@ -4,76 +4,64 @@ import CTALink from "@/components/CTALink";
 import { featuredGuides } from "@/lib/data";
 
 export const metadata: Metadata = {
-  title: "全部指南",
+  title: "All Guides",
   description:
-    "Guts and Blackpowder 所有攻略指南列表，涵盖新手入门、模式攻略、武器指南、敌人图鉴、地图攻略等全方位内容",
+    "Guts and Blackpowder complete guides collection — weapons, enemies, maps, commands, badges, FAQ, and more",
 };
 
 // Category grouping for all guides
 const guideCategories = [
   {
-    category: "新手入门",
-    tag: "START HERE",
-    items: [
-      {
-        icon: "🌟",
-        title: "新手入门",
-        description: "从零开始的完整指南，包含基础操作与战斗技巧",
-        href: "/beginner-guide",
-      },
-    ],
-  },
-  {
-    category: "游戏内容",
+    category: "Game Content",
     tag: "GAME CONTENT",
     items: [
       {
-        icon: "🎯",
-        title: "模式攻略",
-        description: "全部游戏模式深度解析，玩法与策略详解",
-        href: "/classes",
-      },
-      {
         icon: "🔫",
-        title: "武器指南",
-        description: "多种历史武器详解，搭配推荐用法",
+        title: "Weapons Guide",
+        description: "Complete weapons reference — muskets, rifles, sabres, pistols, and more",
         href: "/weapons",
       },
       {
         icon: "👹",
-        title: "敌人图鉴",
-        description: "全敌人类型机制解析，轻松应对每个强敌",
-        href: "/bosses",
+        title: "Enemies Guide",
+        description: "Full enemy bestiary — types, danger levels, and counter strategies",
+        href: "/enemies",
       },
       {
         icon: "🗺️",
-        title: "地图攻略",
-        description: "经典地图详尽指南，快速上手最新战场",
-        href: "/regions",
+        title: "Maps Guide",
+        description: "All 15 maps with detailed walkthroughs and tactical points",
+        href: "/maps",
+      },
+      {
+        icon: "⌨️",
+        title: "Commands Guide",
+        description: "All chat commands, admin commands, and private server settings",
+        href: "/commands",
       },
     ],
   },
   {
-    category: "游戏资讯",
-    tag: "UPDATES",
+    category: "Game Info",
+    tag: "INFO",
     items: [
       {
-        icon: "📅",
-        title: "游戏信息",
-        description: "游戏详情、开发者信息与更新计划一览",
-        href: "/release-date",
-      },
-      {
-        icon: "🗺️",
-        title: "版本更新",
-        description: "完整更新历史与未来内容预览",
-        href: "/roadmap",
+        icon: "🏅",
+        title: "Badges",
+        description: "All 31 badges with unlock conditions and rarity tiers",
+        href: "/badges",
       },
       {
         icon: "❓",
-        title: "常见问题",
-        description: "你最关心的问题，这里都有答案",
+        title: "FAQ",
+        description: "Frequently asked questions about Guts and Blackpowder",
         href: "/faq",
+      },
+      {
+        icon: "📖",
+        title: "Wiki",
+        description: "Getting started, game modes, combat tips, and survival guide",
+        href: "/wiki",
       },
     ],
   },
@@ -89,13 +77,13 @@ export default function GuidesPage() {
             className="font-serif text-4xl md:text-5xl lg:text-6xl leading-tight"
             style={{ color: "#f0ece4", fontFamily: "Georgia, serif" }}
           >
-            全部指南
+            All Guides
           </h1>
           <p
             className="font-sans text-base md:text-lg mt-4 max-w-2xl mx-auto"
             style={{ color: "#8a8884", fontFamily: "Inter, sans-serif" }}
           >
-            从入门到精通，一站式 Guts and Blackpowder 攻略大全
+            From beginner to veteran — the complete Guts and Blackpowder guide collection
           </p>
           <div
             className="mt-6 h-0.5 w-16 rounded-full mx-auto"
@@ -167,13 +155,13 @@ export default function GuidesPage() {
               className="font-serif text-2xl md:text-3xl mt-1"
               style={{ color: "#f0ece4", fontFamily: "Georgia, serif" }}
             >
-              精选指南
+              Featured Guides
             </h2>
             <p
               className="font-sans text-sm mt-3 max-w-xl mx-auto"
               style={{ color: "#8a8884", fontFamily: "Inter, sans-serif" }}
             >
-              不容错过的高质量攻略，助你快速上手进阶
+              Must-read content to level up your skills
             </p>
           </div>
 
@@ -191,7 +179,7 @@ export default function GuidesPage() {
                     className="inline-block font-sans text-xs font-medium"
                     style={{ color: "#d4af6a" }}
                   >
-                    查看详情 &rarr;
+                    View Details &rarr;
                   </span>
                 </div>
               </InfoCard>
@@ -200,7 +188,7 @@ export default function GuidesPage() {
         </div>
       </section>
 
-      {/* Quick Links – All Guides */}
+      {/* Quick Links */}
       <section className="py-14 md:py-20">
         <div className="max-w-4xl mx-auto px-4 text-center">
           <div className="mb-10">
@@ -214,34 +202,31 @@ export default function GuidesPage() {
               className="font-serif text-2xl md:text-3xl mt-1"
               style={{ color: "#f0ece4", fontFamily: "Georgia, serif" }}
             >
-              快速前往
+              Quick Links
             </h2>
           </div>
 
           <div className="flex flex-wrap justify-center gap-3">
-            <CTALink href="/beginner-guide" variant="secondary">
-              新手入门
-            </CTALink>
-            <CTALink href="/classes" variant="secondary">
-              模式攻略
-            </CTALink>
             <CTALink href="/weapons" variant="secondary">
-              武器指南
+              Weapons
             </CTALink>
-            <CTALink href="/bosses" variant="secondary">
-              敌人图鉴
+            <CTALink href="/enemies" variant="secondary">
+              Enemies
             </CTALink>
-            <CTALink href="/regions" variant="secondary">
-              地图攻略
+            <CTALink href="/maps" variant="secondary">
+              Maps
             </CTALink>
-            <CTALink href="/release-date" variant="secondary">
-              游戏信息
+            <CTALink href="/commands" variant="secondary">
+              Commands
             </CTALink>
-            <CTALink href="/roadmap" variant="secondary">
-              版本更新
+            <CTALink href="/badges" variant="secondary">
+              Badges
+            </CTALink>
+            <CTALink href="/wiki" variant="secondary">
+              Wiki
             </CTALink>
             <CTALink href="/faq" variant="secondary">
-              常见问题
+              FAQ
             </CTALink>
           </div>
         </div>

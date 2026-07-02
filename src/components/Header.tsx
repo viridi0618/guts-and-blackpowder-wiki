@@ -5,19 +5,19 @@ import Link from 'next/link';
 import { Menu, X, ChevronDown } from 'lucide-react';
 
 const navLinks = [
-  { label: '首页', href: '/' },
-  { label: '地图', href: '/regions' },
-  { label: '武器', href: '/weapons' },
-  { label: '敌人', href: '/bosses' },
-  { label: '模式', href: '/classes' },
+  { label: 'Home', href: '/' },
+  { label: 'Maps', href: '/maps' },
+  { label: 'Weapons', href: '/weapons' },
+  { label: 'Enemies', href: '/enemies' },
+  { label: 'Guides', href: '/guides' },
   {
-    label: '指南',
+    label: 'More',
     href: '/guides',
     submenu: [
-      { label: '新手入门', href: '/beginner-guide' },
-      { label: '游戏信息', href: '/release-date' },
-      { label: '版本更新', href: '/roadmap' },
-      { label: '常见问题', href: '/faq' },
+      { label: 'Wiki', href: '/wiki' },
+      { label: 'Commands', href: '/commands' },
+      { label: 'Badges', href: '/badges' },
+      { label: 'FAQ', href: '/faq' },
     ],
   },
 ];
@@ -116,7 +116,7 @@ export default function Header() {
           <button
             className="md:hidden p-2 text-[#f0ece4] hover:text-[#d4af6a] transition-colors duration-200"
             onClick={() => setMobileOpen(!mobileOpen)}
-            aria-label={mobileOpen ? '关闭菜单' : '打开菜单'}
+            aria-label={mobileOpen ? 'Close menu' : 'Open menu'}
           >
             {mobileOpen ? <X size={24} /> : <Menu size={24} />}
           </button>

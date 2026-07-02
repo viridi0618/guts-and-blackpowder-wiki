@@ -3,9 +3,9 @@ import FAQAccordion from "@/components/FAQAccordion";
 import { faqs } from "@/lib/data";
 
 export const metadata: Metadata = {
-  title: "常见问题",
+  title: "Frequently Asked Questions",
   description:
-    "Guts and Blackpowder 游戏FAQ大全，涵盖游戏类型、平台信息、模式选择、武器系统等常见问题",
+    "Guts and Blackpowder FAQ — game info, platforms, modes, weapons, classes, Francs, and more answered",
 };
 
 export default function FAQPage() {
@@ -18,13 +18,13 @@ export default function FAQPage() {
             className="font-serif text-4xl md:text-5xl lg:text-6xl leading-tight"
             style={{ color: "#f0ece4", fontFamily: "Georgia, serif" }}
           >
-            常见问题
+            Frequently Asked Questions
           </h1>
           <p
             className="font-sans text-base md:text-lg mt-4 max-w-2xl mx-auto"
             style={{ color: "#8a8884", fontFamily: "Inter, sans-serif" }}
           >
-            你最关心的常见问题，这里都有答案
+            Everything you need to know about Guts and Blackpowder
           </p>
           <div
             className="mt-6 h-0.5 w-16 rounded-full mx-auto"
@@ -40,8 +40,7 @@ export default function FAQPage() {
             className="font-sans text-sm leading-relaxed mb-10"
             style={{ color: "#8a8884", fontFamily: "Inter, sans-serif" }}
           >
-            无论你是刚接触 Guts and Blackpowder 的新玩家，还是想深入了解游戏机制的老手，
-            这里汇总了玩家最常问的问题。点击问题即可展开查看详细解答。
+            Whether you are a new player just discovering Guts and Blackpowder or a veteran looking to deepen your knowledge, this FAQ covers the most commonly asked questions about the game. Click any question to expand the answer.
           </p>
           <div
             className="rounded-lg p-4 md:p-8"

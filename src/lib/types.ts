@@ -98,7 +98,7 @@ export interface Boss {
   level?: string;
   description: string;
   drops?: string[];
-  type: "normal" | "world" | "dungeon";
+  type: "normal" | "world" | "dungeon" | "elite" | "boss";
 }
 
 export interface Dungeon {

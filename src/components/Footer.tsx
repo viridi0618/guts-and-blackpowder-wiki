@@ -2,39 +2,39 @@ import Link from 'next/link';
 
 const footerColumns = [
   {
-    title: '指南',
+    title: 'Guides',
     links: [
-      { label: '新手入门', href: '/guides/newbie' },
-      { label: '模式攻略', href: '/guides/modes' },
-      { label: '敌人图鉴', href: '/guides/enemies' },
-      { label: '武器指南', href: '/guides/weapons' },
+      { label: 'Maps', href: '/maps' },
+      { label: 'Weapons', href: '/weapons' },
+      { label: 'Enemies', href: '/enemies' },
+      { label: 'Commands', href: '/commands' },
     ],
   },
   {
-    title: '资源',
+    title: 'Resources',
     links: [
-      { label: '地图攻略', href: '/regions' },
-      { label: '游戏信息', href: '/guides/release' },
-      { label: '版本更新', href: '/guides/roadmap' },
-      { label: '常见问题', href: '/guides/faq' },
+      { label: 'Wiki', href: '/wiki' },
+      { label: 'Badges', href: '/badges' },
+      { label: 'FAQ', href: '/faq' },
+      { label: 'Francs Guide', href: '/guides/francs' },
     ],
   },
   {
-    title: '实时工具',
+    title: 'Community',
     links: [
-      { label: '兵种强度排行', href: '/tools/class-tier' },
-      { label: '武器推荐配置', href: '/tools/weapon-builds' },
-      { label: '全敌人图鉴', href: '/tools/enemy-encyclopedia' },
-      { label: '新手入坑指南', href: '/guides/newbie' },
+      { label: 'Play on Roblox', href: 'https://www.roblox.com/games/5048655205' },
+      { label: 'Discord', href: 'https://discord.gg/gutsandblackpowder' },
+      { label: 'Trello Board', href: 'https://trello.com/b/ygxvBipE/guts-blackpowder' },
+      { label: 'Twitter / X', href: 'https://x.com/FuzeStudios' },
     ],
   },
   {
-    title: '长尾指南',
+    title: 'More',
     links: [
-      { label: '游戏简介', href: '/about/game' },
-      { label: '系统配置', href: '/about/system-requirements' },
-      { label: '关于我们', href: '/about' },
-      { label: '更新日志', href: '/changelog' },
+      { label: 'Barry Guide', href: '/guides/barry' },
+      { label: 'Server Status', href: 'https://discord.gg/gutsandblackpowder' },
+      { label: 'Tier List', href: '/guides' },
+      { label: 'About', href: '/' },
     ],
   },
 ];
@@ -69,17 +69,17 @@ export default function Footer() {
           {/* Column 5: Copyright / Brand info */}
           <div className="sm:col-span-2 lg:col-span-1">
             <h3 className="text-sm font-semibold tracking-wider uppercase text-[#d4af6a] mb-4">
-              版权信息
+              About
             </h3>
             <div className="space-y-2">
               <p className="text-base font-semibold text-[#f0ece4]">
                 Guts and Blackpowder Wiki
               </p>
               <p className="text-sm text-[#8a8884] leading-relaxed">
-                本站为Guts and Blackpowder玩家提供最全面的游戏攻略、模式分析、武器评测及敌人图鉴指南。
+                The complete community wiki for Guts and Blackpowder — a Roblox PvE zombie survival game set during the Napoleonic Wars.
               </p>
               <p className="text-xs text-[#8a8884] pt-2">
-                &copy; {new Date().getFullYear()} G&B Wiki. All rights reserved.
+                &copy; {new Date().getFullYear()} G&B Wiki. Not affiliated with Roblox or Fuze Studios.
               </p>
             </div>
           </div>
