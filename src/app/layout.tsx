@@ -16,6 +16,10 @@ export const metadata: Metadata = {
   },
   description:
     "The complete Guts and Blackpowder wiki. Maps, weapons, enemies, classes, badges, commands and more for the Roblox PvE zombie survival shooter.",
+  metadataBase: new URL("https://gutsandblackpowder.wiki"),
+  alternates: {
+    canonical: "/",
+  },
   openGraph: {
     title: "Guts and Blackpowder Wiki — PvE Zombie Survival Guide",
     description:
@@ -23,6 +27,12 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_US",
     siteName: "Guts and Blackpowder Wiki",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Guts and Blackpowder Wiki — PvE Zombie Survival Guide",
+    description:
+      "The complete Guts and Blackpowder wiki. Maps, weapons, enemies, classes, badges, commands and more for the Roblox PvE zombie survival shooter.",
   },
   robots: {
     index: true,
@@ -38,6 +48,14 @@ export default function RootLayout({
   return (
     <html lang="en" className="h-full scroll-smooth">
       <head>
+        {/* Google Analytics */}
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-XYRWBHSZHB"></script>
+        <script>{`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-XYRWBHSZHB');
+        `}</script>
         {/* Google AdSense Auto Ads */}
         <script
           async

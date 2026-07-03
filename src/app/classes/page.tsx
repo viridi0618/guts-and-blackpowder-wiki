@@ -6,6 +6,16 @@ export const metadata: Metadata = {
   description: "All 7 classes in Guts and Blackpowder explained in detail — Line Infantry, Officer, Seaman, Musician, Sapper, Surgeon, Chaplain. Roles, abilities, and team synergy.",
 };
 
+  // SEO: BreadcrumbList Schema
+  const bcJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://gutsandblackpowder.wiki/"},
+      {"@type": "ListItem", "position": 2, "name": "Classes", "item": "https://gutsandblackpowder.wiki/classes"}
+    ]
+  };
+
 const classData = [
   {
     name: "Line Infantry",
@@ -88,6 +98,11 @@ const classData = [
 
 export default function ClassesPage() {
   return (
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(bcJsonLd) }}
+      />
+
     <div className="min-h-screen bg-background text-foreground">
       {/* Hero Banner */}
       <section className="relative overflow-hidden border-b border-[#2a2826]">

@@ -8,8 +8,23 @@ export const metadata: Metadata = {
     "Guts and Blackpowder FAQ — game info, platforms, modes, weapons, classes, Francs, and more answered",
 };
 
+  // SEO: BreadcrumbList Schema
+  const bcJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://gutsandblackpowder.wiki/"},
+      {"@type": "ListItem", "position": 2, "name": "FAQ", "item": "https://gutsandblackpowder.wiki/faq"}
+    ]
+  };
+
 export default function FAQPage() {
   return (
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(bcJsonLd) }}
+      />
+
     <div className="min-h-screen">
       {/* Hero Banner */}
       <section className="py-20 md:py-28">

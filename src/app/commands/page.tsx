@@ -6,6 +6,16 @@ export const metadata: Metadata = {
   description: "Every Guts and Blackpowder command in one place: admin commands, zombie spawns, class changes, nation switches, and hidden easter egg commands. Updated for v0.17.9.",
 };
 
+  // SEO: BreadcrumbList Schema
+  const bcJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://gutsandblackpowder.wiki/"},
+      {"@type": "ListItem", "position": 2, "name": "Commands", "item": "https://gutsandblackpowder.wiki/commands"}
+    ]
+  };
+
 // Command data organized by category
 const adminCommands = [
   { command: "/class [class] [user]", desc: "Change a player's class. E.g. /class Officer @a" },
@@ -113,6 +123,11 @@ const modeOptions = ["Endless", "Objective", "Holdout", "Boss"];
 
 export default function CommandsPage() {
   return (
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(bcJsonLd) }}
+      />
+
     <div className="min-h-screen bg-background text-foreground">
       {/* Hero Banner */}
       <section className="relative overflow-hidden border-b border-[#2a2826]">

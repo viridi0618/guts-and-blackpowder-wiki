@@ -6,8 +6,23 @@ export const metadata: Metadata = {
   description: "Complete beginner's guide for Guts and Blackpowder — basic controls, combat tips, class recommendations, and battlefield survival strategies for new players.",
 };
 
+  // SEO: BreadcrumbList Schema
+  const bcJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://gutsandblackpowder.wiki/"},
+      {"@type": "ListItem", "position": 2, "name": "Beginner Guide", "item": "https://gutsandblackpowder.wiki/beginner-guide"}
+    ]
+  };
+
 export default function BeginnerGuidePage() {
   return (
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(bcJsonLd) }}
+      />
+
     <div className="min-h-screen bg-background text-foreground">
       {/* Hero Banner */}
       <section className="relative overflow-hidden border-b border-[#2a2826]">

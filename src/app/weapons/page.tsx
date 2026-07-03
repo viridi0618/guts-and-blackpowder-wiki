@@ -7,8 +7,23 @@ export const metadata: Metadata = {
   description: "Guts and Blackpowder comprehensive weapons guide — muskets, rifles, sabres, pistols, and more",
 };
 
+  // SEO: BreadcrumbList Schema
+  const bcJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://gutsandblackpowder.wiki/"},
+      {"@type": "ListItem", "position": 2, "name": "Weapons", "item": "https://gutsandblackpowder.wiki/weapons"}
+    ]
+  };
+
 export default function WeaponsPage() {
   return (
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(bcJsonLd) }}
+      />
+
     <div className="flex flex-col">
       {/* Hero Banner */}
       <section className="relative flex items-center justify-center py-24 md:py-32 overflow-hidden">

@@ -7,6 +7,16 @@ export const metadata: Metadata = {
   description: "Complete list of all 15 maps in Guts and Blackpowder — Objective, Endless, Holdout, and Seasonal maps with descriptions",
 };
 
+  // SEO: BreadcrumbList Schema
+  const bcJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://gutsandblackpowder.wiki/"},
+      {"@type": "ListItem", "position": 2, "name": "Maps", "item": "https://gutsandblackpowder.wiki/maps"}
+    ]
+  };
+
 // Map data organized by mode
 const mapModes = [
   {
@@ -65,6 +75,11 @@ const mapModes = [
 
 export default function MapsPage() {
   return (
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(bcJsonLd) }}
+      />
+
     <div className="min-h-screen bg-background text-foreground">
       {/* Hero Banner */}
       <section className="relative overflow-hidden border-b border-[#2a2826]">

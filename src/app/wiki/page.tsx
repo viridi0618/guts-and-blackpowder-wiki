@@ -46,8 +46,21 @@ const sections = [
 ];
 
 export default function WikiPage() {
+  const bcJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://gutsandblackpowder.wiki/"},
+      {"@type": "ListItem", "position": 2, "name": "Wiki", "item": "https://gutsandblackpowder.wiki/wiki"}
+    ]
+  };
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(bcJsonLd) }}
+      />
       {/* ===== HERO BANNER ===== */}
       <section className="relative min-h-[50vh] flex items-center justify-center overflow-hidden pt-16">
         {/* Background gradient */}

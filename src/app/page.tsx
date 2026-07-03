@@ -18,6 +18,19 @@ export const metadata: Metadata = {
 };
 
 export default function Home() {
+  const faqJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {"@type":"Question","name":"What is Guts and Blackpowder?","acceptedAnswer":{"@type":"Answer","text":"Guts and Blackpowder is a free-to-play Roblox PvE zombie survival game set during the Napoleonic Wars. Players fight waves of the undead using muskets, sabres, and historical weapons across 15 maps."}},
+      {"@type":"Question","name":"How many maps does Guts and Blackpowder have?","acceptedAnswer":{"@type":"Answer","text":"The game has 15 public maps across multiple modes including Objective, Endless, Holdout, Siege, and Boss Event."}},
+      {"@type":"Question","name":"How many weapons are in Guts and Blackpowder?","acceptedAnswer":{"@type":"Answer","text":"There are 20+ weapons including muskets, rifles, pistols, sabres, axes, bayonets, grenades, and specialized class weapons."}},
+      {"@type":"Question","name":"How many players can play Guts and Blackpowder?","acceptedAnswer":{"@type":"Answer","text":"Up to 12 players per server. Objective mode supports up to 12, Endless up to 12, Holdout up to 12."}},
+      {"@type":"Question","name":"What classes are available in Guts and Blackpowder?","acceptedAnswer":{"@type":"Answer","text":"There are 8 classes: Line Infantry (default), Officer, Seaman, Musician, Sapper, Surgeon, Chaplain, and Rifleman. Each has unique weapons, abilities, and playstyles."}},
+      {"@type":"Question","name":"Is Guts and Blackpowder free to play?","acceptedAnswer":{"@type":"Answer","text":"Yes, Guts and Blackpowder is completely free to play on Roblox. There are optional cosmetic purchases but no pay-to-win elements."}}
+    ]
+  };
+
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "WebApplication",
@@ -33,6 +46,10 @@ export default function Home() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
       />
 
       {/* ===== 1. HERO SECTION ===== */}

@@ -9,6 +9,16 @@ export const metadata: Metadata = {
     "Guts and Blackpowder complete guides collection — beginner guide, classes, weapons, enemies, maps, commands, badges, FAQ, and more",
 };
 
+  // SEO: BreadcrumbList Schema
+  const bcJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://gutsandblackpowder.wiki/"},
+      {"@type": "ListItem", "position": 2, "name": "Guides", "item": "https://gutsandblackpowder.wiki/guides"}
+    ]
+  };
+
 const guideCategories = [
   {
     category: "Getting Started",
@@ -86,6 +96,11 @@ const guideCategories = [
 
 export default function GuidesPage() {
   return (
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(bcJsonLd) }}
+      />
+
     <div className="min-h-screen">
       <section className="py-20 md:py-28">
         <div className="max-w-4xl mx-auto px-4 text-center">

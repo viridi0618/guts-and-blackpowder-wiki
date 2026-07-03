@@ -7,6 +7,16 @@ export const metadata: Metadata = {
   description: "Complete list of all 31 badges in Guts and Blackpowder — grouped by category with unlock conditions and requirements",
 };
 
+  // SEO: BreadcrumbList Schema
+  const bcJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://gutsandblackpowder.wiki/"},
+      {"@type": "ListItem", "position": 2, "name": "Badges", "item": "https://gutsandblackpowder.wiki/badges"}
+    ]
+  };
+
 // Badge categories with their badges
 const badgeCategories = [
   {
@@ -59,6 +69,11 @@ const badgeCategories = [
 
 export default function BadgesPage() {
   return (
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(bcJsonLd) }}
+      />
+
     <div className="min-h-screen bg-background text-foreground">
       {/* Hero Banner */}
       <section className="relative overflow-hidden border-b border-[#2a2826]">
