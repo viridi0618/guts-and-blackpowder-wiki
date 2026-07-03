@@ -218,7 +218,8 @@ export default function MapsPage() {
             <h3 className="font-serif text-xl text-[#f0ece4] mb-4">Related Guides</h3>
             <ul className="space-y-2">
               <li><a href="/enemies" className="text-sm text-[#d4af6a] hover:underline">All Enemies — What You&apos;ll Face on Each Map</a></li>
-              <li><a href="/weapons" className="text-sm text-[#d4af6a] hover:underline">Weapons Guide — Best Weapon for Each Map</a></li>
+              <li><a href="/classes" className="text-sm text-[#d4af6a] hover:underline">Classes Guide — Best Class for Each Map</a></li>
+              <li><a href="/beginner-guide" className="text-sm text-[#d4af6a] hover:underline">Beginner Guide — How to Survive Your First Match</a></li>
               <li><a href="/badges" className="text-sm text-[#d4af6a] hover:underline">Badges — Map Completion Achievements</a></li>
               <li><a href="/wiki" className="text-sm text-[#d4af6a] hover:underline">Full Wiki Overview</a></li>
             </ul>

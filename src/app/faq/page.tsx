@@ -60,6 +60,7 @@ export default function FAQPage() {
           <div className="rounded-lg p-6" style={{ backgroundColor: "rgba(255,255,255,0.03)", border: "1px solid #2a2826" }}>
             <h3 className="font-serif text-xl text-[#f0ece4] mb-4">More Guides</h3>
             <ul className="space-y-2">
+              <li><a href="/beginner-guide" className="text-sm text-[#d4af6a] hover:underline">Beginner Guide</a></li>
               <li><a href="/commands" className="text-sm text-[#d4af6a] hover:underline">Admin Commands List</a></li>
               <li><a href="/badges" className="text-sm text-[#d4af6a] hover:underline">All Badges</a></li>
               <li><a href="/maps" className="text-sm text-[#d4af6a] hover:underline">All Maps</a></li>

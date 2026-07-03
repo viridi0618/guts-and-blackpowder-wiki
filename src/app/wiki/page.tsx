@@ -146,6 +146,7 @@ export default function WikiPage() {
             <ul className="space-y-2">
               <li><a href="/maps" className="text-sm text-[#d4af6a] hover:underline">All Maps</a></li>
               <li><a href="/enemies" className="text-sm text-[#d4af6a] hover:underline">All Enemies</a></li>
+              <li><a href="/classes" className="text-sm text-[#d4af6a] hover:underline">All Classes</a></li>
               <li><a href="/weapons" className="text-sm text-[#d4af6a] hover:underline">All Weapons</a></li>
               <li><a href="/commands" className="text-sm text-[#d4af6a] hover:underline">Admin Commands</a></li>
               <li><a href="/badges" className="text-sm text-[#d4af6a] hover:underline">All Badges</a></li>

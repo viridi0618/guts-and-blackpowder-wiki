@@ -258,7 +258,7 @@ export default function BadgesPage() {
             <h3 className="font-serif text-xl text-[#f0ece4] mb-4">Related Guides</h3>
             <ul className="space-y-2">
               <li><a href="/maps" className="text-sm text-[#d4af6a] hover:underline">Maps Guide — Where to Complete Each Badge</a></li>
-              <li><a href="/weapons" className="text-sm text-[#d4af6a] hover:underline">Weapons Guide — Unlock Chaplain</a></li>
+              <li><a href="/classes" className="text-sm text-[#d4af6a] hover:underline">Classes Guide — Unlock Chaplain with Soldier&apos;s Grace</a></li>
               <li><a href="/commands" className="text-sm text-[#d4af6a] hover:underline">Commands — Easter Egg Badges with /arthur and /marston</a></li>
               <li><a href="/wiki" className="text-sm text-[#d4af6a] hover:underline">Full Wiki Overview</a></li>
             </ul>

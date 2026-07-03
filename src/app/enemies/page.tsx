@@ -403,9 +403,10 @@ export default function EnemiesPage() {
           <div className="rounded-lg p-6" style={{ backgroundColor: "rgba(255,255,255,0.03)", border: "1px solid #2a2826" }}>
             <h3 className="font-serif text-xl text-[#f0ece4] mb-4">Related Guides</h3>
             <ul className="space-y-2">
-              <li><a href="/weapons" className="text-sm text-[#d4af6a] hover:underline">Weapons Guide — Which Weapon Counters Each Enemy</a></li>
+              <li><a href="/classes" className="text-sm text-[#d4af6a] hover:underline">Classes Guide — Which Class Counters Each Enemy</a></li>
               <li><a href="/maps" className="text-sm text-[#d4af6a] hover:underline">Maps Guide — Where Each Enemy Appears</a></li>
               <li><a href="/commands" className="text-sm text-[#d4af6a] hover:underline">Spawn Commands — Summon Enemies in Private Server</a></li>
+              <li><a href="/beginner-guide" className="text-sm text-[#d4af6a] hover:underline">Beginner Guide — How to Deal with Infection</a></li>
               <li><a href="/wiki" className="text-sm text-[#d4af6a] hover:underline">Full Wiki Overview</a></li>
             </ul>
           </div>
