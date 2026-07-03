@@ -137,6 +137,23 @@ export default function WikiPage() {
           </div>
         </div>
       </section>
+
+      {/* Related Guides */}
+      <section className="py-20">
+        <div className="max-w-7xl mx-auto px-4">
+          <div className="rounded-lg p-6" style={{ backgroundColor: "rgba(255,255,255,0.03)", border: "1px solid #2a2826" }}>
+            <h3 className="font-serif text-xl text-[#f0ece4] mb-4">Quick Links</h3>
+            <ul className="space-y-2">
+              <li><a href="/maps" className="text-sm text-[#d4af6a] hover:underline">All Maps</a></li>
+              <li><a href="/enemies" className="text-sm text-[#d4af6a] hover:underline">All Enemies</a></li>
+              <li><a href="/weapons" className="text-sm text-[#d4af6a] hover:underline">All Weapons</a></li>
+              <li><a href="/commands" className="text-sm text-[#d4af6a] hover:underline">Admin Commands</a></li>
+              <li><a href="/badges" className="text-sm text-[#d4af6a] hover:underline">All Badges</a></li>
+              <li><a href="/faq" className="text-sm text-[#d4af6a] hover:underline">FAQ</a></li>
+            </ul>
+          </div>
+        </div>
+      </section>
     </>
   );
 }

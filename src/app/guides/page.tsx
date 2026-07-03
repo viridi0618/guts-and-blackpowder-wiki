@@ -231,6 +231,22 @@ export default function GuidesPage() {
           </div>
         </div>
       </section>
+
+      {/* Related Guides */}
+      <section className="py-14 md:py-20">
+        <div className="max-w-4xl mx-auto px-4">
+          <div className="rounded-lg p-6" style={{ backgroundColor: "rgba(255,255,255,0.03)", border: "1px solid #2a2826" }}>
+            <h3 className="font-serif text-xl text-[#f0ece4] mb-4">Related Guides</h3>
+            <ul className="space-y-2">
+              <li><a href="/weapons" className="text-sm text-[#d4af6a] hover:underline">Weapons Guide — Pick the Right Weapon</a></li>
+              <li><a href="/maps" className="text-sm text-[#d4af6a] hover:underline">Maps Guide — Know Your Battlefields</a></li>
+              <li><a href="/enemies" className="text-sm text-[#d4af6a] hover:underline">Enemies Guide — Understand What You&apos;re Fighting</a></li>
+              <li><a href="/guides/francs" className="text-sm text-[#d4af6a] hover:underline">How to Get Francs Fast</a></li>
+              <li><a href="/badges" className="text-sm text-[#d4af6a] hover:underline">Badges — What to Work Toward First</a></li>
+            </ul>
+          </div>
+        </div>
+      </section>
     </div>
   );
 }

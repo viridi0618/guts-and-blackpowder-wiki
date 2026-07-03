@@ -52,7 +52,7 @@ const badgeCategories = [
     badges: [
       { name: "Soldier's Grace", map: "Any Objective", description: "Unlock the Chaplain class by completing an Objective map as a Surgeon without dying" },
       { name: "Untouchable", map: "Catacombes de Paris", description: "Hidden achievement. Complete Catacombes de Paris without ever being hit by any enemy. Rewards the Delicious Leg item" },
-      { name: "Vos Enterrement", map: "Catacombes de Paris", description: "Unlock Barry. Complete the Barry puzzle chain across multiple maps" },
+      { name: "Vos Enterrement", map: "Catacombes de Paris", description: "Find and interact with Barry's tomb in the catacombs. Barry is an NPC Easter egg, not a playable class" },
     ],
   },
 ];
@@ -222,12 +222,12 @@ export default function BadgesPage() {
           </div>
         </section>
 
-        {/* Vos Enterrement - Barry Unlock */}
+        {/* Vos Enterrement - Barry NPC Easter Egg */}
         <section>
           <SectionTitle
-            tag="Secret Class"
-            title="Vos Enterrement — Unlocking Barry"
-            subtitle="The multi-map puzzle chain to unlock the secret Barry class"
+            tag="NPC Easter Egg"
+            title="Vos Enterrement — Finding Barry"
+            subtitle="Discover the hidden Barry NPC in the Catacombes de Paris"
             align="left"
           />
 
@@ -238,46 +238,30 @@ export default function BadgesPage() {
               border: "1px solid #2a2826",
             }}
           >
-            <p className="text-base leading-relaxed text-[#c8c4bc] mb-6">
-              Vos Enterrement is the badge earned by unlocking Barry, a secret playable class. The unlock process requires solving a multi-step puzzle across several maps. Here is the complete sequence:
+            <p className="text-base leading-relaxed text-[#c8c4bc] mb-4">
+              Vos Enterrement is the badge awarded for finding Barry, a hidden NPC Easter egg in the Catacombes de Paris. Barry is a skeleton figure armed with a shovel, internally nicknamed &quot;WinchGuy.&quot; He is <strong className="text-[#d4af6a]">NOT a playable class</strong> — just a fun secret to discover.
             </p>
-
-            <div className="space-y-4">
-              {[
-                {
-                  step: "Step 1: San Sebastian — Hidden Chamber",
-                  desc: "In the catacombs of San Sebastian, find a hidden chamber by destroying a specific wall. Inside, you will find a piano with a clue.",
-                },
-                {
-                  step: "Step 2: Leipzig — Piano Sequence",
-                  desc: "In the church on Leipzig, play a specific piano key sequence. The correct sequence is revealed by the clue found in San Sebastian.",
-                },
-                {
-                  step: "Step 3: Copenhagen — Mysterious Key",
-                  desc: "In the Copenhagen church, locate and pick up the Mysterious Key that spawns after completing the previous steps.",
-                },
-                {
-                  step: "Step 4: Catacombes de Paris — Barry's Tomb",
-                  desc: "Using the Mysterious Key, open Barry's tomb in the Catacombes de Paris. This unlocks Barry as a playable class and grants the Vos Enterrement badge.",
-                },
-              ].map((item, i) => (
-                <div
-                  key={i}
-                  className="flex items-start gap-4 p-4 rounded-lg"
-                  style={{
-                    backgroundColor: "rgba(255,255,255,0.03)",
-                    border: "1px solid #2a2826",
-                    borderLeft: "3px solid #d4af6a",
-                  }}
-                >
-                  <span className="text-[#d4af6a] font-bold text-lg flex-shrink-0">{i + 1}.</span>
-                  <div>
-                    <h4 className="font-serif text-base text-[#f0ece4] mb-1">{item.step}</h4>
-                    <p className="text-sm text-[#8a8884]">{item.desc}</p>
-                  </div>
-                </div>
-              ))}
+            <p className="text-sm leading-relaxed text-[#8a8884] mb-4">
+              To earn the badge: play Catacombes de Paris on Objective mode, navigate through the underground tunnels, and find the side chamber containing Barry's tomb. Interact with it to unlock the Vos Enterrement badge. No keys, puzzles, or multi-map chains required.
+            </p>
+            <div className="rounded-lg p-4" style={{ backgroundColor: "rgba(212,175,106,0.05)", border: "1px solid rgba(212,175,106,0.2)" }}>
+              <p className="text-sm text-[#d4af6a] font-medium">
+                Tip: The catacombs are dark and disorienting. The side chamber is easy to miss if you rush through the objective. See the Barry guide for a detailed walkthrough.
+              </p>
             </div>
+          </div>
+        </section>
+
+        {/* Related Guides */}
+        <section>
+          <div className="rounded-lg p-6" style={{ backgroundColor: "rgba(255,255,255,0.03)", border: "1px solid #2a2826" }}>
+            <h3 className="font-serif text-xl text-[#f0ece4] mb-4">Related Guides</h3>
+            <ul className="space-y-2">
+              <li><a href="/maps" className="text-sm text-[#d4af6a] hover:underline">Maps Guide — Where to Complete Each Badge</a></li>
+              <li><a href="/weapons" className="text-sm text-[#d4af6a] hover:underline">Weapons Guide — Unlock Chaplain</a></li>
+              <li><a href="/commands" className="text-sm text-[#d4af6a] hover:underline">Commands — Easter Egg Badges with /arthur and /marston</a></li>
+              <li><a href="/wiki" className="text-sm text-[#d4af6a] hover:underline">Full Wiki Overview</a></li>
+            </ul>
           </div>
         </section>
       </div>

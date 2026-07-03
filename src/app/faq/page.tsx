@@ -53,6 +53,21 @@ export default function FAQPage() {
           </div>
         </div>
       </section>
+
+      {/* Related Guides */}
+      <section className="pb-20 md:pb-28">
+        <div className="max-w-4xl mx-auto px-4">
+          <div className="rounded-lg p-6" style={{ backgroundColor: "rgba(255,255,255,0.03)", border: "1px solid #2a2826" }}>
+            <h3 className="font-serif text-xl text-[#f0ece4] mb-4">More Guides</h3>
+            <ul className="space-y-2">
+              <li><a href="/commands" className="text-sm text-[#d4af6a] hover:underline">Admin Commands List</a></li>
+              <li><a href="/badges" className="text-sm text-[#d4af6a] hover:underline">All Badges</a></li>
+              <li><a href="/maps" className="text-sm text-[#d4af6a] hover:underline">All Maps</a></li>
+              <li><a href="/wiki" className="text-sm text-[#d4af6a] hover:underline">Full Wiki</a></li>
+            </ul>
+          </div>
+        </div>
+      </section>
     </div>
   );
 }

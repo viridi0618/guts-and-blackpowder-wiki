@@ -295,6 +295,21 @@ export default function WeaponsPage() {
           </div>
         </div>
       </section>
+
+      {/* Related Guides */}
+      <section className="py-20">
+        <div className="max-w-7xl mx-auto px-4">
+          <div className="rounded-lg p-6" style={{ backgroundColor: "rgba(255,255,255,0.03)", border: "1px solid #2a2826" }}>
+            <h3 className="font-serif text-xl text-[#f0ece4] mb-4">Related Guides</h3>
+            <ul className="space-y-2">
+              <li><a href="/enemies" className="text-sm text-[#d4af6a] hover:underline">Enemies Guide — Which Weapon to Use Against Each Enemy</a></li>
+              <li><a href="/maps" className="text-sm text-[#d4af6a] hover:underline">Maps Guide — Find Your Best Weapon Layout</a></li>
+              <li><a href="/commands" className="text-sm text-[#d4af6a] hover:underline">Commands — Give Items with /give Command</a></li>
+              <li><a href="/wiki" className="text-sm text-[#d4af6a] hover:underline">Full Wiki Overview</a></li>
+            </ul>
+          </div>
+        </div>
+      </section>
     </div>
   );
 }
