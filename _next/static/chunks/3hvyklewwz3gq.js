@@ -1,0 +1,14 @@
+(globalThis.TURBOPACK||(globalThis.TURBOPACK=[])).push(["object"==typeof document?document.currentScript:void 0,49429,r=>{"use strict";var e=r.i(43476),a=r.i(22016);r.s(["default",0,({icon:r,tag:t,title:o,description:s,href:l,children:n,className:c=""})=>{let d=`
+    flex flex-col gap-4 p-6 rounded-lg
+    transition-all duration-300 ease-in-out
+    cursor-default
+  `,i=(0,e.jsxs)(e.Fragment,{children:[r&&(0,e.jsx)("span",{className:"text-4xl leading-none",children:r}),t&&(0,e.jsx)("span",{className:"inline-block self-start font-sans text-xs font-medium uppercase tracking-wider px-3 py-1 rounded-full",style:{backgroundColor:"#d4af6a",color:"#05030c"},children:t}),(0,e.jsx)("h3",{className:"font-serif text-xl leading-snug",style:{color:"#f0ece4",fontFamily:"Georgia, serif"},children:o}),(0,e.jsx)("p",{className:"font-sans text-sm leading-relaxed",style:{color:"#8a8884",fontFamily:"Inter, sans-serif"},children:s}),n]}),u=`${d} ${c}`.trim();return l?(0,e.jsx)(a.default,{href:l,className:u,style:{backgroundColor:"rgba(255,255,255,0.03)",border:"1px solid #2a2826"},onMouseEnter:r=>{r.currentTarget.style.backgroundColor="rgba(255,255,255,0.06)",r.currentTarget.style.borderColor="#d4af6a",r.currentTarget.style.transform="translateY(-2px)"},onMouseLeave:r=>{r.currentTarget.style.backgroundColor="rgba(255,255,255,0.03)",r.currentTarget.style.borderColor="#2a2826",r.currentTarget.style.transform="translateY(0)"},children:i}):(0,e.jsx)("div",{className:u,style:{backgroundColor:"rgba(255,255,255,0.03)",border:"1px solid #2a2826"},onMouseEnter:r=>{r.currentTarget.style.backgroundColor="rgba(255,255,255,0.06)",r.currentTarget.style.borderColor="#d4af6a",r.currentTarget.style.transform="translateY(-2px)"},onMouseLeave:r=>{r.currentTarget.style.backgroundColor="rgba(255,255,255,0.03)",r.currentTarget.style.borderColor="#2a2826",r.currentTarget.style.transform="translateY(0)"},children:i})}])},28526,r=>{"use strict";var e=r.i(43476),a=r.i(22016);r.s(["default",0,({href:r,children:t,variant:o="primary",external:s=!1,className:l=""})=>{let n={primary:`
+      text-[#05030c]
+      hover:brightness-110 hover:shadow-lg
+      active:scale-[0.98]
+    `,secondary:`
+      border
+      text-[#d4af6a]
+      hover:text-[#05030c] hover:bg-[#d4af6a]
+      active:scale-[0.98]
+    `},c={primary:{backgroundColor:"#d4af6a"},secondary:{backgroundColor:"transparent",borderColor:"#d4af6a"}},d=`inline-block font-sans text-sm font-medium rounded-full px-8 py-3 transition-all duration-300 ease-in-out ${n[o]} ${l}`.trim();return s?(0,e.jsx)("a",{href:r,target:"_blank",rel:"noopener noreferrer",className:d,style:c[o],children:t}):(0,e.jsx)(a.default,{href:r,className:d,style:c[o],children:t})}])}]);
