@@ -15,7 +15,7 @@ import {
 } from "@/lib/data";
 
 export const metadata: Metadata = {
-  title: "Guts and Blackpowder Wiki — 游戏攻略、地图指南、敌人图鉴一站式平台",
+  title: "Guts and Blackpowder Wiki — PvE Zombie Survival Guide, Maps & Weapons",
 };
 
 export default function Home() {
