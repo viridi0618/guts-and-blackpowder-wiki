@@ -77,7 +77,7 @@ export default function Home() {
 
           <div className="flex flex-wrap justify-center gap-4 mb-16">
             <CTALink
-              href="https://www.roblox.com/games/5048655205"
+              href="https://www.roblox.com/games/12334109280/Guts-Blackpowder"
               variant="primary"
               external
             >
@@ -341,7 +341,7 @@ export default function Home() {
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <a
-              href="https://www.roblox.com/games/5048655205"
+              href="https://www.roblox.com/games/12334109280/Guts-Blackpowder"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-block rounded-full px-8 py-3 text-sm font-medium transition-all duration-300 hover:opacity-90"

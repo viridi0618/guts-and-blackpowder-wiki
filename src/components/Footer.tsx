@@ -22,7 +22,7 @@ const footerColumns = [
   {
     title: 'Community',
     links: [
-      { label: 'Play on Roblox', href: 'https://www.roblox.com/games/5048655205' },
+      { label: 'Play on Roblox', href: 'https://www.roblox.com/games/12334109280/Guts-Blackpowder' },
       { label: 'Discord', href: 'https://discord.gg/gutsandblackpowder' },
       { label: 'Trello Board', href: 'https://trello.com/b/ygxvBipE/guts-blackpowder' },
       { label: 'Twitter / X', href: 'https://x.com/FuzeStudios' },
