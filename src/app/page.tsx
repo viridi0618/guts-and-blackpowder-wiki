@@ -24,7 +24,7 @@ export default function Home() {
     "@type": "WebApplication",
     name: "Guts and Blackpowder Wiki",
     description:
-      "Guts and Blackpowder 中文攻略站，提供完整的游戏模式攻略、武器指南、敌人图鉴、地图攻略、新手入门等全方位内容",
+      "The complete Guts and Blackpowder wiki. Maps, weapons, enemies, classes, badges, commands and more for the Roblox PvE zombie survival shooter.",
     applicationCategory: "GameApplication",
     operatingSystem: "Web",
   };
@@ -81,10 +81,10 @@ export default function Home() {
               variant="primary"
               external
             >
-              在 Roblox 上游玩
+              Play on Roblox
             </CTALink>
             <CTALink href="/beginner-guide" variant="secondary">
-              新手入门
+              Beginner Guide
             </CTALink>
           </div>
 
@@ -121,7 +121,7 @@ export default function Home() {
       <section className="py-20">
         <div className="max-w-7xl mx-auto px-4">
           <SectionTitle
-            tag="关于游戏"
+            tag="About the Game"
             title="Guts and Blackpowder"
             align="left"
           />
@@ -160,10 +160,10 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ===== 3. GAME MODES SECTION (原CLASSES) ===== */}
+      {/* ===== 3. GAME MODES SECTION ===== */}
       <section className="py-20">
         <div className="max-w-7xl mx-auto px-4">
-          <SectionTitle tag="四大模式" title="选择你的战场" />
+          <SectionTitle tag="Game Modes" title="Choose Your Battlefield" />
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-10">
             {classes.map((cls) => (
               <InfoCard
@@ -179,10 +179,10 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ===== 4. MAPS SECTION (原REGIONS) ===== */}
+      {/* ===== 4. MAPS SECTION ===== */}
       <section className="py-20">
         <div className="max-w-7xl mx-auto px-4">
-          <SectionTitle tag="经典地图" title="探索历史战场" />
+          <SectionTitle tag="Maps" title="Explore Historical Battlefields" />
           <div className="grid md:grid-cols-2 gap-6 mt-10">
             {regions.map((region) => (
               <InfoCard
@@ -200,7 +200,7 @@ export default function Home() {
       {/* ===== 5. JOURNEYS SECTION ===== */}
       <section className="py-20">
         <div className="max-w-7xl mx-auto px-4">
-          <SectionTitle tag="开始你的旅程" title="从这里出发" />
+          <SectionTitle tag="Get Started" title="Begin Your Journey" />
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-10">
             {journeys.map((journey) => (
               <InfoCard
@@ -218,7 +218,7 @@ export default function Home() {
       {/* ===== 6. TOOLS SECTION ===== */}
       <section className="py-20">
         <div className="max-w-7xl mx-auto px-4">
-          <SectionTitle tag="工具与排行榜" title="实用工具" />
+          <SectionTitle tag="Tools & Resources" title="Useful Resources" />
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-10">
             {tools.map((tool) => (
               <InfoCard
@@ -237,7 +237,7 @@ export default function Home() {
       {/* ===== 7. GUIDES SECTION ===== */}
       <section className="py-20">
         <div className="max-w-7xl mx-auto px-4">
-          <SectionTitle tag="精选指南" title="攻略精选" />
+          <SectionTitle tag="Featured" title="Featured Guides" />
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-10">
             {featuredGuides.map((guide) => (
               <InfoCard
@@ -252,7 +252,7 @@ export default function Home() {
                     className="text-xs font-medium"
                     style={{ color: "#d4af6a" }}
                   >
-                    阅读更多 &rarr;
+                    Read More &rarr;
                   </span>
                 </div>
               </InfoCard>
@@ -260,7 +260,7 @@ export default function Home() {
           </div>
           <div className="text-center mt-10">
             <CTALink href="/guides" variant="secondary">
-              查看全部指南
+              View All Guides
             </CTALink>
           </div>
         </div>
@@ -269,7 +269,7 @@ export default function Home() {
       {/* ===== 8. NEWS SECTION ===== */}
       <section className="py-20">
         <div className="max-w-4xl mx-auto px-4">
-          <SectionTitle tag="最新动态" title="资讯" />
+          <SectionTitle tag="Updates" title="Latest News" />
           <div className="mt-10 relative">
             {/* Timeline line */}
             <div
@@ -309,13 +309,13 @@ export default function Home() {
       {/* ===== 9. FAQ SECTION ===== */}
       <section className="py-20">
         <div className="max-w-4xl mx-auto px-4">
-          <SectionTitle tag="常见问题" title="你需要知道的" />
+          <SectionTitle tag="FAQ" title="What You Need to Know" />
           <div className="mt-10">
             <FAQAccordion faqs={faqs.slice(0, 5)} />
           </div>
           <div className="text-center mt-10">
             <CTALink href="/faq" variant="secondary">
-              查看全部FAQ
+              View All FAQ
             </CTALink>
           </div>
         </div>
@@ -331,13 +331,13 @@ export default function Home() {
             className="text-3xl md:text-4xl font-serif font-bold mb-4"
             style={{ color: "#05030c" }}
           >
-            准备好加入战场了吗？
+            Ready to Join the Battle?
           </h2>
           <p
             className="text-base mb-8 max-w-lg mx-auto"
             style={{ color: "#2a2826" }}
           >
-            加入 Guts and Blackpowder 的世界，选择你的战场，使用历史武器，在拿破仑战争中成为传奇。
+            Step into the world of Guts and Blackpowder. Choose your battlefield, wield historical weapons, and become a legend of the Napoleonic Wars.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <a
@@ -350,7 +350,7 @@ export default function Home() {
                 color: "#f0ece4",
               }}
             >
-              在 Roblox 上游玩
+              Play on Roblox
             </a>
             <a
               href="/beginner-guide"
@@ -360,7 +360,7 @@ export default function Home() {
                 color: "#05030c",
               }}
             >
-              新手入门
+              Beginner Guide
             </a>
           </div>
         </div>
