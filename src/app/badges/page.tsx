@@ -3,8 +3,8 @@ import SectionTitle from "@/components/SectionTitle";
 import InfoCard from "@/components/InfoCard";
 
 export const metadata: Metadata = {
-  title: "Badges & Achievements",
-  description: "Complete list of all 31 badges in Guts and Blackpowder — grouped by category with unlock conditions and requirements",
+  title: "Guts and Blackpowder Badges & Secret Achievements — How to Get Soldier's Grace, Old Guard, Untouchable",
+  description: "Complete list of all 31 badges and hidden secret achievements in Guts and Blackpowder. Covers Soldier's Grace, Soldats de ma Vieille Garde (Old Guard), Untouchable, Vos Enterrement, and more with unlock conditions.",
 };
 
 // Badge categories with their badges

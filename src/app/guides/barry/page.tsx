@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import SectionTitle from "@/components/SectionTitle";
 
 export const metadata: Metadata = {
-  title: "Barry — Who Is He & Why Does Everyone Love Him?",
-  description: "Who is Barry in Guts and Blackpowder? The truth about the Catacombes de Paris NPC Easter egg, the Vos Enterrement badge, and why the community loves him",
+  title: "Barry Guts and Blackpowder — Who Is He, Vos Enterrement Badge & Hidden NPC Easter Egg",
+  description: "Who is Barry in Guts and Blackpowder? The truth about the Catacombes de Paris NPC Easter egg, how to get the Vos Enterrement badge, and why the community loves him.",
 };
 
 export default function BarryGuidePage() {
