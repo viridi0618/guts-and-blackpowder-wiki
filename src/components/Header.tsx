@@ -59,9 +59,11 @@ export default function Header() {
           {/* Logo / Site Title */}
           <Link
             href="/"
-            className="text-2xl font-bold tracking-wider text-[#f0ece4] hover:text-[#d4af6a] transition-colors duration-200"
+            className="flex items-center gap-3 text-2xl font-bold tracking-wider text-[#f0ece4] hover:text-[#d4af6a] transition-colors duration-200"
           >
-            G&B Wiki
+            <img src="/icon.png" alt="Guts & Blackpowder" className="h-8 w-8 rounded-lg" />
+            <span className="hidden sm:inline">G&amp;B Wiki</span>
+            <span className="sm:hidden">G&amp;B</span>
           </Link>
 
           {/* Desktop Navigation */}
