@@ -21,13 +21,22 @@ export const metadata: Metadata = {
     title: "Guts and Blackpowder Wiki — PvE Zombie Survival Guide",
     description:
       "The complete Guts and Blackpowder wiki. Maps, weapons, enemies, classes, badges, commands and more for the Roblox PvE zombie survival shooter.",
+    url: "https://gutsandblackpowder.wiki",
     type: "website",
     locale: "en_US",
     siteName: "Guts and Blackpowder Wiki",
+    images: [{ url: "https://gutsandblackpowder.wiki/og-image.png", width: 288, height: 288 }],
   },
   robots: {
     index: true,
     follow: true,
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Guts and Blackpowder Wiki",
+    description:
+      "PvE zombie survival guide with maps, weapons, enemies, classes, and more.",
+    images: ["https://gutsandblackpowder.wiki/og-image.png"],
   },
 };
 
@@ -39,6 +48,8 @@ export default function RootLayout({
   return (
     <html lang="en" className="h-full scroll-smooth">
       <head>
+        <link rel="icon" type="image/png" href="/favicon.png" />
+        <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
         {/* Google AdSense Auto Ads */}
         <script
           async
