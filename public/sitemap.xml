@@ -49,8 +49,20 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://gutsandblackpowder.wiki/commands/private-server-commands</loc>
+    <lastmod>2026-07-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://gutsandblackpowder.wiki/badges</loc>
     <lastmod>2026-07-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://gutsandblackpowder.wiki/achievements</loc>
+    <lastmod>2026-07-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>

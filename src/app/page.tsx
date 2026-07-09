@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import SectionTitle from "@/components/SectionTitle";
 import InfoCard from "@/components/InfoCard";
 import CTALink from "@/components/CTALink";
@@ -15,10 +16,27 @@ import {
 } from "@/lib/data";
 
 export const metadata: Metadata = {
-  title: "Guts and Blackpowder Wiki — PvE Zombie Survival Guide, Maps & Weapons",
+  title: "Guts and Blackpowder Wiki: Commands, Maps, Badges & Guides",
+  description:
+    "Find Guts and Blackpowder commands, maps, badges, achievements, enemies, weapons, classes, and beginner guides for Roblox G&B.",
 };
 
 export default function Home() {
+  const popularGuides = [
+    { label: "Commands", href: "/commands" },
+    { label: "Private Server Commands", href: "/commands/private-server-commands" },
+    { label: "Maps", href: "/maps" },
+    { label: "Weapons", href: "/weapons" },
+    { label: "Enemies", href: "/enemies" },
+    { label: "Badges", href: "/badges" },
+    { label: "Achievements", href: "/achievements" },
+    { label: "Beginner Guide", href: "/beginner-guide" },
+    { label: "Barry Guide", href: "/guides/barry" },
+    { label: "Cuirassier Guide", href: "/enemies" },
+    { label: "How to Use Musician", href: "/classes" },
+    { label: "How to Get Francs", href: "/guides/francs" },
+  ];
+
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "WebApplication",
@@ -61,18 +79,18 @@ export default function Home() {
             className="inline-block text-xs font-medium tracking-[0.2em] uppercase mb-6"
             style={{ color: "#d4af6a" }}
           >
-            Guts and Blackpowder Wiki
+            Survive the Blight
           </span>
 
           <h1 className="font-serif text-4xl sm:text-5xl md:text-6xl lg:text-7xl leading-tight mb-6">
-            {gameData.heroTitle}
+            Guts and Blackpowder Wiki
           </h1>
 
           <p
             className="text-base md:text-lg max-w-2xl mx-auto mb-10 leading-relaxed"
             style={{ color: "#8a8884" }}
           >
-            {gameData.heroSubtitle}
+            Commands, maps, badges, weapons, enemies, and beginner guides for Roblox G&B.
           </p>
 
           <div className="flex flex-wrap justify-center gap-4 mb-16">
@@ -112,6 +130,32 @@ export default function Home() {
                   {stat.label}
                 </div>
               </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ===== POPULAR GUIDES SECTION ===== */}
+      <section className="py-16 border-b border-[#2a2826]">
+        <div className="max-w-7xl mx-auto px-4">
+          <SectionTitle
+            tag="Start Here"
+            title="Popular Guts and Blackpowder Guides"
+            subtitle="Quick links to the pages players search for most."
+          />
+          <div className="mt-10 grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3">
+            {popularGuides.map((guide) => (
+              <Link
+                key={guide.href}
+                href={guide.href}
+                className="rounded-lg px-4 py-3 text-sm font-medium text-[#f0ece4] transition-all duration-200 hover:text-[#d4af6a] hover:border-[#d4af6a]"
+                style={{
+                  backgroundColor: "rgba(255,255,255,0.03)",
+                  border: "1px solid #2a2826",
+                }}
+              >
+                {guide.label}
+              </Link>
             ))}
           </div>
         </div>
@@ -187,7 +231,7 @@ export default function Home() {
             {regions.map((region) => (
               <InfoCard
                 key={region.id}
-                tag={`${region.tag} · ${region.levelRange}`}
+                tag={`${region.tag} / ${region.levelRange}`}
                 title={region.name}
                 description={region.description}
                 href="/regions"
@@ -368,3 +412,4 @@ export default function Home() {
     </>
   );
 }
+

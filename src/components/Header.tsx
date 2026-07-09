@@ -17,6 +17,7 @@ const navLinks = [
       { label: 'Wiki', href: '/wiki' },
       { label: 'Commands', href: '/commands' },
       { label: 'Badges', href: '/badges' },
+      { label: 'Achievements', href: '/achievements' },
       { label: 'FAQ', href: '/faq' },
     ],
   },

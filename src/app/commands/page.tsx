@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import SectionTitle from "@/components/SectionTitle";
 
 export const metadata: Metadata = {
-  title: "Guts and Blackpowder Commands — Full Admin & Private Server Command List",
-  description: "Every Guts and Blackpowder command in one place: admin commands, zombie spawns, class changes, nation switches, and hidden easter egg commands. Updated for v0.17.9.",
+  title: "Guts and Blackpowder Commands: G&B / GNB Admin & Private Server Commands",
+  description: "Every Guts and Blackpowder command in one place: G&B commands, GNB commands, admin commands, private server commands, zombie spawn commands, class commands, map commands, and nation commands.",
 };
 
 // Command data organized by category
@@ -59,8 +59,8 @@ const zombieSpawnCommands = [
   { command: "/summon zapper [amount]", zombie: "Zapper", shorthand: "zap" },
   { command: "/summon igniter [amount]", zombie: "Igniter", shorthand: "ig" },
   { command: "/summon cuirassier [amount]", zombie: "Cuirassier Zombie", shorthand: "cui" },
-  { command: "/spawn [type] [amount]", zombie: "Same as /summon", shorthand: "—" },
-  { command: "/togglez", zombie: "Toggle zombie spawning on/off", shorthand: "—" },
+  { command: "/spawn [type] [amount]", zombie: "Same as /summon", shorthand: "-" },
+  { command: "/togglez", zombie: "Toggle zombie spawning on/off", shorthand: "-" },
 ];
 
 const gameplayCommands = [
@@ -97,8 +97,8 @@ const utilityCommands = [
 ];
 
 const easterEggCommands = [
-  { command: "/arthur [user]", effect: "Transform into Arthur Morgan (Red Dead Redemption 2)", badge: "Evening Redness — must be used before any zombie is killed in the round" },
-  { command: "/marston [user]", effect: "Transform into John Marston (Red Dead Redemption)", badge: "Evening Redness — same restriction as /arthur" },
+  { command: "/arthur [user]", effect: "Transform into Arthur Morgan (Red Dead Redemption 2)", badge: "Evening Redness - must be used before any zombie is killed in the round" },
+  { command: "/marston [user]", effect: "Transform into John Marston (Red Dead Redemption)", badge: "Evening Redness - same restriction as /arthur" },
   { command: "/krisface [user]", effect: "Change a player's face to \":3\" expression", badge: "None" },
 ];
 
@@ -119,10 +119,10 @@ export default function CommandsPage() {
         <div className="absolute inset-0 bg-gradient-to-b from-[#d4af6a]/5 via-transparent to-transparent" />
         <div className="relative mx-auto max-w-4xl px-4 py-24 text-center">
           <h1 className="font-serif text-5xl md:text-6xl lg:text-7xl leading-tight tracking-tight text-[#f0ece4]">
-            Guts and Blackpowder Commands — Complete List (v0.17.9)
+            Guts and Blackpowder Commands
           </h1>
           <p className="mt-6 text-lg md:text-xl text-[#8a8884] max-w-2xl mx-auto leading-relaxed">
-            Every admin command, zombie spawn, class change, nation switch, and hidden easter egg command in one place
+            Guts and Blackpowder commands, G&B commands, and GNB commands for private server commands, admin commands, zombie spawn commands, class commands, maps, nations, and server gameplay controls.
           </p>
           <div className="mt-8 mx-auto h-0.5 w-20 rounded-full bg-[#d4af6a]" />
         </div>
@@ -321,7 +321,7 @@ export default function CommandsPage() {
               { q: "Can commands be used on console / mobile?", a: "Yes. On console, press the left D-pad button to open the Command Bar. On mobile, use the on-screen chat button and type the command normally." },
               { q: "Why isn't my command working?", a: "Check that you are the private server owner, that you typed the / prefix, and that the player name or @ argument is correct. Some commands like /arthur have timing restrictions." },
               { q: "What's the fastest way to get Francs using commands?", a: "Use /hardcore to double all Franc rewards, then play Endless mode to farm waves efficiently. See our Francs guide for more strategies." },
-              { q: "Can I spawn the Headless Horseman or Dracula with commands?", a: "No — these boss enemies are tied to the Sleepy Hollow and Transylvania seasonal maps and cannot be manually spawned." },
+              { q: "Can I spawn the Headless Horseman or Dracula with commands?", a: "No - these boss enemies are tied to the Sleepy Hollow and Transylvania seasonal maps and cannot be manually spawned." },
             ].map((item, i) => (
               <div key={i} className="rounded-lg p-5" style={{ backgroundColor: "rgba(255,255,255,0.03)", border: "1px solid #2a2826", borderLeft: "3px solid #d4af6a" }}>
                 <h3 className="font-serif text-base text-[#d4af6a] mb-2">{item.q}</h3>

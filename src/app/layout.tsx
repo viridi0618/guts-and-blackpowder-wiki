@@ -12,15 +12,15 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: {
-    default: "Guts and Blackpowder Wiki — PvE Zombie Survival Guide, Maps & Weapons",
+    default: "Guts and Blackpowder Wiki: Commands, Maps, Badges & Guides",
     template: "%s | Guts and Blackpowder Wiki",
   },
   description:
-    "The complete Guts and Blackpowder wiki. Maps, weapons, enemies, classes, badges, commands and more for the Roblox PvE zombie survival shooter.",
+    "Find Guts and Blackpowder commands, maps, badges, achievements, enemies, weapons, classes, and beginner guides for Roblox G&B.",
   openGraph: {
-    title: "Guts and Blackpowder Wiki — PvE Zombie Survival Guide",
+    title: "Guts and Blackpowder Wiki: Commands, Maps, Badges & Guides",
     description:
-      "The complete Guts and Blackpowder wiki. Maps, weapons, enemies, classes, badges, commands and more for the Roblox PvE zombie survival shooter.",
+      "Find Guts and Blackpowder commands, maps, badges, achievements, enemies, weapons, classes, and beginner guides for Roblox G&B.",
     url: "https://gutsandblackpowder.wiki",
     type: "website",
     locale: "en_US",
@@ -33,9 +33,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Guts and Blackpowder Wiki",
+    title: "Guts and Blackpowder Wiki: Commands, Maps, Badges & Guides",
     description:
-      "PvE zombie survival guide with maps, weapons, enemies, classes, and more.",
+      "Find Guts and Blackpowder commands, maps, badges, achievements, enemies, weapons, classes, and beginner guides for Roblox G&B.",
     images: ["https://gutsandblackpowder.wiki/og-image.png"],
   },
 };
