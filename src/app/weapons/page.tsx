@@ -1,10 +1,10 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import SectionTitle from "@/components/SectionTitle";
 import { weaponTypes, classWeaponMap, recommendedWeapons } from "@/lib/data";
 
 export const metadata: Metadata = {
-  title: "Weapons Guide",
-  description: "Guts and Blackpowder comprehensive weapons guide — muskets, rifles, sabres, pistols, and more",
+  title: "Guts and Blackpowder Weapons: Muskets, Sabres, Pistols & Best Picks",
+  description: "Guts and Blackpowder weapons guide covering muskets, rifles, sabres, pistols, class loadouts, and best weapon picks for Roblox G&B.",
 };
 
 export default function WeaponsPage() {
@@ -299,3 +299,5 @@ export default function WeaponsPage() {
     </div>
   );
 }
+
+

@@ -1,78 +1,78 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import SectionTitle from "@/components/SectionTitle";
 import InfoCard from "@/components/InfoCard";
 
 export const metadata: Metadata = {
-  title: "Enemies Guide",
-  description: "Complete enemy guide for Guts and Blackpowder — regular zombies, special infected, boss enemies, and infection mechanics explained",
+  title: "Guts and Blackpowder Enemies: Zombies, Cuirassier, Bomber & Runner Guide",
+  description: "Complete enemy guide for Guts and Blackpowder, including zombies, special infected, boss enemies, and infection mechanics explained.",
 };
 
 // Regular zombie types
 const regularEnemies = [
   {
     name: "Shambler",
-    icon: "🧟",
+    icon: "SH",
     type: "Common",
     danger: "Low",
     spawn: "All Maps",
     health: "Low",
     speed: "Slow",
-    description: "The most common enemy type. Slow-moving standard undead that walk directly toward players and attack with basic melee swipes. Appears in large numbers as horde filler. Individually weak but dangerous in groups.",
+    description: "Complete enemy guide for Guts and Blackpowder, including zombies, special infected, boss enemies, and infection mechanics explained.",
     counters: "One musket shot or melee hit kills them. Headshots save ammo. Bayonet charge clears clusters efficiently.",
   },
   {
     name: "Runner",
-    icon: "💨",
+    icon: "RN",
     type: "Common",
     danger: "Medium",
     spawn: "All Maps (Wave 7+ Endless)",
     health: "Low",
     speed: "Very Fast",
-    description: "Fast-moving infected that sprint at players with alarming speed. Able to quickly close the distance if not dealt with promptly. Priority target in any engagement — a pack of Runners can overwhelm even experienced teams.",
+    description: "Complete enemy guide for Guts and Blackpowder, including zombies, special infected, boss enemies, and infection mechanics explained.",
     counters: "Kill before they reach the line. Requires quick aiming. Officer Charge can knock back approaching Runners. Coordinated volleys are most effective.",
   },
   {
     name: "Bomber",
-    icon: "💥",
+    icon: "BM",
     type: "Special",
     danger: "High",
     spawn: "All Maps",
     health: "Medium",
     speed: "Slow",
-    description: "Bloated undead that explode when killed or when they reach close range. Deal massive area damage and can instantly kill nearby players. Their distinctive hissing sound gives away their presence, but in crowded battles they can be easily missed.",
+    description: "Complete enemy guide for Guts and Blackpowder, including zombies, special infected, boss enemies, and infection mechanics explained.",
     counters: "Shoot from maximum range. Officer Charge can detonate them safely. Never let one reach melee range in a crowd. Call out Bomber locations.",
   },
   {
     name: "Zapper",
-    icon: "⚡",
+    icon: "ZP",
     type: "Special",
     danger: "High",
     spawn: "All Maps",
     health: "Medium",
     speed: "Medium",
-    description: "Electrical undead that discharge lightning in close range. Stun players on contact, leaving them vulnerable to surrounding enemies. Faintly glow with an electrical aura, making them identifiable in the dark.",
-    counters: "Priority target — kill before they reach the line. Ranged attacks are safest. If stunned, teammates must clear surrounding enemies. Headshots eliminate fastest.",
+    description: "Complete enemy guide for Guts and Blackpowder, including zombies, special infected, boss enemies, and infection mechanics explained.",
+    counters: "Priority target 鈥?kill before they reach the line. Ranged attacks are safest. If stunned, teammates must clear surrounding enemies. Headshots eliminate fastest.",
   },
   {
     name: "Igniter",
-    icon: "🔥",
+    icon: "IG",
     type: "Special",
     danger: "Very High",
     spawn: "All Maps (Wave 20+ Endless)",
     health: "Medium",
     speed: "Medium",
-    description: "Flaming undead that set players on fire on contact. Fire spreads from burning players to nearby teammates, creating chain reactions. Deal continuous damage over time. They burn brightly and leave a trail of fire.",
-    counters: "Absolute top priority — kill immediately on sight. Do not cluster near burning players. Spread out to prevent chain fire. Surgeon cannot heal through fire damage effectively.",
+    description: "Complete enemy guide for Guts and Blackpowder, including zombies, special infected, boss enemies, and infection mechanics explained.",
+    counters: "Absolute top priority 鈥?kill immediately on sight. Do not cluster near burning players. Spread out to prevent chain fire. Surgeon cannot heal through fire damage effectively.",
   },
   {
     name: "Cuirassier Zombie",
-    icon: "🛡️",
+    icon: "CU",
     type: "Elite",
     danger: "Extreme",
     spawn: "All Maps (Wave 16+ Endless)",
     health: "Very High",
     speed: "Medium",
-    description: "Armored undead cavalry wearing steel breastplate. Heavy armor absorbs multiple shots. Weak point is the exposed head. Appear from wave 16 in Endless mode. Require concentrated fire and can break well-defended positions.",
+    description: "Complete enemy guide for Guts and Blackpowder, including zombies, special infected, boss enemies, and infection mechanics explained.",
     counters: "Only headshots deal meaningful damage. Requires coordinated team fire. Sapper axe can damage through armor slowly. Spread out to avoid being trampled. Sapper barricades buy time.",
   },
 ];
@@ -81,11 +81,11 @@ const regularEnemies = [
 const bossEnemies = [
   {
     name: "Headless Horseman",
-    icon: "👻",
+    icon: "HH",
     type: "Boss",
     location: "Sleepy Hollow (Seasonal)",
     health: "Extremely High",
-    description: "Halloween seasonal boss. Rides horseback, hurls flaming jack-o'-lanterns, charges across the arena, and summons Headless Ones. Requires coordinated dodging and timing. The Horseman's charge attack covers the entire arena and must be dodged.",
+    description: "Complete enemy guide for Guts and Blackpowder, including zombies, special infected, boss enemies, and infection mechanics explained.",
     phases: [
       "Phase 1: Charges on horseback, throws flaming projectiles",
       "Phase 2: Summons Headless Ones while continuing to charge",
@@ -94,11 +94,11 @@ const bossEnemies = [
   },
   {
     name: "Dracula",
-    icon: "🧛",
+    icon: "DR",
     type: "Boss",
     location: "Transylvania (Seasonal)",
     health: "Extremely High",
-    description: "Halloween seasonal boss. Multi-phase fight in Dracula's castle. Uses dark magic, teleports around the arena, summons Vampires, and has devastating area attacks. Widely considered the most difficult encounter in the game.",
+    description: "Complete enemy guide for Guts and Blackpowder, including zombies, special infected, boss enemies, and infection mechanics explained.",
     phases: [
       "Phase 1: Dark magic bolts, teleport attacks in the Grand Hall",
       "Phase 2: Summons Vampires, uses area-denial magic",
@@ -118,7 +118,7 @@ export default function EnemiesPage() {
             Enemies Guide
           </h1>
           <p className="mt-6 text-lg md:text-xl text-[#8a8884] max-w-2xl mx-auto leading-relaxed">
-            Complete enemy bestiary — regular zombies, special infected, elite enemies, and boss encounters
+            Complete enemy bestiary 鈥?regular zombies, special infected, elite enemies, and boss encounters
           </p>
           <div className="mt-8 mx-auto h-0.5 w-20 rounded-full bg-[#d4af6a]" />
         </div>
@@ -367,7 +367,7 @@ export default function EnemiesPage() {
                 },
                 {
                   title: "Curing Infection",
-                  desc: "Only the Surgeon can cure infection using Medical Supplies. If no Surgeon is available or you cannot reach one in time, you will turn. Turning is permanent for that life — you cannot be revived afterward.",
+                  desc: "Only the Surgeon can cure infection using Medical Supplies. If no Surgeon is available or you cannot reach one in time, you will turn. Turning is permanent for that life 鈥?you cannot be revived afterward.",
                 },
                 {
                   title: "Special Map Mechanics",
@@ -378,7 +378,7 @@ export default function EnemiesPage() {
                   <span className="text-[#d4af6a] mt-1.5 flex-shrink-0">&#8226;</span>
                   <div>
                     <span className="text-[#d4af6a] font-medium">{item.title}</span>
-                    <span className="text-[#8a8884]"> — {item.desc}</span>
+                    <span className="text-[#8a8884]"> - {item.desc}</span>
                   </div>
                 </div>
               ))}
@@ -402,3 +402,5 @@ export default function EnemiesPage() {
     </div>
   );
 }
+
+

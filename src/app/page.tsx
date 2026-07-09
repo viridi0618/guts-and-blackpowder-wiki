@@ -32,8 +32,8 @@ export default function Home() {
     { label: "Achievements", href: "/achievements" },
     { label: "Beginner Guide", href: "/beginner-guide" },
     { label: "Barry Guide", href: "/guides/barry" },
-    { label: "Cuirassier Guide", href: "/enemies" },
-    { label: "How to Use Musician", href: "/classes" },
+    { label: "Cuirassier Guide", href: "/enemies/cuirassier" },
+    { label: "How to Use Musician", href: "/guides/how-to-use-musician" },
     { label: "How to Get Francs", href: "/guides/francs" },
   ];
 

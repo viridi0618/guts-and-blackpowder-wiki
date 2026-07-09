@@ -1,10 +1,10 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import SectionTitle from "@/components/SectionTitle";
 import InfoCard from "@/components/InfoCard";
 
 export const metadata: Metadata = {
-  title: "Maps",
-  description: "Complete list of all 15 maps in Guts and Blackpowder — Objective, Endless, Holdout, and Seasonal maps with descriptions",
+  title: "Guts and Blackpowder Maps: Objective, Endless, Holdout & Boss Maps",
+  description: "Complete list of all 15 maps in Guts and Blackpowder, including Objective, Endless, Holdout, and Boss maps with descriptions.",
 };
 
 // Map data organized by mode
@@ -12,7 +12,7 @@ const mapModes = [
   {
     mode: "Objective",
     tag: "OBJECTIVE",
-    description: "Complete mission objectives and escape. 9 maps available.",
+    description: "Complete list of all 15 maps in Guts and Blackpowder, including Objective, Endless, Holdout, and Boss maps with descriptions.",
     color: "#22c55e",
     maps: [
       { name: "Vardohus Fortress", players: "Up to 12", description: "Snow-covered Norwegian fortress. Light signal fires and escape by boat through tight corridors." },
@@ -29,7 +29,7 @@ const mapModes = [
   {
     mode: "Endless",
     tag: "ENDLESS",
-    description: "Survive infinite waves of increasing difficulty. 6 maps available.",
+    description: "Complete list of all 15 maps in Guts and Blackpowder, including Objective, Endless, Holdout, and Boss maps with descriptions.",
     color: "#f97316",
     maps: [
       { name: "Hougoumont", players: "Up to 12", description: "Waterloo farmhouse. Walled compound, large courtyard, barn interiors." },
@@ -43,7 +43,7 @@ const mapModes = [
   {
     mode: "Holdout",
     tag: "HOLDOUT",
-    description: "Defend a fixed position through waves. 2 maps available.",
+    description: "Complete list of all 15 maps in Guts and Blackpowder, including Objective, Endless, Holdout, and Boss maps with descriptions.",
     color: "#3b82f6",
     maps: [
       { name: "Berezina", players: "Up to 12", description: "Frozen river crossing. Build a bridge to escape with frostbite mechanic." },
@@ -53,7 +53,7 @@ const mapModes = [
   {
     mode: "Seasonal / Boss Event",
     tag: "SEASONAL",
-    description: "Limited-time boss encounters during seasonal events. 3 maps available.",
+    description: "Complete list of all 15 maps in Guts and Blackpowder, including Objective, Endless, Holdout, and Boss maps with descriptions.",
     color: "#ef4444",
     maps: [
       { name: "Road to Sleepy Hollow", players: "Up to 12", description: "Approach map leading to the Sleepy Hollow boss arena. Forest path with enemies." },
@@ -74,7 +74,7 @@ export default function MapsPage() {
             Maps
           </h1>
           <p className="mt-6 text-lg md:text-xl text-[#8a8884] max-w-2xl mx-auto leading-relaxed">
-            All 15 maps in Guts and Blackpowder — from Objective missions to Endless survival, Holdout defenses, and Seasonal boss events
+            All 15 maps in Guts and Blackpowder 鈥?from Objective missions to Endless survival, Holdout defenses, and Seasonal boss events
           </p>
           <div className="mt-8 mx-auto h-0.5 w-20 rounded-full bg-[#d4af6a]" />
         </div>
@@ -86,7 +86,7 @@ export default function MapsPage() {
           <SectionTitle
             tag="Game Modes"
             title="Maps by Mode"
-            subtitle="15 maps spread across 4 game modes — each offering unique challenges and objectives"
+            subtitle="15 maps spread across 4 game modes 鈥?each offering unique challenges and objectives"
             align="center"
           />
           <div className="mt-8 grid gap-4 md:grid-cols-2 lg:grid-cols-4">
@@ -216,3 +216,5 @@ export default function MapsPage() {
     </div>
   );
 }
+
+
