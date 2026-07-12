@@ -77,7 +77,7 @@ export default function MapsPage() {
             Maps
           </h1>
           <p className="mt-6 text-lg md:text-xl text-[#8a8884] max-w-2xl mx-auto leading-relaxed">
-            All 15 maps in Guts and Blackpowder 鈥?from Objective missions to Endless survival, Holdout defenses, and Seasonal boss events
+            All 15 maps in Guts and Blackpowder — from Objective missions to Endless survival, Holdout defenses, and Seasonal boss events
           </p>
           <div className="mt-8 mx-auto h-0.5 w-20 rounded-full bg-[#d4af6a]" />
         </div>
@@ -89,7 +89,7 @@ export default function MapsPage() {
           <SectionTitle
             tag="Game Modes"
             title="Maps by Mode"
-            subtitle="15 maps spread across 4 game modes 鈥?each offering unique challenges and objectives"
+            subtitle="15 maps spread across 4 game modes — each offering unique challenges and objectives"
             align="center"
           />
           <div className="mt-8 grid gap-4 md:grid-cols-2 lg:grid-cols-4">
