@@ -16,9 +16,12 @@ import {
 } from "@/lib/data";
 
 export const metadata: Metadata = {
-  title: "Guts and Blackpowder Wiki: Commands, Maps, Badges & Guides",
+  title: "Guts and Blackpowder Wiki — Commands, Maps, Badges & Guides",
   description:
     "Find Guts and Blackpowder commands, maps, badges, achievements, enemies, weapons, classes, and beginner guides for Roblox G&B.",
+  alternates: {
+    canonical: "https://gutsandblackpowder.wiki",
+  },
 };
 
 export default function Home() {
@@ -39,12 +42,15 @@ export default function Home() {
 
   const jsonLd = {
     "@context": "https://schema.org",
-    "@type": "WebApplication",
+    "@type": "WebSite",
     name: "Guts and Blackpowder Wiki",
+    url: "https://gutsandblackpowder.wiki",
     description:
       "The complete Guts and Blackpowder wiki. Maps, weapons, enemies, classes, badges, commands and more for the Roblox PvE zombie survival shooter.",
-    applicationCategory: "GameApplication",
-    operatingSystem: "Web",
+    publisher: {
+      "@type": "Organization",
+      name: "Guts and Blackpowder Wiki",
+    },
   };
 
   return (
@@ -234,7 +240,7 @@ export default function Home() {
                 tag={`${region.tag} / ${region.levelRange}`}
                 title={region.name}
                 description={region.description}
-                href="/regions"
+                href="/maps"
               />
             ))}
           </div>

@@ -4,6 +4,9 @@ import SectionTitle from "@/components/SectionTitle";
 export const metadata: Metadata = {
   title: "Guts and Blackpowder Beginner Guide — How to Survive Your First Match",
   description: "Complete beginner's guide for Guts and Blackpowder — basic controls, combat tips, class recommendations, and battlefield survival strategies for new players.",
+  alternates: {
+    canonical: "https://gutsandblackpowder.wiki/beginner-guide",
+  },
 };
 
 export default function BeginnerGuidePage() {

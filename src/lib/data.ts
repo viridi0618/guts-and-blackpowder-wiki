@@ -378,7 +378,7 @@ export const journeys: JourneyCard[] = [
     icon: "📖",
     title: "Game Info",
     description: "Learn about Guts and Blackpowder, its development team, and Roblox platform details",
-    href: "/about/",
+    href: "/wiki",
   },
   {
     icon: "🏅",

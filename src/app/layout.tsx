@@ -10,22 +10,25 @@ const inter = Inter({
   display: "swap",
 });
 
+const SITE_NAME = "Guts and Blackpowder Wiki";
+const SITE_URL = "https://gutsandblackpowder.wiki";
+const OG_IMAGE = `${SITE_URL}/og-image.png`;
+const DEFAULT_TITLE = "Guts and Blackpowder Wiki — Commands, Maps, Badges & Guides";
+const DEFAULT_DESC =
+  "Find Guts and Blackpowder commands, maps, badges, achievements, enemies, weapons, classes, and beginner guides for Roblox G&B.";
+
 export const metadata: Metadata = {
+  metadataBase: new URL(SITE_URL),
   title: {
-    default: "Guts and Blackpowder Wiki: Commands, Maps, Badges & Guides",
-    template: "%s | Guts and Blackpowder Wiki",
+    default: DEFAULT_TITLE,
+    template: `%s | ${SITE_NAME}`,
   },
-  description:
-    "Find Guts and Blackpowder commands, maps, badges, achievements, enemies, weapons, classes, and beginner guides for Roblox G&B.",
+  description: DEFAULT_DESC,
   openGraph: {
-    title: "Guts and Blackpowder Wiki: Commands, Maps, Badges & Guides",
-    description:
-      "Find Guts and Blackpowder commands, maps, badges, achievements, enemies, weapons, classes, and beginner guides for Roblox G&B.",
-    url: "https://gutsandblackpowder.wiki",
     type: "website",
     locale: "en_US",
-    siteName: "Guts and Blackpowder Wiki",
-    images: [{ url: "https://gutsandblackpowder.wiki/og-image.png", width: 288, height: 288 }],
+    siteName: SITE_NAME,
+    images: [{ url: OG_IMAGE, width: 1200, height: 630 }],
   },
   robots: {
     index: true,
@@ -33,10 +36,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Guts and Blackpowder Wiki: Commands, Maps, Badges & Guides",
-    description:
-      "Find Guts and Blackpowder commands, maps, badges, achievements, enemies, weapons, classes, and beginner guides for Roblox G&B.",
-    images: ["https://gutsandblackpowder.wiki/og-image.png"],
+    images: [OG_IMAGE],
   },
 };
 

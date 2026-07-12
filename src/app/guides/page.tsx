@@ -7,6 +7,9 @@ export const metadata: Metadata = {
   title: "All Guides",
   description:
     "Guts and Blackpowder complete guides collection — weapons, enemies, maps, commands, badges, FAQ, and more",
+  alternates: {
+    canonical: "https://gutsandblackpowder.wiki/guides",
+  },
 };
 
 // Category grouping for all guides

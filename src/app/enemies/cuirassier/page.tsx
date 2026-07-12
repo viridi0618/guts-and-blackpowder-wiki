@@ -6,6 +6,9 @@ export const metadata: Metadata = {
   title: "Guts and Blackpowder Cuirassier Guide: How to Beat Cuirassier Zombies",
   description:
     "Learn how to fight Cuirassier Zombies in Guts and Blackpowder, including weak points, Endless wave timing, counters, and team tips for Roblox G&B.",
+  alternates: {
+    canonical: "https://gutsandblackpowder.wiki/enemies/cuirassier",
+  },
 };
 
 const tips = [

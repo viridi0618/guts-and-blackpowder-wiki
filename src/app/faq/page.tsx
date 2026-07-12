@@ -6,6 +6,9 @@ export const metadata: Metadata = {
   title: "Frequently Asked Questions",
   description:
     "Guts and Blackpowder FAQ — game info, platforms, modes, weapons, classes, Francs, and more answered",
+  alternates: {
+    canonical: "https://gutsandblackpowder.wiki/faq",
+  },
 };
 
 export default function FAQPage() {

@@ -6,6 +6,9 @@ export const metadata: Metadata = {
   title: "Guts and Blackpowder Private Server Commands",
   description:
     "List of Guts and Blackpowder private server commands, including class, map, nation, zombie spawn, hardcore, and admin-style commands for Roblox G&B.",
+  alternates: {
+    canonical: "https://gutsandblackpowder.wiki/commands/private-server-commands",
+  },
 };
 
 const commandGroups = [

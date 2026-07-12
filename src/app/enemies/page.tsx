@@ -5,6 +5,9 @@ import InfoCard from "@/components/InfoCard";
 export const metadata: Metadata = {
   title: "Guts and Blackpowder Enemies: Zombies, Cuirassier, Bomber & Runner Guide",
   description: "Complete enemy guide for Guts and Blackpowder, including zombies, special infected, boss enemies, and infection mechanics explained.",
+  alternates: {
+    canonical: "https://gutsandblackpowder.wiki/enemies",
+  },
 };
 
 // Regular zombie types
