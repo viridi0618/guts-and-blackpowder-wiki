@@ -78,9 +78,14 @@ export default function Footer() {
               <p className="text-sm text-[#8a8884] leading-relaxed">
                 The complete community wiki for Guts and Blackpowder — a Roblox PvE zombie survival game set during the Napoleonic Wars.
               </p>
-              <p className="text-xs text-[#8a8884] pt-2">
-                &copy; {new Date().getFullYear()} G&B Wiki. Not affiliated with Roblox or Fuze Studios.
-              </p>
+              <div className="pt-2 space-y-1">
+                <p className="text-xs text-[#8a8884]">More game guides:</p>
+                <a href="https://stealabrainrotguide.wiki" target="_blank" rel="noopener" className="block text-xs text-[#8a8884] hover:text-[#f0ece4] transition">Steal a Brainrot Wiki</a>
+                <a href="https://moonlightpeaksguide.wiki" target="_blank" rel="noopener" className="block text-xs text-[#8a8884] hover:text-[#f0ece4] transition">Moonlight Peaks Guide</a>
+                <p className="text-xs text-[#8a8884] pt-1">
+                  &copy; {new Date().getFullYear()} G&B Wiki. Not affiliated with Roblox or Fuze Studios.
+                </p>
+              </div>
             </div>
           </div>
         </div>
