@@ -3,7 +3,7 @@ import Link from "next/link";
 import SectionTitle from "@/components/SectionTitle";
 
 export const metadata: Metadata = {
-  title: "How to Use Musician in Guts and Blackpowder",
+  title: "How to Use Musician Class — Guts & Blackpowder Guide | G&B Wiki",
   description:
     "Learn how to use the Musician class in Guts and Blackpowder, including team buffs, positioning, survival tips, and beginner advice for Roblox G&B.",
   alternates: {

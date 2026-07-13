@@ -3,7 +3,7 @@ import SectionTitle from "@/components/SectionTitle";
 import InfoCard from "@/components/InfoCard";
 
 export const metadata: Metadata = {
-  title: "Guts and Blackpowder Enemies: Zombies, Cuirassier, Bomber & Runner Guide",
+  title: "Guts & Blackpowder Enemies — All Zombie Types & Infection Guide | G&B Wiki",
   description: "Complete enemy guide for Guts and Blackpowder, including zombies, special infected, boss enemies, and infection mechanics explained.",
   alternates: {
     canonical: "https://gutsandblackpowder.wiki/enemies",

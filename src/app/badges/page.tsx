@@ -3,7 +3,7 @@ import SectionTitle from "@/components/SectionTitle";
 import InfoCard from "@/components/InfoCard";
 
 export const metadata: Metadata = {
-  title: "Guts and Blackpowder Badges & Secret Achievements — How to Get Soldier's Grace, Old Guard, Untouchable",
+  title: "Guts & Blackpowder Badges — All Secret Achievements & How to Unlock | G&B Wiki",
   description: "Complete list of all 31 badges and hidden secret achievements in Guts and Blackpowder. Covers Soldier's Grace, Soldats de ma Vieille Garde (Old Guard), Untouchable, Vos Enterrement, and more with unlock conditions.",
   alternates: {
     canonical: "https://gutsandblackpowder.wiki/badges",

@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import SectionTitle from "@/components/SectionTitle";
 
 export const metadata: Metadata = {
-  title: "Guts and Blackpowder Classes Guide — Best Class for Each Map",
+  title: "Guts & Blackpowder Classes Guide — All 7 Roles & Best Picks | G&B Wiki",
   description: "All 7 classes in Guts and Blackpowder explained in detail — Line Infantry, Officer, Seaman, Musician, Sapper, Surgeon, Chaplain. Roles, abilities, and team synergy.",
   alternates: {
     canonical: "https://gutsandblackpowder.wiki/classes",

@@ -3,7 +3,7 @@ import SectionTitle from "@/components/SectionTitle";
 import InfoCard from "@/components/InfoCard";
 
 export const metadata: Metadata = {
-  title: "How to Get Francs in Guts and Blackpowder — Best Farming Methods & Complete Currency Guide",
+  title: "How to Get Francs Fast — Guts & Blackpowder Currency Guide | G&B Wiki",
   description: "Complete Francs guide for Guts and Blackpowder — how to earn Francs fast, best farming methods (Hardcore Endless, Speedrun Objectives, Holdout), and what to spend them on.",
   alternates: {
     canonical: "https://gutsandblackpowder.wiki/guides/francs",

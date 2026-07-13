@@ -3,7 +3,7 @@ import Link from "next/link";
 import SectionTitle from "@/components/SectionTitle";
 
 export const metadata: Metadata = {
-  title: "Guts and Blackpowder Achievements: Badges & How to Unlock Them",
+  title: "Guts & Blackpowder Achievements — How to Unlock Every Badge | G&B Wiki",
   description:
     "Learn about Guts and Blackpowder achievements, Roblox badges, unlock requirements, and badge guides for G&B players.",
   alternates: {

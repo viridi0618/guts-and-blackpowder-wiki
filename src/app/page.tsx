@@ -16,7 +16,7 @@ import {
 } from "@/lib/data";
 
 export const metadata: Metadata = {
-  title: "Guts and Blackpowder Wiki — Commands, Maps, Badges & Guides",
+  title: "Guts & Blackpowder Wiki — PvE Zombie Survival Guide | G&B Wiki",
   description:
     "Find Guts and Blackpowder commands, maps, badges, achievements, enemies, weapons, classes, and beginner guides for Roblox G&B.",
   alternates: {
