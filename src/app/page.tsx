@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import Link from "next/link";
 import SectionTitle from "@/components/SectionTitle";
 import InfoCard from "@/components/InfoCard";
@@ -16,9 +16,9 @@ import {
 } from "@/lib/data";
 
 export const metadata: Metadata = {
-  title: "Guts & Blackpowder Wiki — PvE Zombie Survival Guide | G&B Wiki",
+  title: "Guts and Blackpowder Wiki: Commands, Maps, Badges & Private Servers",
   description:
-    "Find Guts and Blackpowder commands, maps, badges, achievements, enemies, weapons, classes, and beginner guides for Roblox G&B.",
+    "Guts and Blackpowder wiki for Roblox G&B commands, private server commands, maps, badges, achievements, weapons, enemies, classes, and beginner guides.",
   alternates: {
     canonical: "https://gutsandblackpowder.wiki",
   },
@@ -26,18 +26,18 @@ export const metadata: Metadata = {
 
 export default function Home() {
   const popularGuides = [
-    { label: "Commands", href: "/commands" },
-    { label: "Private Server Commands", href: "/commands/private-server-commands" },
-    { label: "Maps", href: "/maps" },
-    { label: "Weapons", href: "/weapons" },
-    { label: "Enemies", href: "/enemies" },
-    { label: "Badges", href: "/badges" },
-    { label: "Achievements", href: "/achievements" },
+    { label: "Guts and Blackpowder Commands List", href: "/commands" },
+    { label: "G&B Private Server Commands", href: "/commands/private-server-commands" },
+    { label: "Guts and Blackpowder Achievements Guide", href: "/achievements" },
+    { label: "Guts and Blackpowder Badges Guide", href: "/badges" },
+    { label: "Guts and Blackpowder Maps Guide", href: "/maps" },
+    { label: "Guts and Blackpowder Enemies Guide", href: "/enemies" },
+    { label: "Guts and Blackpowder Classes Guide", href: "/classes" },
     { label: "Beginner Guide", href: "/beginner-guide" },
     { label: "Barry Guide", href: "/guides/barry" },
     { label: "Cuirassier Guide", href: "/enemies/cuirassier" },
     { label: "How to Use Musician", href: "/guides/how-to-use-musician" },
-    { label: "How to Get Francs", href: "/guides/francs" },
+    { label: "How to Get Francs in Guts and Blackpowder", href: "/guides/how-to-get-francs" },
   ];
 
   const jsonLd = {

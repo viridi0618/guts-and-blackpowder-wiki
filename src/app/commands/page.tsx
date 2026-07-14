@@ -1,9 +1,10 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import SectionTitle from "@/components/SectionTitle";
 
 export const metadata: Metadata = {
-  title: "Guts & Blackpowder Commands — Admin & Private Server Guide | G&B Wiki",
-  description: "Complete G&B command list: admin, private server, zombie spawn, class, map, and nation commands for Guts and Blackpowder.",
+  title: "Guts and Blackpowder Commands List: Private Server & Admin Commands",
+  description: "Full Guts and Blackpowder commands list for Roblox G&B private servers, admin tools, command syntax, examples, and troubleshooting.",
   alternates: {
     canonical: "https://gutsandblackpowder.wiki/commands",
   },
@@ -127,6 +128,15 @@ export default function CommandsPage() {
           <p className="mt-6 text-lg md:text-xl text-[#8a8884] max-w-2xl mx-auto leading-relaxed">
             Guts and Blackpowder commands, G&B commands, and GNB commands for private server commands, admin commands, zombie spawn commands, class commands, maps, nations, and server gameplay controls.
           </p>
+          <div className="mt-8">
+            <Link
+              href="/commands/private-server-commands"
+              className="inline-block rounded-full px-6 py-3 text-sm font-medium text-[#05030c] transition-all duration-300 hover:brightness-110"
+              style={{ backgroundColor: "#d4af6a" }}
+            >
+              View Private Server Commands
+            </Link>
+          </div>
           <div className="mt-8 mx-auto h-0.5 w-20 rounded-full bg-[#d4af6a]" />
         </div>
       </section>
@@ -156,7 +166,7 @@ export default function CommandsPage() {
           <SectionTitle tag="Syntax" title="Target Arguments (@a / @m / @o)" subtitle="How to target players with commands" align="left" />
           <div className="mt-8 rounded-lg p-6" style={{ backgroundColor: "rgba(255,255,255,0.03)", border: "1px solid #2a2826", borderLeft: "3px solid #d4af6a" }}>
             <p className="text-base leading-relaxed text-[#c8c4bc] mb-4">
-              Most commands require a <code className="text-[#d4af6a] bg-[rgba(212,175,106,0.1)] px-1.5 py-0.5 rounded">[user]</code> target. Instead of typing a player's name, use these shortcuts:
+              Most commands require a <code className="text-[#d4af6a] bg-[rgba(212,175,106,0.1)] px-1.5 py-0.5 rounded">[user]</code> target. Instead of typing a player&apos;s name, use these shortcuts:
             </p>
             <div className="overflow-x-auto rounded-lg border border-[#2a2826] mb-4">
               <table className="w-full border-collapse">
@@ -330,6 +340,45 @@ export default function CommandsPage() {
                 <h3 className="font-serif text-base text-[#d4af6a] mb-2">{item.q}</h3>
                 <p className="text-sm text-[#8a8884]">{item.a}</p>
               </div>
+            ))}
+          </div>
+        </section>
+
+        <section>
+          <SectionTitle tag="Spanish Note" title="Comandos de Guts and Blackpowder" align="left" />
+          <div className="mt-8 rounded-lg p-6" style={{ backgroundColor: "rgba(255,255,255,0.03)", border: "1px solid #2a2826", borderLeft: "3px solid #d4af6a" }}>
+            <p className="text-sm leading-relaxed text-[#c8c4bc] mb-3">
+              La lista anterior cubre comandos de Guts and Blackpowder para servidores privados de G&B.
+            </p>
+            <p className="text-sm leading-relaxed text-[#c8c4bc] mb-3">
+              Tambien incluye comandos de administrador, ejemplos de sintaxis y usos basicos.
+            </p>
+            <p className="text-sm leading-relaxed text-[#c8c4bc] mb-3">
+              Si un comando no funciona, revisa que seas el dueno del servidor privado o que tengas permisos de administrador.
+            </p>
+            <p className="text-sm leading-relaxed text-[#c8c4bc]">
+              Para una version enfocada en servidores privados, visita la guia de <Link href="/commands/private-server-commands" className="text-[#d4af6a] hover:underline">Guts and Blackpowder private server commands</Link>.
+            </p>
+          </div>
+        </section>
+
+        <section>
+          <SectionTitle tag="Related" title="More Command and Progression Guides" align="left" />
+          <div className="mt-8 flex flex-wrap gap-3">
+            {[
+              { label: "Private Server Commands", href: "/commands/private-server-commands" },
+              { label: "How to Get Francs", href: "/guides/how-to-get-francs" },
+              { label: "Achievements Guide", href: "/achievements" },
+              { label: "Classes Guide", href: "/classes" },
+            ].map((link) => (
+              <Link
+                key={link.href}
+                href={link.href}
+                className="rounded-full px-4 py-2 text-sm font-medium text-[#d4af6a] transition-colors hover:bg-[#d4af6a] hover:text-[#05030c]"
+                style={{ border: "1px solid #d4af6a" }}
+              >
+                {link.label}
+              </Link>
             ))}
           </div>
         </section>
