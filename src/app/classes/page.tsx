@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import Link from "next/link";
 import SectionTitle from "@/components/SectionTitle";
 
 export const metadata: Metadata = {
@@ -152,27 +151,6 @@ export default function ClassesPage() {
                   <p className="text-xs text-[#d4af6a]"><strong>Tip:</strong> {cls.tips}</p>
                 </div>
               </div>
-            ))}
-          </div>
-        </section>
-
-        <section>
-          <SectionTitle tag="Support Classes" title="Class-Specific Guides" align="left" />
-          <div className="mt-8 flex flex-wrap gap-3">
-            {[
-              { label: "How to Use Musician", href: "/guides/how-to-use-musician" },
-              { label: "Weapons Guide", href: "/weapons" },
-              { label: "Beginner Guide", href: "/beginner-guide" },
-              { label: "Achievements Guide", href: "/achievements" },
-            ].map((link) => (
-              <Link
-                key={link.href}
-                href={link.href}
-                className="rounded-full px-4 py-2 text-sm font-medium text-[#d4af6a] transition-colors hover:bg-[#d4af6a] hover:text-[#05030c]"
-                style={{ border: "1px solid #d4af6a" }}
-              >
-                {link.label}
-              </Link>
             ))}
           </div>
         </section>

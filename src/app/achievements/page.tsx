@@ -3,9 +3,9 @@ import Link from "next/link";
 import SectionTitle from "@/components/SectionTitle";
 
 export const metadata: Metadata = {
-  title: "Guts and Blackpowder Achievements Guide: Badges, Unlocks & Rewards",
+  title: "Guts & Blackpowder Achievements — How to Unlock Every Badge | G&B Wiki",
   description:
-    "Guts and Blackpowder achievements guide with badges, unlock requirements, rare achievements, and tips for Roblox G&B players.",
+    "Learn about Guts and Blackpowder achievements, Roblox badges, unlock requirements, and badge guides for G&B players.",
   alternates: {
     canonical: "https://gutsandblackpowder.wiki/achievements",
   },
@@ -20,7 +20,7 @@ const achievementTopics = [
   {
     title: "Hidden and Challenge Badges",
     text: "Players often search for achievements like Soldier's Grace, Untouchable, Old Guard, and Vos Enterrement because the unlock requirements are specific.",
-    href: "/badges/untouchable",
+    href: "/badges",
   },
   {
     title: "Barry and Catacombes Badges",
@@ -35,8 +35,7 @@ const achievementTopics = [
 ];
 
 const guideLinks = [
-  { label: "Guts and Blackpowder Badges Guide", href: "/badges" },
-  { label: "Untouchable Badge Guide", href: "/badges/untouchable" },
+  { label: "All Badges", href: "/badges" },
   { label: "Barry Guide", href: "/guides/barry" },
   { label: "Beginner Guide", href: "/beginner-guide" },
   { label: "Classes Guide", href: "/classes" },
@@ -70,7 +69,7 @@ export default function AchievementsPage() {
           />
           <div className="mt-8 rounded-lg p-6" style={{ backgroundColor: "rgba(255,255,255,0.03)", border: "1px solid #2a2826", borderLeft: "3px solid #d4af6a" }}>
             <p className="text-base leading-relaxed text-[#c8c4bc]">
-              Start with the <Link href="/badges" className="text-[#d4af6a] hover:underline">Guts and Blackpowder badges guide</Link> for the full badge list, then use the <Link href="/badges/untouchable" className="text-[#d4af6a] hover:underline">Untouchable badge guide</Link> for one of the most searched hidden achievements.
+              Start with the <Link href="/badges" className="text-[#d4af6a] hover:underline">Guts and Blackpowder badges guide</Link> for the full badge list, then use the related guides below for specific unlock paths.
             </p>
           </div>
         </section>

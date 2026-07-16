@@ -366,7 +366,7 @@ export default function EnemiesPage() {
                 },
                 {
                   title: "Prevention",
-                  desc: "Avoid being hit by maintaining distance, using cover, and staying in formation. The Officer's Charge buff can push enemies back. The Chaplain&apos;s Crucifix creates a safe zone that slows undead approach.",
+                  desc: "Avoid being hit by maintaining distance, using cover, and staying in formation. The Officer's Charge buff can push enemies back. The Chaplain's Crucifix creates a safe zone that slows undead approach.",
                 },
                 {
                   title: "Curing Infection",
@@ -395,7 +395,7 @@ export default function EnemiesPage() {
               }}
             >
               <p className="text-sm text-[#ef4444] font-medium">
-                Tip: Always keep a Surgeon on your team. Without a Surgeon, infection is essentially a death sentence. In Endless mode past wave 20, the Chaplain&apos;s Crucifix becomes essential for creating safe zones against the overwhelming horde.
+                Tip: Always keep a Surgeon on your team. Without a Surgeon, infection is essentially a death sentence. In Endless mode past wave 20, the Chaplain's Crucifix becomes essential for creating safe zones against the overwhelming horde.
               </p>
             </div>
           </div>
@@ -405,4 +405,5 @@ export default function EnemiesPage() {
     </div>
   );
 }
+
 

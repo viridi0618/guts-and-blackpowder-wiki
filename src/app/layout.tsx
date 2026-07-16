@@ -13,21 +13,18 @@ const inter = Inter({
 const SITE_NAME = "Guts and Blackpowder Wiki";
 const SITE_URL = "https://gutsandblackpowder.wiki";
 const OG_IMAGE = `${SITE_URL}/og-image.png`;
-const DEFAULT_TITLE = "Guts and Blackpowder Wiki: Commands, Maps, Badges & Private Servers";
+const DEFAULT_TITLE = "Guts & Blackpowder Wiki — PvE Zombie Survival Guide | G&B Wiki";
 const DEFAULT_DESC =
-  "Guts and Blackpowder wiki for Roblox G&B commands, private server commands, maps, badges, achievements, weapons, enemies, classes, and beginner guides.";
+  "Find Guts and Blackpowder commands, maps, badges, achievements, enemies, weapons, classes, and beginner guides for Roblox G&B.";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
     default: DEFAULT_TITLE,
-    template: "%s | Guts and Blackpowder Wiki",
+    template: "%s",
   },
   description: DEFAULT_DESC,
   openGraph: {
-    title: DEFAULT_TITLE,
-    description: DEFAULT_DESC,
-    url: SITE_URL,
     type: "website",
     locale: "en_US",
     siteName: SITE_NAME,
@@ -39,8 +36,6 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: DEFAULT_TITLE,
-    description: DEFAULT_DESC,
     images: [OG_IMAGE],
   },
 };

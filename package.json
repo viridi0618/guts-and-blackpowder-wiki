@@ -7,10 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
-    "typecheck": "tsc --noEmit",
-    "seo:check": "node scripts/check-seo-english.mjs",
-    "check:seo": "node scripts/check-seo-english.mjs",
-    "check:links": "node scripts/check-links.mjs"
+    "seo:check": "node scripts/check-seo-english.js"
   },
   "dependencies": {
     "lucide-react": "^1.21.0",

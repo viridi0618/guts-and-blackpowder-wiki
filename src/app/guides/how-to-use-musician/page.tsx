@@ -11,49 +11,17 @@ export const metadata: Metadata = {
   },
 };
 
-const steps = [
-  "Stay close to the main group so your Musician support reaches the players doing the fighting.",
-  "Keep moving with the team during objectives instead of playing far behind the line.",
-  "Use your sabre only when enemies get close or a teammate needs immediate help.",
-  "Watch the frontline, Sappers, Surgeons, and Officers because they benefit most from steady support.",
-  "Reposition early when the team rotates, retreats, or pushes through an objective.",
-];
-
-const faqs = [
-  {
-    question: "Is Musician good for beginners in Guts and Blackpowder?",
-    answer: "Yes. Musician is beginner-friendly because it teaches positioning, team awareness, and support play without requiring perfect aim.",
-  },
-  {
-    question: "Should Musician fight on the frontline?",
-    answer: "Usually no. Musician should stay near the group and help with melee only when enemies are close or the line is in danger.",
-  },
-  {
-    question: "What is the biggest Musician mistake?",
-    answer: "The biggest mistake is standing too far away from teammates, which wastes the class's support value.",
-  },
+const musicianTips = [
+  "Stay near teammates so your music buff actually reaches the group.",
+  "Avoid leading the frontline unless the team needs an emergency push.",
+  "Watch Sappers, Surgeons, and Officers because they benefit heavily from steady support.",
+  "Move with the team during objectives instead of holding a buff far behind everyone.",
+  "Swap to weapons only when enemies are close or the line is about to break.",
 ];
 
 export default function HowToUseMusicianPage() {
-  const faqJsonLd = {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    mainEntity: faqs.map((faq) => ({
-      "@type": "Question",
-      name: faq.question,
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: faq.answer,
-      },
-    })),
-  };
-
   return (
     <div className="min-h-screen bg-background text-foreground">
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
-      />
       <section className="relative overflow-hidden border-b border-[#2a2826]">
         <div className="absolute inset-0 bg-gradient-to-b from-[#d4af6a]/5 via-transparent to-transparent" />
         <div className="relative mx-auto max-w-4xl px-4 py-24 text-center">
@@ -61,7 +29,7 @@ export default function HowToUseMusicianPage() {
             How to Use Musician in Guts and Blackpowder
           </h1>
           <p className="mt-6 text-lg md:text-xl text-[#8a8884] max-w-2xl mx-auto leading-relaxed">
-            To use Musician well in Guts and Blackpowder, stay close to your team, keep your support active where players are fighting, and avoid wandering away from the defensive line.
+            Musician is a support class built around team positioning. Your job is to keep useful buffs active while staying close enough to help the line survive.
           </p>
           <div className="mt-8 mx-auto h-0.5 w-20 rounded-full bg-[#d4af6a]" />
         </div>
@@ -70,27 +38,20 @@ export default function HowToUseMusicianPage() {
       <div className="mx-auto max-w-4xl px-4 py-16 space-y-16">
         <section>
           <SectionTitle
-            tag="Step by Step"
-            title="How to Play Musician"
-            subtitle="A practical support routine for objectives, Endless waves, and team pushes."
+            tag="Quick Answer"
+            title="Musician Basics"
+            subtitle="Play near the team, keep the buff where it matters, and do not wander away from the defensive line."
             align="left"
           />
-          <ol className="mt-8 list-decimal list-inside space-y-3 rounded-lg p-6 text-sm leading-relaxed text-[#c8c4bc]" style={{ backgroundColor: "rgba(255,255,255,0.03)", border: "1px solid #2a2826", borderLeft: "3px solid #d4af6a" }}>
-            {steps.map((step) => (
-              <li key={step}>{step}</li>
-            ))}
-          </ol>
-        </section>
-
-        <section>
-          <SectionTitle tag="FAQ" title="Musician FAQ" align="left" />
-          <div className="mt-8 space-y-4">
-            {faqs.map((faq) => (
-              <div key={faq.question} className="rounded-lg p-5" style={{ backgroundColor: "rgba(255,255,255,0.03)", border: "1px solid #2a2826", borderLeft: "3px solid #d4af6a" }}>
-                <h2 className="font-serif text-base text-[#d4af6a] mb-2">{faq.question}</h2>
-                <p className="text-sm leading-relaxed text-[#8a8884]">{faq.answer}</p>
-              </div>
-            ))}
+          <div className="mt-8 rounded-lg p-6" style={{ backgroundColor: "rgba(255,255,255,0.03)", border: "1px solid #2a2826", borderLeft: "3px solid #d4af6a" }}>
+            <ul className="space-y-3">
+              {musicianTips.map((tip) => (
+                <li key={tip} className="flex gap-3 text-sm leading-relaxed text-[#c8c4bc]">
+                  <span className="mt-2 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-[#d4af6a]" />
+                  <span>{tip}</span>
+                </li>
+              ))}
+            </ul>
           </div>
         </section>
 
@@ -102,7 +63,7 @@ export default function HowToUseMusicianPage() {
               { label: "Beginner Guide", href: "/beginner-guide" },
               { label: "Weapons Guide", href: "/weapons" },
               { label: "Enemies Guide", href: "/enemies" },
-              { label: "Commands List", href: "/commands" },
+              { label: "Maps Guide", href: "/maps" },
             ].map((link) => (
               <Link
                 key={link.href}

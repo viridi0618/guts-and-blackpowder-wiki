@@ -3,8 +3,8 @@ import SectionTitle from "@/components/SectionTitle";
 import InfoCard from "@/components/InfoCard";
 
 export const metadata: Metadata = {
-  title: "How to Get Francs in Guts and Blackpowder: Best Farming Methods & Complete Currency Guide",
-  description: "Complete Francs guide for Guts and Blackpowder: how to earn Francs fast, best farming methods (Hardcore Endless, Speedrun Objectives, Holdout), and what to spend them on.",
+  title: "How to Get Francs Fast — Guts & Blackpowder Currency Guide | G&B Wiki",
+  description: "Complete Francs guide for Guts and Blackpowder — how to earn Francs fast, best farming methods (Hardcore Endless, Speedrun Objectives, Holdout), and what to spend them on.",
   alternates: {
     canonical: "https://gutsandblackpowder.wiki/guides/francs",
   },
@@ -74,7 +74,7 @@ export default function FrancsGuidePage() {
             Francs Guide
           </h1>
           <p className="mt-6 text-lg md:text-xl text-[#8a8884] max-w-2xl mx-auto leading-relaxed">
-            Master the in-game currency of Guts and Blackpowder 鈥?learn how to earn Francs efficiently and what to spend them on
+            Master the in-game currency of Guts and Blackpowder — learn how to earn Francs efficiently and what to spend them on
           </p>
           <div className="mt-8 mx-auto h-0.5 w-20 rounded-full bg-[#d4af6a]" />
         </div>
@@ -98,10 +98,10 @@ export default function FrancsGuidePage() {
             }}
           >
             <p className="text-base leading-relaxed text-[#c8c4bc] mb-4">
-              Francs are the premium in-game currency in Guts and Blackpowder. They are earned by completing objectives, surviving waves, and participating in matches. Unlike Robux (Roblox&apos;s real-money currency), Francs are earned entirely through gameplay and cannot be purchased directly.
+              Francs are the premium in-game currency in Guts and Blackpowder. They are earned by completing objectives, surviving waves, and participating in matches. Unlike Robux (Roblox's real-money currency), Francs are earned entirely through gameplay and cannot be purchased directly.
             </p>
             <p className="text-base leading-relaxed text-[#c8c4bc] mb-4">
-              Francs serve as the game&apos;s progression economy. They are used to purchase weapon skins, cosmetic items, and at the trader NPC in the Saint Petersburg Holdout map. Earning Francs efficiently is key to unlocking the cosmetic items you want.
+              Francs serve as the game's progression economy. They are used to purchase weapon skins, cosmetic items, and at the trader NPC in the Saint Petersburg Holdout map. Earning Francs efficiently is key to unlocking the cosmetic items you want.
             </p>
             <p className="text-base leading-relaxed text-[#c8c4bc]">
               The Franc economy is designed to reward skilled play and team contribution. Players who complete objectives, survive longer, and play supportive roles earn more Francs over time.
@@ -199,7 +199,7 @@ export default function FrancsGuidePage() {
             <div className="space-y-4">
               {[
                 {
-                  title: "1. Hardcore Endless 鈥?Best Overall",
+                  title: "1. Hardcore Endless — Best Overall",
                   desc: "Play Endless mode with the Hardcore modifier enabled. The double Franc multiplier applies to wave bonuses and every 5-wave bonus. A coordinated team reaching wave 25+ on Hardcore Endless can earn 5,000+ Francs per run.",
                 },
                 {
@@ -361,7 +361,7 @@ export default function FrancsGuidePage() {
                   <span className="text-[#d4af6a] mt-1.5 flex-shrink-0">&#8226;</span>
                   <div>
                     <span className="text-[#d4af6a] font-medium">{item.title}</span>
-                    <span className="text-[#8a8884]"> 鈥?{item.desc}</span>
+                    <span className="text-[#8a8884]"> — {item.desc}</span>
                   </div>
                 </li>
               ))}

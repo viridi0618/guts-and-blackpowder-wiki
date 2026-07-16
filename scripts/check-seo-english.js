@@ -1,5 +1,5 @@
-import fs from "fs";
-import path from "path";
+const fs = require("fs");
+const path = require("path");
 
 const root = process.cwd();
 const filesToCheck = [
@@ -12,10 +12,8 @@ const filesToCheck = [
   "src/app/commands/page.tsx",
   "src/app/commands/private-server-commands/page.tsx",
   "src/app/achievements/page.tsx",
-  "src/app/badges/untouchable/page.tsx",
   "src/app/enemies/cuirassier/page.tsx",
   "src/app/guides/how-to-use-musician/page.tsx",
-  "src/app/guides/how-to-get-francs/page.tsx",
   "src/components/Header.tsx",
   "src/components/CTALink.tsx",
 ];

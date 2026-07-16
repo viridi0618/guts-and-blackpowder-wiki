@@ -3,9 +3,9 @@ import Link from "next/link";
 import SectionTitle from "@/components/SectionTitle";
 
 export const metadata: Metadata = {
-  title: "Guts and Blackpowder Private Server Commands: Full G&B List",
+  title: "Guts and Blackpowder Private Server Commands",
   description:
-    "All Guts and Blackpowder private server commands, syntax examples, admin command tips, and common fixes for Roblox G&B servers.",
+    "List of Guts and Blackpowder private server commands, including class, map, nation, zombie spawn, hardcore, and admin-style commands for Roblox G&B.",
   alternates: {
     canonical: "https://gutsandblackpowder.wiki/commands/private-server-commands",
   },
@@ -90,41 +90,9 @@ const relatedLinks = [
   { label: "Maps", href: "/maps" },
 ];
 
-const faqs = [
-  {
-    question: "Who can use Guts and Blackpowder private server commands?",
-    answer: "Private server owners, game admins, and developers can use these commands. Regular public server players usually cannot use admin-style commands.",
-  },
-  {
-    question: "Why is a private server command not working?",
-    answer: "Check that you own the private server, typed the slash prefix, used a valid target such as @a or @m, and entered a command supported by the current game version.",
-  },
-  {
-    question: "Are private server commands the same as admin commands?",
-    answer: "Many private server commands are admin-style controls, but exact permissions can vary by server ownership, admin access, and future game updates.",
-  },
-];
-
 export default function PrivateServerCommandsPage() {
-  const faqJsonLd = {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    mainEntity: faqs.map((faq) => ({
-      "@type": "Question",
-      name: faq.question,
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: faq.answer,
-      },
-    })),
-  };
-
   return (
     <div className="min-h-screen bg-background text-foreground">
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
-      />
       <section className="relative overflow-hidden border-b border-[#2a2826]">
         <div className="absolute inset-0 bg-gradient-to-b from-[#d4af6a]/5 via-transparent to-transparent" />
         <div className="relative mx-auto max-w-4xl px-4 py-24 text-center">
@@ -191,18 +159,6 @@ export default function PrivateServerCommandsPage() {
             </div>
           </section>
         ))}
-
-        <section>
-          <SectionTitle tag="FAQ" title="Private Server Command FAQ" align="left" />
-          <div className="mt-8 space-y-4">
-            {faqs.map((faq) => (
-              <div key={faq.question} className="rounded-lg p-5" style={{ backgroundColor: "rgba(255,255,255,0.03)", border: "1px solid #2a2826", borderLeft: "3px solid #d4af6a" }}>
-                <h2 className="font-serif text-base text-[#d4af6a] mb-2">{faq.question}</h2>
-                <p className="text-sm leading-relaxed text-[#8a8884]">{faq.answer}</p>
-              </div>
-            ))}
-          </div>
-        </section>
       </div>
     </div>
   );
