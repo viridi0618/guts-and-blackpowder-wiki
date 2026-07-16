@@ -3,7 +3,7 @@ import Link from "next/link";
 import SectionTitle from "@/components/SectionTitle";
 
 export const metadata: Metadata = {
-  title: "How to Beat Cuirassier Zombies — Guts & Blackpowder Guide | G&B Wiki",
+  title: "Guts and Blackpowder Cuirassier Guide: How to Beat Cuirassier Zombies",
   description:
     "Learn how to fight Cuirassier Zombies in Guts and Blackpowder, including weak points, Endless wave timing, counters, and team tips for Roblox G&B.",
   alternates: {

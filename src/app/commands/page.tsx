@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import SectionTitle from "@/components/SectionTitle";
 
 export const metadata: Metadata = {
-  title: "Guts & Blackpowder Commands — Admin & Private Server Guide | G&B Wiki",
-  description: "Complete G&B command list: admin, private server, zombie spawn, class, map, and nation commands for Guts and Blackpowder.",
+  title: "Guts and Blackpowder Commands: G&B / GNB Admin & Private Server Commands",
+  description: "Every Guts and Blackpowder command in one place: G&B commands, GNB commands, admin commands, private server commands, zombie spawn commands, class commands, map commands, and nation commands.",
   alternates: {
     canonical: "https://gutsandblackpowder.wiki/commands",
   },

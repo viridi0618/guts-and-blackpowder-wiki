@@ -3,7 +3,7 @@ import FAQAccordion from "@/components/FAQAccordion";
 import { faqs } from "@/lib/data";
 
 export const metadata: Metadata = {
-  title: "Guts & Blackpowder FAQ — Game Info, Platforms & Common Questions | G&B Wiki",
+  title: "Frequently Asked Questions",
   description:
     "Guts and Blackpowder FAQ — game info, platforms, modes, weapons, classes, Francs, and more answered",
   alternates: {

@@ -3,7 +3,7 @@ import SectionTitle from "@/components/SectionTitle";
 import { weaponTypes, classWeaponMap, recommendedWeapons } from "@/lib/data";
 
 export const metadata: Metadata = {
-  title: "Guts & Blackpowder Weapons — Muskets, Sabres & Best Loadouts | G&B Wiki",
+  title: "Guts and Blackpowder Weapons: Muskets, Sabres, Pistols & Best Picks",
   description: "Guts and Blackpowder weapons guide covering muskets, rifles, sabres, pistols, class loadouts, and best weapon picks for Roblox G&B.",
   alternates: {
     canonical: "https://gutsandblackpowder.wiki/weapons",

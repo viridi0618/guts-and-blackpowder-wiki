@@ -4,7 +4,7 @@ import CTALink from "@/components/CTALink";
 import { featuredGuides } from "@/lib/data";
 
 export const metadata: Metadata = {
-  title: "Guts & Blackpowder Guides — Weapons, Maps, Commands & More | G&B Wiki",
+  title: "All Guides",
   description:
     "Guts and Blackpowder complete guides collection — weapons, enemies, maps, commands, badges, FAQ, and more",
   alternates: {

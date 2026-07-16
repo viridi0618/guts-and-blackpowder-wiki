@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import SectionTitle from "@/components/SectionTitle";
 
 export const metadata: Metadata = {
-  title: "Guts & Blackpowder Wiki — Complete Player Guide | G&B Wiki",
+  title: "Guts and Blackpowder Wiki: Complete Player Guide",
   description:
     "Complete Guts and Blackpowder wiki guide with commands, maps, weapons, enemies, badges, classes, and beginner tips for Roblox G&B.",
   alternates: {
