@@ -148,7 +148,7 @@ export default function BadgesPage() {
                 borderLeft: "3px solid #d4af6a",
               }}
             >
-              <h3 className="font-serif text-xl text-[#d4af6a] mb-3">Soldier's Grace</h3>
+              <h3 className="font-serif text-xl text-[#d4af6a] mb-3">Soldier&apos;s Grace</h3>
               <span
                 className="inline-block text-xs px-2.5 py-0.5 rounded-full mb-3"
                 style={{
@@ -245,7 +245,7 @@ export default function BadgesPage() {
               Vos Enterrement is the badge awarded for finding Barry, a hidden NPC Easter egg in the Catacombes de Paris. Barry is a skeleton figure armed with a shovel, internally nicknamed &quot;WinchGuy.&quot; He is <strong className="text-[#d4af6a]">NOT a playable class</strong> — just a fun secret to discover.
             </p>
             <p className="text-sm leading-relaxed text-[#8a8884] mb-4">
-              To earn the badge: play Catacombes de Paris on Objective mode, navigate through the underground tunnels, and find the side chamber containing Barry's tomb. Interact with it to unlock the Vos Enterrement badge. No keys, puzzles, or multi-map chains required.
+              To earn the badge: play Catacombes de Paris on Objective mode, navigate through the underground tunnels, and find the side chamber containing Barry&apos;s tomb. Interact with it to unlock the Vos Enterrement badge. No keys, puzzles, or multi-map chains required.
             </p>
             <div className="rounded-lg p-4" style={{ backgroundColor: "rgba(212,175,106,0.05)", border: "1px solid rgba(212,175,106,0.2)" }}>
               <p className="text-sm text-[#d4af6a] font-medium">

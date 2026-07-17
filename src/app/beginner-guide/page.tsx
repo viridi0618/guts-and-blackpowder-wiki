@@ -71,10 +71,10 @@ export default function BeginnerGuidePage() {
           <SectionTitle tag="Classes" title="Recommended Starting Class" subtitle="Which class should you pick as a beginner?" align="left" />
           <div className="mt-8 rounded-lg p-6" style={{ backgroundColor: "rgba(255,255,255,0.03)", border: "1px solid #2a2826", borderLeft: "3px solid #d4af6a" }}>
             <p className="text-base text-[#c8c4bc] mb-4">
-              <strong className="text-[#d4af6a]">Start with Line Infantry.</strong> It's the most versatile class — the musket with bayonet lets you handle any situation. You'll learn the fundamentals of both ranged and melee combat without being overwhelmed by special abilities.
+              <strong className="text-[#d4af6a]">Start with Line Infantry.</strong> It&apos;s the most versatile class — the musket with bayonet lets you handle any situation. You&apos;ll learn the fundamentals of both ranged and melee combat without being overwhelmed by special abilities.
             </p>
             <p className="text-sm text-[#8a8884] mb-4">
-              Once you're comfortable with Line Infantry, try these next:
+              Once you&apos;re comfortable with Line Infantry, try these next:
             </p>
             <div className="space-y-2">
               {[

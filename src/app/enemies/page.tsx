@@ -395,7 +395,7 @@ export default function EnemiesPage() {
               }}
             >
               <p className="text-sm text-[#ef4444] font-medium">
-                Tip: Always keep a Surgeon on your team. Without a Surgeon, infection is essentially a death sentence. In Endless mode past wave 20, the Chaplain's Crucifix becomes essential for creating safe zones against the overwhelming horde.
+                Tip: Always keep a Surgeon on your team. Without a Surgeon, infection is essentially a death sentence. In Endless mode past wave 20, the Chaplain&apos;s Crucifix becomes essential for creating safe zones against the overwhelming horde.
               </p>
             </div>
           </div>

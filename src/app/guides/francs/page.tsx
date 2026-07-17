@@ -98,10 +98,10 @@ export default function FrancsGuidePage() {
             }}
           >
             <p className="text-base leading-relaxed text-[#c8c4bc] mb-4">
-              Francs are the premium in-game currency in Guts and Blackpowder. They are earned by completing objectives, surviving waves, and participating in matches. Unlike Robux (Roblox's real-money currency), Francs are earned entirely through gameplay and cannot be purchased directly.
+              Francs are the premium in-game currency in Guts and Blackpowder. They are earned by completing objectives, surviving waves, and participating in matches. Unlike Robux (Roblox&apos;s real-money currency), Francs are earned entirely through gameplay and cannot be purchased directly.
             </p>
             <p className="text-base leading-relaxed text-[#c8c4bc] mb-4">
-              Francs serve as the game's progression economy. They are used to purchase weapon skins, cosmetic items, and at the trader NPC in the Saint Petersburg Holdout map. Earning Francs efficiently is key to unlocking the cosmetic items you want.
+              Francs serve as the game&apos;s progression economy. They are used to purchase weapon skins, cosmetic items, and at the trader NPC in the Saint Petersburg Holdout map. Earning Francs efficiently is key to unlocking the cosmetic items you want.
             </p>
             <p className="text-base leading-relaxed text-[#c8c4bc]">
               The Franc economy is designed to reward skilled play and team contribution. Players who complete objectives, survive longer, and play supportive roles earn more Francs over time.

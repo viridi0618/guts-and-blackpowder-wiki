@@ -156,7 +156,7 @@ export default function CommandsPage() {
           <SectionTitle tag="Syntax" title="Target Arguments (@a / @m / @o)" subtitle="How to target players with commands" align="left" />
           <div className="mt-8 rounded-lg p-6" style={{ backgroundColor: "rgba(255,255,255,0.03)", border: "1px solid #2a2826", borderLeft: "3px solid #d4af6a" }}>
             <p className="text-base leading-relaxed text-[#c8c4bc] mb-4">
-              Most commands require a <code className="text-[#d4af6a] bg-[rgba(212,175,106,0.1)] px-1.5 py-0.5 rounded">[user]</code> target. Instead of typing a player's name, use these shortcuts:
+              Most commands require a <code className="text-[#d4af6a] bg-[rgba(212,175,106,0.1)] px-1.5 py-0.5 rounded">[user]</code> target. Instead of typing a player&apos;s name, use these shortcuts:
             </p>
             <div className="overflow-x-auto rounded-lg border border-[#2a2826] mb-4">
               <table className="w-full border-collapse">
