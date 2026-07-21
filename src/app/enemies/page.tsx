@@ -8,7 +8,10 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://gutsandblackpowder.wiki/enemies",
   },
-};
+  openGraph: {
+    title: "Guts and Blackpowder Enemies: Zombies, Cuirassier, Bomber & Runner Guide",
+    description: "Complete enemy guide for Guts and Blackpowder, including zombies, special infected, boss enemies, and infection mechanics explained.",
+  }};
 
 // Regular zombie types
 const regularEnemies = [

@@ -7,7 +7,10 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://gutsandblackpowder.wiki/classes",
   },
-};
+  openGraph: {
+    title: "Guts and Blackpowder Classes Guide — Best Class for Each Map",
+    description: "All 7 classes in Guts and Blackpowder explained in detail — Line Infantry, Officer, Seaman, Musician, Sapper, Surgeon, Chaplain. Roles, abilities, and team synergy.",
+  }};
 
 const classData = [
   {

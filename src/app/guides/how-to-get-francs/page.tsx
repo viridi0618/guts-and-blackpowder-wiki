@@ -9,7 +9,10 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://gutsandblackpowder.wiki/guides/how-to-get-francs",
   },
-};
+  openGraph: {
+    title: "How to Get Francs in Guts and Blackpowder",
+    description: "Learn how to get Francs in Guts and Blackpowder with practical farming tips, mode advice, Hardcore notes, and safe spending guidance for Roblox G&B.",
+  }};
 
 const steps = [
   "Complete Objective maps consistently before chasing risky farms.",

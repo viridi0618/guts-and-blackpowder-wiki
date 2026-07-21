@@ -9,7 +9,10 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://gutsandblackpowder.wiki/faq",
   },
-};
+  openGraph: {
+    title: "Frequently Asked Questions",
+    description: "Guts and Blackpowder FAQ — game info, platforms, modes, weapons, classes, Francs, and more answered",
+  }};
 
 export default function FAQPage() {
   return (

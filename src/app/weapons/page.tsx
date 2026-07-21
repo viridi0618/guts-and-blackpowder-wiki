@@ -8,7 +8,10 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://gutsandblackpowder.wiki/weapons",
   },
-};
+  openGraph: {
+    title: "Guts and Blackpowder Weapons: Muskets, Sabres, Pistols & Best Picks",
+    description: "Guts and Blackpowder weapons guide covering muskets, rifles, sabres, pistols, class loadouts, and best weapon picks for Roblox G&B.",
+  }};
 
 export default function WeaponsPage() {
   return (

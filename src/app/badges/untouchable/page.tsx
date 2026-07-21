@@ -9,7 +9,10 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://gutsandblackpowder.wiki/badges/untouchable",
   },
-};
+  openGraph: {
+    title: "Untouchable Badge Guts and Blackpowder: How to Unlock It",
+    description: "Guide to the Untouchable badge in Guts and Blackpowder with cautious unlock tips, Catacombes de Paris advice, and related Roblox G&B badge links.",
+  }};
 
 const steps = [
   "Start from the badges guide and confirm the current unlock requirement in-game, because badge details can change after updates.",

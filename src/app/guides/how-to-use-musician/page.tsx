@@ -9,7 +9,10 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://gutsandblackpowder.wiki/guides/how-to-use-musician",
   },
-};
+  openGraph: {
+    title: "How to Use Musician in Guts and Blackpowder",
+    description: "Learn how to use the Musician class in Guts and Blackpowder, including team buffs, positioning, survival tips, and beginner advice for Roblox G&B.",
+  }};
 
 const musicianTips = [
   "Stay near teammates so your music buff actually reaches the group.",

@@ -7,7 +7,10 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://gutsandblackpowder.wiki/commands",
   },
-};
+  openGraph: {
+    title: "Guts and Blackpowder Commands: G&B / GNB Admin & Private Server Commands",
+    description: "Every Guts and Blackpowder command in one place: G&B commands, GNB commands, admin commands, private server commands, zombie spawn commands, class commands, map commands, and nation commands.",
+  }};
 
 // Command data organized by category
 const adminCommands = [

@@ -8,7 +8,10 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://gutsandblackpowder.wiki/wiki",
   },
-};
+  openGraph: {
+    title: "Guts and Blackpowder Wiki: Complete Player Guide",
+    description: "Complete Guts and Blackpowder wiki guide with commands, maps, weapons, enemies, badges, classes, and beginner tips for Roblox G&B.",
+  }};
 
 const sections = [
   {

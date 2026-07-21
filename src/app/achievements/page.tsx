@@ -9,7 +9,10 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://gutsandblackpowder.wiki/achievements",
   },
-};
+  openGraph: {
+    title: "Guts and Blackpowder Achievements: Badges & How to Unlock Them",
+    description: "Learn about Guts and Blackpowder achievements, Roblox badges, unlock requirements, and badge guides for G&B players.",
+  }};
 
 const achievementTopics = [
   {

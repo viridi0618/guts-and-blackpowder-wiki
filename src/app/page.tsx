@@ -22,7 +22,10 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://gutsandblackpowder.wiki",
   },
-};
+  openGraph: {
+    title: "Guts and Blackpowder Wiki — PvE Zombie Survival Guide, Maps & Weapons",
+    description: "The complete Guts and Blackpowder wiki. Maps, weapons, enemies, classes, badges, commands and more for the Roblox PvE zombie survival shooter.",
+  }};
 
 export default function Home() {
   const popularGuides = [

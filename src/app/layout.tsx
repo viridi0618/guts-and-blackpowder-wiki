@@ -25,8 +25,6 @@ export const metadata: Metadata = {
   },
   description: DEFAULT_DESC,
   openGraph: {
-    title: DEFAULT_TITLE,
-    description: DEFAULT_DESC,
     type: "website",
     locale: "en_US",
     siteName: SITE_NAME,
@@ -38,8 +36,6 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: DEFAULT_TITLE,
-    description: DEFAULT_DESC,
     images: [OG_IMAGE],
   },
 };

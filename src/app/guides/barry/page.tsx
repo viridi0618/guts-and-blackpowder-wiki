@@ -7,7 +7,10 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://gutsandblackpowder.wiki/guides/barry",
   },
-};
+  openGraph: {
+    title: "Barry Guts and Blackpowder — Who Is He, Vos Enterrement Badge & Hidden NPC Easter Egg",
+    description: "Who is Barry in Guts and Blackpowder? The truth about the Catacombes de Paris NPC Easter egg, how to get the Vos Enterrement badge, and why the community loves him.",
+  }};
 
 export default function BarryGuidePage() {
   return (

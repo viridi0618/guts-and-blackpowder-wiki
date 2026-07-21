@@ -8,7 +8,10 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://gutsandblackpowder.wiki/guides/francs",
   },
-};
+  openGraph: {
+    title: "How to Get Francs in Guts and Blackpowder — Best Farming Methods & Complete Currency Guide",
+    description: "Complete Francs guide for Guts and Blackpowder — how to earn Francs fast, best farming methods (Hardcore Endless, Speedrun Objectives, Holdout), and what to spend them on.",
+  }};
 
 // Franc earning rates by activity
 const francEarningRates = [

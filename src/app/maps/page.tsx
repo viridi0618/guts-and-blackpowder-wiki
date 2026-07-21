@@ -8,7 +8,10 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://gutsandblackpowder.wiki/maps",
   },
-};
+  openGraph: {
+    title: "Guts and Blackpowder Maps: Objective, Endless, Holdout & Boss Maps",
+    description: "Complete list of all 15 maps in Guts and Blackpowder, including Objective, Endless, Holdout, and Boss maps with descriptions.",
+  }};
 
 // Map data organized by mode
 const mapModes = [

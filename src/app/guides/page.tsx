@@ -10,7 +10,10 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://gutsandblackpowder.wiki/guides",
   },
-};
+  openGraph: {
+    title: "All Guides",
+    description: "Guts and Blackpowder complete guides collection — weapons, enemies, maps, commands, badges, FAQ, and more",
+  }};
 
 // Category grouping for all guides
 const guideCategories = [
